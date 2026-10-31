@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-bs-theme="dark">
 <?php
 $pageTitle = 'Beranda | LINNMS';
 $pageDescription = 'LINNMS membantu memantau OLT, ONU, dan perangkat jaringan dari satu dashboard.';
@@ -12,7 +12,7 @@ include __DIR__ . '/assets/parsial/head.php';
    
     <main id="main">
       <section class="hero hero-product">
-        <div class="shell hero-grid">
+        <div class="container hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">
               <span class="eyebrow-line" aria-hidden="true"></span>NETWORK MANAGEMENT SYSTEM
@@ -34,9 +34,9 @@ include __DIR__ . '/assets/parsial/head.php';
                 tersusun rapi untuk membantu pemeriksaan sehari-hari.
               </p>
             </div>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="fitur.php">Jelajahi fitur</a
-              ><a class="btn btn-ghost" href="docs.php">Baca dokumentasi</a>
+            <div class="hero-actions d-flex justify-content-center flex-wrap gap-3">
+              <a class="btn btn-brand btn-uniform" href="fitur.php">Jelajahi fitur</a
+              ><a class="btn btn-outline-light btn-uniform" href="docs.php">Baca dokumentasi</a>
             </div>
 
           </div>
@@ -302,8 +302,8 @@ include __DIR__ . '/assets/parsial/head.php';
           </div>
         </div>
       </section>
-      <section class="section-block shell" id="fitur">
-        <div class="section-intro">
+      <section class="section-block container" id="fitur">
+        <div class="section-intro d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-4">
           <div>
             <span class="kicker">FITUR UTAMA</span>
             <h2>
@@ -315,8 +315,8 @@ include __DIR__ . '/assets/parsial/head.php';
             serta aktivitas sinkronisasi dalam alur kerja yang lebih jelas.
           </p>
         </div>
-        <div class="topic-grid product-feature-grid">
-          <a class="topic-card product-feature" href="fitur.php#pemantauan"
+        <div class="row g-3 product-feature-grid">
+          <div class="col-md-6 col-lg-4"><a class="topic-card product-feature h-100" href="fitur.php#pemantauan"
             ><div class="topic-icon">
               <i class="bi bi-speedometer2" aria-hidden="true"></i>
             </div>
@@ -325,8 +325,7 @@ include __DIR__ . '/assets/parsial/head.php';
               Lihat ringkasan perangkat dan indikator status untuk mengenali
               kondisi jaringan.
             </p>
-            <span class="feature-card-footer">Pelajari pemantauan</span></a
-          ><a class="topic-card product-feature" href="fitur.php#perangkat"
+            <span class="feature-card-footer">Pelajari pemantauan</span></a></div><div class="col-md-6 col-lg-4"><a class="topic-card product-feature h-100" href="fitur.php#perangkat"
             ><div class="topic-icon">
               <i class="bi bi-diagram-3" aria-hidden="true"></i>
             </div>
@@ -335,8 +334,7 @@ include __DIR__ . '/assets/parsial/head.php';
               Telusuri informasi perangkat berdasarkan dukungan model dan
               firmware yang digunakan.
             </p>
-            <span class="feature-card-footer">Pelajari pengelolaan</span></a
-          ><a class="topic-card product-feature" href="fitur.php#sinkronisasi"
+            <span class="feature-card-footer">Pelajari pengelolaan</span></a></div><div class="col-md-6 col-lg-4"><a class="topic-card product-feature h-100" href="fitur.php#sinkronisasi"
             ><div class="topic-icon">
               <i class="bi bi-activity" aria-hidden="true"></i>
             </div>
@@ -345,8 +343,7 @@ include __DIR__ . '/assets/parsial/head.php';
               Periksa pembaruan dan aktivitas perangkat untuk mendukung
               penelusuran masalah.
             </p>
-            <span class="feature-card-footer">Pelajari sinkronisasi</span></a
-          >
+            <span class="feature-card-footer">Pelajari sinkronisasi</span></a></div>
         </div>
         <div class="section-footer-link">
           <a class="text-link" href="fitur.php"
@@ -354,7 +351,7 @@ include __DIR__ . '/assets/parsial/head.php';
           >
         </div>
       </section>
-      <section class="section-block shell product-about">
+      <section class="section-block container product-about">
         <div class="feature-split">
           <div>
             <span class="kicker">TENTANG LINNMS</span>

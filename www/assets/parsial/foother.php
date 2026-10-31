@@ -1,5 +1,5 @@
  <footer class="footer">
-      <div class="shell footer-top">
+      <div class="container footer-top">
         <div class="footer-links">
           <div>
             <a href="docs.php">Dokumentasi</a>
@@ -12,7 +12,8 @@
           </div>
         </div>
       </div>
-      <div class="shell footer-bottom">
+      <div class="container footer-bottom">
         <span>© <?php echo date('Y'); ?> LINNMS</span>
       </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

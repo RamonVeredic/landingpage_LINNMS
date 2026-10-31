@@ -1,6 +1,6 @@
 # LINNMS — Network Management System Landing Page
 
-Landing page khusus **LINNMS** dalam folder mandiri `linnms-landingpage-tamplat/` di repository `RamonVeredic/LandingPage:main`. Template ini berdampingan dengan `Tech-Netnms/` dan tidak mengubah template pertama.
+Landing page **LINNMS** pada repository `RamonVeredic/landingpage_LINNMS`, menggunakan PHP dan Bootstrap melalui CDN.
 
 ## Struktur situs
 
@@ -22,13 +22,13 @@ Mockup ringkasan jaringan pada beranda adalah ilustrasi konsep (bukan data peran
 Buka situs melalui server PHP dari folder proyek:
 
 ```bash
-cd linnms-landingpage-tamplat
+cd www
 php -S 127.0.0.1:8000
 ```
 
 Lalu buka `http://localhost:8000`.
 
-Tidak membutuhkan bundler, backend, atau dependensi npm. Google Fonts opsional dengan fallback sistem. Layout dan interaksi utama tetap memakai `assets/css/styles.css` serta `assets/js/script.js` lokal. Ikon menggunakan stylesheet **Bootstrap Icons 1.13.1 melalui jsDelivr CDN** pada semua halaman; Google Fonts dimuat dari CDN dengan fallback sistem. Jika offline, teks navigasi tetap tersedia tetapi ikon CDN tidak tampil. Tidak memerlukan bundler.
+Tidak menggunakan bundler atau npm. PHP diperlukan untuk menyertakan komponen halaman bersama. Bootstrap CSS **5.3.8** dan Bootstrap JS bundle (termasuk Popper untuk dropdown) disediakan melalui jsDelivr CDN, disertai Bootstrap Icons. Bootstrap menyediakan utilitas layout, grid, spacing, tombol, navbar, collapse, dan dropdown. `assets/css/styles.css` hanya menangani tema LINNMS, preview dashboard, dan komponen khusus dokumentasi. `assets/js/script.js` hanya menangani konfigurasi tautan autentikasi, salin snippet, filter tabel OID, dan indikasi bagian dokumentasi.
 
 ## Konfigurasi dan keamanan
 
@@ -49,3 +49,12 @@ const AUTH_URLS={login:'https://domain-aplikasi.example/login',register:'https:/
 ```
 
 Alamat di atas hanyalah **contoh format**, bukan endpoint resmi LINNMS yang sudah diverifikasi. Jika nilai tetap kosong, menu dapat dibuka tetapi tautan Masuk dan Daftar nonaktif, sehingga tidak mengarahkan pengguna ke URL palsu. Hanya URL HTTP/HTTPS yang diterima.
+
+
+## Refactor ke Bootstrap CDN (branch `refactor/css/js`)
+
+- Versi CDN dikunci ke Bootstrap 5.3.8 dengan atribut `integrity` (SRI); CSS masuk melalui `assets/parsial/head.php`, Bootstrap JS bundle melalui `assets/parsial/foother.php`.
+- Navbar collapse dan dropdown 'Gabung' memakai komponen Bootstrap `data-bs-*`, bukan handler JavaScript khusus.
+- Grid fitur, kartu dokumentasi, dan spacing menggunakan utilitas `container`, `row`, `col-*`, `g-*`, `d-flex`, `gap-*`.
+- Ukuran CTA dikontrol oleh kelas `btn-uniform` agar panjang teks tidak mengubah lebar tombol; di mobile CTA menggunakan lebar penuh.
+- Akses CDN diperlukan agar komponen Bootstrap (terutama dropdown dan navbar mobile) berfungsi; pada lingkungan produksi dengan aturan CSP, izinkan domain jsDelivr.

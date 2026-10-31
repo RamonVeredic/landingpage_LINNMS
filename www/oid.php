@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-bs-theme="dark">
 
 <?php
 $pageTitle = 'Referensi OID & SNMP | LINNMS';
@@ -11,13 +11,13 @@ include __DIR__ . '/assets/parsial/head.php';
 <?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
 
     <main id="main">
-        <div class="page-head shell">
+        <div class="page-head container">
             <div class="crumb"><a href="index.php">Beranda</a><span>/</span><a href="docs.php">Dokumentasi</a><span>/</span>Referensi OID</div><span class="kicker">LINNMS / DOKUMENTASI</span>
             <h1>Referensi <span class='gradient-text'>OID dan SNMP.</span></h1>
             <p>Kumpulan OID standar dan vendor yang dapat Anda gunakan sebagai referensi untuk memeriksa perangkat jaringan, baik dengan LINNMS maupun alat SNMP lainnya.</p>
-            <div class="header-pills"><span class="pill">MIB-II</span><span class="pill">IF-MIB</span><span class="pill">ZTE · HIOSO</span></div>
+            <div class="header-pills d-flex flex-wrap gap-2"><span class="pill">MIB-II</span><span class="pill">IF-MIB</span><span class="pill">ZTE · HIOSO</span></div>
         </div>
-        <div class="shell docs-layout">
+        <div class="container docs-layout">
             <aside class="doc-aside">
                 <div class="aside-sticky"><a class="sidebar-back" href="docs.php"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
                     <div class="aside-title">DAFTAR ISI</div><a href="#before">01 Cara membaca OID</a><a href="#reference">02 Tabel referensi</a><a href="#vendor">03 OID vendor</a><a href="#examples">04 Contoh perintah</a><a href="#results">05 Interpretasi hasil</a>
@@ -41,8 +41,8 @@ include __DIR__ . '/assets/parsial/head.php';
                     <div class="section-number">02 / REFERENCE TABLE</div>
                     <h2>Daftar OID yang sering diperiksa</h2>
                     <p>Cari nama OID, angka, kategori, atau vendor. Entri vendor ini merupakan contoh cabang yang digunakan dalam driver LINNMS, bukan daftar lengkap atau jaminan kompatibilitas untuk semua model.</p>
-                    <div class="filter-toolbar"><label class="search-field"><span><i class="bi bi-search" aria-hidden="true"></i></span><input type="search" id="oid-search" placeholder="Cari OID, sysName, 3902, IF-MIB..." aria-label="Cari dalam daftar OID"></label>
-                        <div class="filter-buttons" aria-label="Jenis OID"><button class="filter-btn" data-oid-filter="all" aria-pressed="true">Semua</button><button class="filter-btn" data-oid-filter="standard" aria-pressed="false">Standar</button><button class="filter-btn" data-oid-filter="vendor" aria-pressed="false">Vendor</button></div>
+                    <div class="filter-toolbar d-flex flex-column flex-md-row gap-2 align-items-stretch align-items-md-center"><label class="search-field flex-grow-1"><span><i class="bi bi-search" aria-hidden="true"></i></span><input type="search" id="oid-search" placeholder="Cari OID, sysName, 3902, IF-MIB..." aria-label="Cari dalam daftar OID" class="form-control"></label>
+                        <div class="filter-buttons d-flex gap-2" aria-label="Jenis OID"><button class="btn btn-outline-info btn-sm filter-btn" data-oid-filter="all" aria-pressed="true">Semua</button><button class="btn btn-outline-info btn-sm filter-btn" data-oid-filter="standard" aria-pressed="false">Standar</button><button class="btn btn-outline-info btn-sm filter-btn" data-oid-filter="vendor" aria-pressed="false">Vendor</button></div>
                     </div>
                     <p class="table-count" id="oid-count" aria-live="polite"></p>
                     <div class="table-scroller">
@@ -212,17 +212,17 @@ include __DIR__ . '/assets/parsial/head.php';
                     <h2>Contoh snmpget & snmpwalk</h2>
                     <p>Jalankan perintah pada host yang punya akses ke jaringan manajemen. Ganti <code>DEVICE_IP</code> dan <code>COMMUNITY</code> sesuai data yang valid.</p>
                     <div class="snippet">
-                        <div class="snippet-head"><span><span class="terminal-dot"></span> Identitas dan uptime perangkat</span><button type="button" class="copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                        <div class="snippet-head"><span><span class="terminal-dot"></span> Identitas dan uptime perangkat</span><button type="button" class="btn btn-outline-light btn-sm copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                         <pre><code>snmpget -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.2.1.1.5.0
 snmpget -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.2.1.1.3.0</code></pre>
                     </div>
                     <div class="snippet">
-                        <div class="snippet-head"><span><span class="terminal-dot"></span> Cari indeks interface</span><button type="button" class="copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                        <div class="snippet-head"><span><span class="terminal-dot"></span> Cari indeks interface</span><button type="button" class="btn btn-outline-light btn-sm copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                         <pre><code>snmpwalk -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.2.1.31.1.1.1.1
 snmpwalk -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.2.1.2.2.1.8</code></pre>
                     </div>
                     <div class="snippet">
-                        <div class="snippet-head"><span><span class="terminal-dot"></span> Walk enterprise OID vendor (jika didukung)</span><button type="button" class="copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                        <div class="snippet-head"><span><span class="terminal-dot"></span> Walk enterprise OID vendor (jika didukung)</span><button type="button" class="btn btn-outline-light btn-sm copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                         <pre><code>snmpwalk -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.4.1.3902
 snmpwalk -v2c -c 'COMMUNITY' DEVICE_IP 1.3.6.1.4.1.25355</code></pre>
                     </div>

@@ -1,40 +1,33 @@
- <a class="skip-link" href="#main">Langsung ke konten</a>
- <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="index.php"
-          ><img
-            class="brand-logo"
-            src="assets/linnms-logo.png"
-            alt=""
-            width="44"
-            height="44"
-            decoding="async"
-          /><span
-            ><strong>LINNMS</strong
-            ><small>NETWORK MANAGEMENT</small></span
-          ></a
-        >
-        <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama">
-          <a href="index.php" <?= ($activePage ?? '') === 'home' ? 'aria-current="page"' : '' ?>>Beranda</a
-          ><a href="fitur.php" <?= ($activePage ?? '') === 'features' ? 'aria-current="page"' : '' ?>>Fitur</a><a href="docs.php" <?= ($activePage ?? '') === 'docs' ? 'aria-current="page"' : '' ?>>Dokumentasi</a
-          ><a href="about.php" <?= ($activePage ?? '') === 'about' ? 'aria-current="page"' : '' ?>>Tentang</a>
-          <div class="auth-menu">
-            <button
-              class="header-cta auth-trigger"
-              type="button"
-              aria-expanded="false"
-              aria-controls="auth-menu-panel"
-            >
-             Gabung<span class="auth-caret" aria-hidden="true"></span>
-            </button>
-            <div class="auth-menu-panel" id="auth-menu-panel" hidden>
-              <a class="auth-link is-unavailable" data-auth-link="login" aria-disabled="true" tabindex="-1">Masuk<small>URL belum tersedia</small></a>
-              <a class="auth-link is-unavailable" data-auth-link="register" aria-disabled="true" tabindex="-1">Daftar<small>URL belum tersedia</small></a
-              >
-            </div>
-          </div>
-        </nav>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Buka navigasi"> <span></span><span></span><span></span>
-        </button>
+<a class="skip-link" href="#main">Langsung ke konten</a>
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navigasi utama">
+    <div class="container">
+      <a class="navbar-brand brand d-inline-flex align-items-center gap-2" href="index.php">
+        <img class="brand-logo" src="assets/linnms-logo.png" alt="" width="42" height="42" decoding="async" />
+        <span class="brand-copy d-flex flex-column">
+          <strong>LINNMS</strong><small>NETWORK MANAGEMENT</small>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation"
+        aria-controls="siteNavigation" aria-expanded="false" aria-label="Buka navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siteNavigation">
+        <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link <?= ($activePage ?? '') === 'home' ? 'active' : '' ?>" href="index.php" <?= ($activePage ?? '') === 'home' ? 'aria-current="page"' : '' ?>>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage ?? '') === 'features' ? 'active' : '' ?>" href="fitur.php" <?= ($activePage ?? '') === 'features' ? 'aria-current="page"' : '' ?>>Fitur</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage ?? '') === 'docs' ? 'active' : '' ?>" href="docs.php" <?= ($activePage ?? '') === 'docs' ? 'aria-current="page"' : '' ?>>Dokumentasi</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage ?? '') === 'about' ? 'active' : '' ?>" href="about.php" <?= ($activePage ?? '') === 'about' ? 'aria-current="page"' : '' ?>>Tentang</a></li>
+          <li class="nav-item dropdown ms-lg-3 mt-2 mt-lg-0">
+            <button class="btn btn-brand dropdown-toggle nav-join" type="button" id="accountDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">Gabung</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+              <li><a class="dropdown-item disabled" data-auth-link="login" role="link" aria-disabled="true" tabindex="-1">Masuk <small class="d-block">URL belum tersedia</small></a></li>
+              <li><a class="dropdown-item disabled" data-auth-link="register" role="link" aria-disabled="true" tabindex="-1">Daftar <small class="d-block">URL belum tersedia</small></a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
+</header>
