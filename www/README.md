@@ -11,7 +11,7 @@ Landing page **LINNMS** pada repository `RamonVeredic/landingpage_LINNMS`, mengg
 - `instalasi.php` — panduan instalasi LINNMS Production (Docker Compose / CasaOS).
 - `oid.php` — referensi OID dan SNMP yang dapat digunakan dan dibagikan oleh pengguna umum, **bagian dari dokumentasi**, bukan produk.
 
-Navigasi utama: **Beranda · Fitur · Dokumentasi · Tentang · Masuk / Daftar**. Fitur membuka halaman khusus `fitur.php` dengan detail setiap kemampuan; kartu fitur di beranda membuka bagian yang sesuai. Instalasi dan OID diakses dari pusat dokumentasi.
+Navigasi utama: **Beranda · Fitur · Dokumentasi · Tentang · Gabung** (dropdown Masuk / Daftar). Fitur membuka halaman khusus `fitur.php` dengan detail setiap kemampuan; kartu fitur di beranda membuka bagian yang sesuai. Instalasi dan OID diakses dari pusat dokumentasi.
 
 Desain responsive dark navy dengan aksen **hijau → cyan → biru** mengikuti **logo LINNMS resmi**, bukan logo generik. Aset `assets/linnms-logo.png` dan `assets/favicon.ico` bersumber dari `RamonVeredic/icon` pada `LINNMS/LINNMS_icon_cropped.png` dan `LINNMS/LINNMS_icon.ico`. Sub-brand konsisten: **NETWORK MANAGEMENT SYSTEM**.
 
@@ -38,7 +38,7 @@ OID enterprise ZTE `1.3.6.1.4.1.3902` dan HIOSO `1.3.6.1.4.1.25355` adalah conto
 
 ## Penyesuaian tampilan
 
-Hero beranda menggunakan tipografi dan spacing yang konsisten, dua CTA berukuran tetap, dan contoh dashboard ringkas dengan hanya dua baris perangkat. Preview merupakan data ilustrasi, bukan live monitor. Navigasi desktop memakai area klik berukuran tetap, hover, active, dan focus-visible; mobile tetap memakai menu responsif. CSS khusus tampilan tetap lokal untuk memudahkan perubahan desain tanpa build step.
+Hero beranda menggunakan tipografi dan spacing yang konsisten, dua CTA berukuran tetap, dan contoh dashboard ringkas dengan hanya dua baris perangkat. Preview merupakan data ilustrasi, bukan live monitor. Navbar responsif, dropdown, tombol, dan grid menggunakan Bootstrap. CSS lokal hanya mempertahankan warna, tipografi, dan bagian khusus produk yang tidak disediakan oleh Bootstrap.
 
 ## Dropdown Masuk / Daftar
 

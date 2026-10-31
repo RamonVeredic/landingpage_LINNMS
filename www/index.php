@@ -49,7 +49,7 @@ include __DIR__ . '/assets/parsial/head.php';
             <div class="auth-preview-scroll">
               <div
                 class="auth-dashboard"
-                role="img">
+                role="img" aria-label="Pratinjau dashboard LINNMS dengan data perangkat ilustratif, bukan data aktual.">
                 <aside class="auth-sidebar">
                   <div class="auth-app-brand">
                     <img src="assets/linnms-logo.png" alt="" width="26" height="26" />
@@ -76,51 +76,6 @@ include __DIR__ . '/assets/parsial/head.php';
                     ><span>Dashboard</span>
                   </div>
                   <div class="auth-side-section">MANAGEMENT</div>
-                  <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7v10M7 12h10" /></svg
-                    ><span>Add ONU</span>
-                  </div>
-                  <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="3" y="8" width="18" height="12" rx="2" />
-                      <path d="M7 8V4m10 4V4M7 16h.01M11 16h.01M15 16h3" /></svg
-                    ><span>All ONU</span>
-                  </div>
-                  <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                  </div>
                   <div class="auth-side-section">NOTIFIKASI</div>
                   <div class="auth-side-item">
                     <svg

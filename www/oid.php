@@ -197,7 +197,7 @@ include __DIR__ . '/assets/parsial/head.php';
                             </tbody>
                         </table>
                     </div>
-                    <div class="empty-state" id="oid-empty">Tidak ada OID yang cocok dengan pencarian.</div>
+                    <div class="empty-state d-none" id="oid-empty">Tidak ada OID yang cocok dengan pencarian.</div>
                 </section>
                 <section class="doc-section" id="vendor">
                     <div class="section-number">03 / VENDOR OIDS</div>
