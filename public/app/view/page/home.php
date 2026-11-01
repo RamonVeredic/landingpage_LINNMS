@@ -1,15 +1,3 @@
-<!doctype html>
-<html lang="id">
-<?php
-$pageTitle = 'Beranda | LINNMS';
-$pageDescription = 'LINNMS membantu memantau OLT, ONU, dan perangkat jaringan dari satu dashboard.';
-$activePage = 'home';
-include __DIR__ . '/assets/parsial/head.php';
-?>
-<body>
-<?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
-
-   
     <main id="main">
       <section class="hero hero-product">
         <div class="shell hero-grid">
@@ -372,9 +360,3 @@ include __DIR__ . '/assets/parsial/head.php';
       </section>
 
     </main>
-
-    <?php include __DIR__ . '/assets/parsial/foother.php'; ?>
-
-    <script src="assets/js/script.js" defer></script>
-  </body>
-</html>
