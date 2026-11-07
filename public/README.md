@@ -9,9 +9,10 @@ Landing page khusus **LINNMS** dalam folder mandiri `linnms-landingpage-tamplat/
 - `about.php` — profil produk, tujuan, dan sasaran pengguna LINNMS.
 - `docs.php` — indeks dokumentasi.
 - `instalasi.php` — panduan instalasi LINNMS Production (Docker Compose / CasaOS).
-- `oid.php` — referensi OID dan SNMP yang dapat digunakan dan dibagikan oleh pengguna umum, **bagian dari dokumentasi**, bukan produk.
+- `oid.php` — dokumentasi OID yang digunakan LINNMS, dipisahkan per vendor ZTE dan HIOSO.
+- `changelog.php` — catatan perubahan versi yang tercatat pada `LINNMS-Staging/config/README.md`.
 
-Navigasi utama: **Beranda · Fitur · Dokumentasi · Tentang · Masuk / Daftar**. Fitur membuka halaman khusus `fitur.php` dengan detail setiap kemampuan; kartu fitur di beranda membuka bagian yang sesuai. Instalasi dan OID diakses dari pusat dokumentasi.
+Navigasi utama: **Beranda · Fitur · Dokumentasi · Tentang · Masuk / Daftar**. Fitur membuka halaman khusus `fitur.php` dengan detail setiap kemampuan; kartu fitur di beranda membuka bagian yang sesuai. Instalasi, OID, dan catatan perubahan diakses dari pusat dokumentasi.
 
 Desain responsive dark navy dengan aksen **hijau → cyan → biru** mengikuti **logo LINNMS resmi**, bukan logo generik. Aset `assets/linnms-logo.png` dan `assets/favicon.ico` bersumber dari `RamonVeredic/icon` pada `LINNMS/LINNMS_icon_cropped.png` dan `LINNMS/LINNMS_icon.ico`. Sub-brand konsisten: **NETWORK MANAGEMENT SYSTEM**.
 
@@ -34,7 +35,7 @@ Tidak membutuhkan bundler, backend, atau dependensi npm. Google Fonts opsional d
 
 Nama image rujukan: `ghcr.io/ramonveredic/linnms`. Hanya gunakan tag yang sudah tersedia. Contoh deployment mengacu pada `RamonVeredic/LINNMS/deploy/`; periksa kredensial database dan batas akses sebelum dipakai.
 
-OID enterprise ZTE `1.3.6.1.4.1.3902` dan HIOSO `1.3.6.1.4.1.25355` adalah contoh cabang dari driver `LINNMS-Staging`, bukan jaminan kompatibilitas semua model. Sesuaikan credential dan IP pada contoh perintah SNMP. Portal sengaja tidak menjabarkan source code dan implementasi internal LINNMS.
+OID untuk ZTE dan HIOSO didokumentasikan sesuai penggunaannya pada driver `LINNMS-Staging`, masing-masing dalam satu tabel per vendor. Changelog mengikuti catatan pada `LINNMS-Staging/config/README.md`.
 
 ## Penyesuaian tampilan
 

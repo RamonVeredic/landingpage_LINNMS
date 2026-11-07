@@ -3,28 +3,28 @@
         <div class="shell hero-grid container-xl">
           <div class="hero-copy">
             <div class="eyebrow">
-              <span class="eyebrow-line" aria-hidden="true"></span>NETWORK MANAGEMENT SYSTEM
+              <span class="eyebrow-line" aria-hidden="true"></span>KENALI LINNMS
             </div>
             <h1 class="hero-title">
               <span class="hero-title-line hero-title-main"
-                >Kondisi jaringan,</span
+                >Satu tempat untuk</span
               ><span class="hero-title-line hero-title-accent gradient-text"
-                >lebih mudah dipahami.</span
+                >memahami jaringan.</span
               >
             </h1>
             <div class="hero-description">
               <p class="hero-lead">
-                Pantau OLT, ONU, dan perangkat jaringan dari satu dashboard
-                LINNMS.
+                LINNMS adalah platform manajemen jaringan yang membantu tim
+                memahami kondisi jaringan dan mengelola perangkat dalam satu tempat.
               </p>
               <p class="hero-support">
-                Ringkasan status, informasi perangkat, dan hasil sinkronisasi
-                tersusun rapi untuk membantu pemeriksaan sehari-hari.
+                Lihat apa yang sedang terjadi, temukan perangkat yang perlu diperiksa,
+                dan jalankan pekerjaan sehari-hari dengan lebih terarah.
               </p>
             </div>
             <div class="hero-actions">
               <a class="btn btn-sm btn-brand" href="fitur.php">Jelajahi fitur</a
-              ><a class="btn btn-sm btn-brand-outline" href="docs.php">Baca dokumentasi</a>
+              ><a class="btn btn-sm btn-brand-outline" href="about.php">Tentang LINNMS</a>
             </div>
 
           </div>
@@ -295,12 +295,12 @@
           <div>
             <span class="kicker">FITUR UTAMA</span>
             <h2>
-              Informasi yang Anda butuhkan,<br />tanpa tampilan berlebihan.
+              Pahami jaringan, kelola perangkat,<br />ikuti setiap perubahan.
             </h2>
           </div>
           <p>
-            Kenali cara LINNMS menyajikan kondisi jaringan, data OLT dan ONU,
-            serta aktivitas sinkronisasi dalam alur kerja yang lebih jelas.
+            LINNMS membantu tim melihat gambaran jaringan dan menemukan informasi
+            yang dibutuhkan saat memantau pekerjaan sehari-hari.
           </p>
         </div>
         <div class="topic-grid product-feature-grid row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
@@ -308,37 +308,37 @@
             ><div class="topic-icon">
               <i class="bi bi-speedometer2" aria-hidden="true"></i>
             </div>
-            <h3>Pemantauan perangkat</h3>
+            <h3>Pantau kondisi jaringan</h3>
             <p>
-              Lihat ringkasan perangkat dan indikator status untuk mengenali
-              kondisi jaringan.
+              Lihat gambaran kondisi perangkat agar tim tahu bagian yang perlu
+              mendapat perhatian.
             </p>
-            <span class="feature-card-footer">Pelajari pemantauan</span></a
+            <span class="feature-card-footer">Jelajahi pemantauan</span></a
           ></div><div class="col"><a class="topic-card product-feature h-100" href="fitur.php#perangkat"
             ><div class="topic-icon">
               <i class="bi bi-diagram-3" aria-hidden="true"></i>
             </div>
-            <h3>Pengelolaan OLT &amp; ONU</h3>
+            <h3>Kenali perangkat Anda</h3>
             <p>
-              Telusuri informasi perangkat berdasarkan dukungan model dan
-              firmware yang digunakan.
+              Temukan informasi perangkat yang dibutuhkan untuk memahami
+              jaringan yang Anda kelola.
             </p>
-            <span class="feature-card-footer">Pelajari pengelolaan</span></a
+            <span class="feature-card-footer">Jelajahi perangkat</span></a
           ></div><div class="col"><a class="topic-card product-feature h-100" href="fitur.php#sinkronisasi"
             ><div class="topic-icon">
               <i class="bi bi-activity" aria-hidden="true"></i>
             </div>
-            <h3>Aktivitas &amp; sinkronisasi</h3>
+            <h3>Ikuti aktivitas jaringan</h3>
             <p>
-              Periksa pembaruan dan aktivitas perangkat untuk mendukung
-              penelusuran masalah.
+              Pahami perubahan terbaru sebagai titik awal saat ada kondisi
+              yang perlu ditindaklanjuti.
             </p>
-            <span class="feature-card-footer">Pelajari sinkronisasi</span></a
+            <span class="feature-card-footer">Jelajahi aktivitas</span></a
           ></div>
         </div>
         <div class="section-footer-link">
           <a class="text-link" href="fitur.php"
-            >Lihat penjelasan seluruh fitur</a
+            >Lihat semua fitur</a
           >
         </div>
       </section>
@@ -346,11 +346,12 @@
         <div class="feature-split">
           <div>
             <span class="kicker">TENTANG LINNMS</span>
-            <h2>Dirancang untuk kebutuhan pengelolaan jaringan.</h2>
+            <h2>Lebih mudah memahami jaringan yang Anda kelola.</h2>
             <p>
-              LINNMS mengutamakan informasi perangkat dan kondisi jaringan yang
-              dibutuhkan saat pemantauan sehari-hari, terutama untuk lingkungan
-              OLT dan ONU.
+              LINNMS dirancang untuk tim yang perlu memantau jaringan dan
+              menemukan informasi perangkat dalam pekerjaan sehari-hari.
+              Semuanya disajikan dengan jelas agar tim dapat menentukan langkah
+              berikutnya dengan lebih yakin.
             </p>
             <a class="text-link" href="about.php"
               >Kenali LINNMS lebih lanjut</a
