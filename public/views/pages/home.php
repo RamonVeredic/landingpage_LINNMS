@@ -11,10 +11,10 @@
           <a class="btn btn-sm btn-brand" href="#">Coba Gratis</a>
           <a class="btn btn-sm btn-brand-outline" href="#">Pesan Sekarang</a>
         </div>
-        <ul class="home-highlights" aria-label="Cakupan LINNMS">
-          <li><i class="bi bi-diagram-3" aria-hidden="true"></i>OLT &amp; ONU</li>
-          <li><i class="bi bi-hdd-network" aria-hidden="true"></i>Router &amp; switch</li>
-          <li><i class="bi bi-bell" aria-hidden="true"></i>Notifikasi jaringan</li>
+        <ul class="home-highlights" aria-label="Fungsi utama LINNMS">
+          <li><i class="bi bi-speedometer2" aria-hidden="true"></i>Pantau perangkat</li>
+          <li><i class="bi bi-sliders" aria-hidden="true"></i>Kelola ONU</li>
+          <li><i class="bi bi-chat-dots" aria-hidden="true"></i>Terima notifikasi</li>
         </ul>
       </div>
           <div class="auth-preview-wrap" id="dashboard-preview">
@@ -36,102 +36,22 @@
                   </div>
                   <div class="auth-side-section">DASHBOARD</div>
                   <div class="auth-side-item active">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M4.2 17a9 9 0 1 1 15.6 0" />
-                      <path d="M12 14l4-5" />
-                      <circle cx="12" cy="14" r="1.3" /></svg
-                    ><span>Dashboard</span>
+                    <i class="bi bi-speedometer2" aria-hidden="true"></i><span>Dashboard</span>
                   </div>
                   <div class="auth-side-section">MANAGEMENT</div>
                   <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7v10M7 12h10" /></svg
-                    ><span>Add ONU</span>
+                    <i class="bi bi-plus-circle" aria-hidden="true"></i><span>Add ONU</span>
                   </div>
                   <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <rect x="3" y="8" width="18" height="12" rx="2" />
-                      <path d="M7 8V4m10 4V4M7 16h.01M11 16h.01M15 16h3" /></svg
-                    ><span>All ONU</span>
-                  </div>
-                  <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"></svg>
+                    <i class="bi bi-router" aria-hidden="true"></i><span>All ONU</span>
                   </div>
                   <div class="auth-side-section">NOTIFIKASI</div>
                   <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"
-                      /></svg
-                    ><span>Notifikasi</span>
+                    <i class="bi bi-bell" aria-hidden="true"></i><span>Notifikasi</span>
                   </div>
                   <div class="auth-side-section">AKUN</div>
                   <div class="auth-side-item">
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="15"
-                      height="15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M4 7h16M4 17h16" />
-                      <circle cx="9" cy="7" r="2" />
-                      <circle cx="15" cy="17" r="2" /></svg
-                    ><span>Pengaturan</span>
+                    <i class="bi bi-sliders" aria-hidden="true"></i><span>Pengaturan</span>
                   </div>
                 </aside>
                 <div class="auth-app-content">
@@ -148,59 +68,33 @@
                     </div>
                     <div class="auth-rule"></div>
                     <div class="auth-stat-grid">
-                      <div class="auth-stat blue">
+                      <div class="auth-stat info">
                         <span>Total Perangkat</span><strong>48</strong>
                       </div>
-                      <div class="auth-stat teal">
+                      <div class="auth-stat accent">
                         <span>Total ONU</span><strong>1.286</strong>
                       </div>
-                      <div class="auth-stat green">
+                      <div class="auth-stat success">
                         <span>Online</span><strong>1.231</strong>
                       </div>
-                      <div class="auth-stat yellow">
+                      <div class="auth-stat warning">
                         <span>Offline</span><strong>25</strong>
                       </div>
-                      <div class="auth-stat orange">
+                      <div class="auth-stat lost">
                         <span>Lost</span><strong>9</strong>
                       </div>
-                      <div class="auth-stat red">
+                      <div class="auth-stat danger">
                         <span>Bermasalah</span><strong>21</strong>
                       </div>
                     </div>
                     <section class="auth-panel">
                       <div class="auth-device-toolbar">
                         <div class="auth-search">
-                          <svg
-                            viewBox="0 0 24 24"
-                            width="15"
-                            height="15"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true"
-                          >
-                            <circle cx="10.5" cy="10.5" r="6.5" />
-                            <path d="m16 16 5 5" />
-                          </svg>
+                          <i class="bi bi-search" aria-hidden="true"></i>
                           <span>Cari...</span>
                         </div>
                         <span class="auth-add"
-                          ><svg
-                            viewBox="0 0 24 24"
-                            width="15"
-                            height="15"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="9" />
-                            <path d="M12 7v10M7 12h10" />
-                          </svg>
+                          ><i class="bi bi-plus-circle" aria-hidden="true"></i>
                           Add</span
                         >
                       </div>

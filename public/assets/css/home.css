@@ -15,7 +15,7 @@
 }
 .home-eyebrow {
   margin-bottom: 18px;
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
   font-size: var(--font-xs);
   font-weight: 700;
   letter-spacing: .08em;
@@ -56,11 +56,6 @@
   justify-content: space-between;
   min-height: 38px;
 }
-.home-page .kicker {
-  font-family: var(--font);
-  font-size: var(--font-sm);
-  letter-spacing: .04em;
-}
 .home-highlights {
   display: flex;
   flex-wrap: wrap;
@@ -69,8 +64,9 @@
   margin: 24px 0 0;
   padding: 0;
   list-style: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: var(--font-sm);
+  font-weight: 500;
 }
 .home-highlights li {
   display: inline-flex;
@@ -78,7 +74,8 @@
   gap: 8px;
 }
 .home-highlights .bi {
-  color: var(--accent-text);
+  color: var(--brand-accent);
+  font-size: var(--font-md);
 }
 .home-benefits,
 .home-support {
@@ -115,7 +112,7 @@
 .home-benefit-panel > .bi {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
   font-size: var(--font-xl);
 }
 .home-benefit-panel h3 {
@@ -154,7 +151,7 @@
   font-size: var(--font-sm);
 }
 .home-channel-event > .bi {
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
 }
 .home-channel-event small {
   display: block;
@@ -195,7 +192,7 @@
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--brand-accent-subtle);
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
   font-size: var(--font-xl);
 }
 .home-channel strong {
@@ -253,7 +250,7 @@
   line-height: 1.7;
 }
 .home-install-link:hover {
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
 }
 @media (max-width: 991.98px) {
   .home-feature-detail {

@@ -1,6 +1,12 @@
 <main id="main">
   <div class="page-head shell container-xl">
-    <div class="crumb"><a href="/">Beranda</a><span>/</span><a href="/dokumentasi">Dokumentasi</a><span>/</span>Instalasi</div>
+    <nav class="mb-4" aria-label="Breadcrumb">
+      <ol class="breadcrumb mb-0 text-body-secondary">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="/dokumentasi">Dokumentasi</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Instalasi</li>
+      </ol>
+    </nav>
     <h1>Instalasi LINNMS</h1>
     <p>Panduan pemasangan LINNMS melalui Docker Compose atau CasaOS.</p>
   </div>

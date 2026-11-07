@@ -1,3 +1,20 @@
+const dismissPageLoader = () => {
+ const loader = document.getElementById('page-loader');
+ document.documentElement.classList.remove('is-loading');
+ loader?.remove();
+};
+const finishPageLoading = () => {
+ window.setTimeout(dismissPageLoader, 500);
+};
+if (document.readyState === 'complete') {
+ finishPageLoading();
+} else {
+ window.addEventListener('load', finishPageLoading, {once: true});
+}
+window.addEventListener('pageshow', event => {
+ if (event.persisted) dismissPageLoader();
+});
+
 document.addEventListener('DOMContentLoaded',()=>{
  document.querySelectorAll('.linnms-nav-link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
   const menu=document.getElementById('primary-nav');

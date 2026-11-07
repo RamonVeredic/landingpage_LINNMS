@@ -1,10 +1,11 @@
 <main id="main">
 
   <div class="page-head shell container-xl about-head">
-    <nav class="crumb" aria-label="Breadcrumb">
-      <a href="/">Beranda</a>
-      <span>/</span>
-      <span aria-current="page">Tentang</span>
+    <nav class="mb-4" aria-label="Breadcrumb">
+      <ol class="breadcrumb mb-0 text-body-secondary">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tentang</li>
+      </ol>
     </nav>
 
     <h1>Tentang LINNMS</h1>

@@ -6,10 +6,6 @@
   padding-top: 48px;
   padding-bottom: 32px;
 }
-.about-head .crumb {
-  margin-bottom: 24px;
-  font-size: var(--font-sm);
-}
 .about-head h1 {
   margin: 0 0 20px;
   font: 700 var(--font-display-sm)/1.2 var(--heading);
@@ -71,7 +67,7 @@
 }
 .about-focus-item h3 .bi {
   flex-shrink: 0;
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
   font-size: var(--font-lg);
   line-height: 1.4;
 }
@@ -97,7 +93,7 @@
 }
 .about-benefits-list > li > .bi {
   flex-shrink: 0;
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
   font-size: var(--font-lg);
   line-height: 1.5;
 }
@@ -148,7 +144,7 @@
   color: var(--text-primary);
 }
 .about-contact .contact-links a:hover {
-  color: var(--accent-text);
+  color: var(--brand-accent-hover);
 }
 @media (max-width: 767.98px) {
   .about-head {

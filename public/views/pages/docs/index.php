@@ -1,6 +1,11 @@
 <main id="main">
   <header class="documentation-head shell container-xl">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Beranda</a><span>/</span>Dokumentasi</nav>
+    <nav class="mb-4" aria-label="Breadcrumb">
+      <ol class="breadcrumb mb-0 text-body-secondary">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Dokumentasi</li>
+      </ol>
+    </nav>
     <h1>Dokumentasi LINNMS</h1>
     <p>Panduan pemasangan dan penjelasan data perangkat yang digunakan LINNMS.</p>
   </header>
