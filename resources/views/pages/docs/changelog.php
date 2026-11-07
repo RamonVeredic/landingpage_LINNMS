@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="id" data-bs-theme="dark">
-<?php
-$pageTitle = 'Changelog | LINNMS';
-$pageDescription = 'Changelog LINNMS v1.0.2 dan v1.0.3.';
-$activePage = 'docs';
-include __DIR__ . '/assets/parsial/head.php';
-?>
-<body>
-<?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
 <main id="main">
   <div class="page-head changelog-page-head shell container-xl">
-    <div class="crumb"><a href="index.php">Beranda</a><span>/</span><a href="docs.php">Dokumentasi</a><span>/</span>Changelog</div>
+    <div class="crumb"><a href="<?= route('home') ?>">Beranda</a><span>/</span><a href="<?= route('docs.index') ?>">Dokumentasi</a><span>/</span>Changelog</div>
     <h1>Changelog</h1>
   </div>
   <div class="changelog-feed shell container-xl">
@@ -39,7 +29,3 @@ include __DIR__ . '/assets/parsial/head.php';
     </details>
   </div>
 </main>
-<?php include __DIR__ . '/assets/parsial/foother.php'; ?>
-<script src="assets/js/script.js" defer></script>
-</body>
-</html>

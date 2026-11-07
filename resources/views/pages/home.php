@@ -24,7 +24,7 @@
                 role="img" aria-label="Ilustrasi dashboard LINNMS dengan data contoh">
                 <aside class="auth-sidebar">
                   <div class="auth-app-brand">
-                    <img src="assets/linnms-logo.png" alt="" width="26" height="26" />
+                    <img src="<?= asset('linnms-logo.png') ?>" alt="" width="26" height="26" />
                     <span><b>LINNMS
                     </b><small>Network Management</small></span
                     >
@@ -302,6 +302,6 @@
       <h2>Jalankan LINNMS di server Anda.</h2>
       <p>Ikuti panduan pemasangan menggunakan Docker Compose atau CasaOS.</p>
     </div>
-    <a class="btn btn-sm btn-brand" href="instalasi.php">Panduan instalasi</a>
+    <a class="btn btn-sm btn-brand" href="<?= route('docs.installation') ?>">Panduan instalasi</a>
   </section>
 </main>

@@ -1,13 +1,19 @@
-<!doctype html>
-<html lang="id" data-bs-theme="dark">
 <?php
-$pageTitle = 'LINNMS | Pemantauan Jaringan dan Pengelolaan OLT/ONU';
-$pageDescription = 'Pantau status perangkat, kelola OLT dan ONU, serta telusuri aktivitas jaringan melalui LINNMS.';
-$activePage = 'home';
-include __DIR__ . '/assets/parsial/head.php';
-?>
-<body class="home-page">
-<?php include __DIR__ . '/app/routed.php'; ?>
-<script src="assets/js/script.js" defer></script>
-</body>
-</html>
+declare(strict_types=1);
+
+$router = require dirname(__DIR__) . '/bootstrap/app.php';
+
+ob_start();
+try {
+    $router->dispatch($_SERVER['REQUEST_METHOD'] ?? 'GET', $_SERVER['REQUEST_URI'] ?? '/');
+} catch (Throwable $exception) {
+    ob_clean();
+    error_log((string) $exception);
+    (new App\Http\Controllers\PageController())->error(500);
+}
+
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'HEAD') {
+    ob_end_clean();
+} else {
+    ob_end_flush();
+}

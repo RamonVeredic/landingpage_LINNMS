@@ -1,23 +1,13 @@
-<!doctype html>
-<html lang="id" data-bs-theme="dark">
-<?php
-$pageTitle = 'Instalasi LINNMS | Dokumentasi';
-$pageDescription = 'Panduan instalasi LINNMS menggunakan berkas Docker Compose resmi atau CasaOS.';
-$activePage = 'docs';
-include __DIR__ . '/assets/parsial/head.php';
-?>
-<body>
-<?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
 <main id="main">
   <div class="page-head shell container-xl">
-    <div class="crumb"><a href="index.php">Beranda</a><span>/</span><a href="docs.php">Dokumentasi</a><span>/</span>Instalasi</div>
+    <div class="crumb"><a href="<?= route('home') ?>">Beranda</a><span>/</span><a href="<?= route('docs.index') ?>">Dokumentasi</a><span>/</span>Instalasi</div>
     <h1>Instalasi LINNMS</h1>
     <p>Pilih Docker Compose atau CasaOS. Keduanya memakai berkas yang tersedia di repository LINNMS.</p>
   </div>
   <div class="shell docs-layout container-xl">
     <aside class="doc-aside">
       <nav class="aside-sticky" aria-label="Daftar isi instalasi">
-        <a class="sidebar-back" href="docs.php"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
+        <a class="sidebar-back" href="<?= route('docs.index') ?>"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
         <div class="aside-title">DAFTAR ISI</div>
         <a href="#sebelum-mulai">Sebelum mulai</a>
         <a href="#docker-compose">Docker Compose</a>
@@ -66,7 +56,3 @@ docker compose -f docker/docker-compose.yml logs --tail=50 app db</code></pre>
     </article>
   </div>
 </main>
-<?php include __DIR__ . '/assets/parsial/foother.php'; ?>
-<script src="assets/js/script.js" defer></script>
-</body>
-</html>

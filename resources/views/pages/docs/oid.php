@@ -1,19 +1,9 @@
-<!doctype html>
-<html lang="id" data-bs-theme="dark">
-<?php
-$pageTitle = 'OID perangkat | Dokumentasi LINNMS';
-$pageDescription = 'OID yang digunakan LINNMS untuk membaca data perangkat melalui SNMP.';
-$activePage = 'docs';
-include __DIR__ . '/assets/parsial/head.php';
-?>
-<body>
-<?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
 <main id="main">
   <div class="container-xl py-5">
     <nav aria-label="Breadcrumb">
       <ol class="breadcrumb small mb-4">
-        <li class="breadcrumb-item"><a href="index.php">Beranda</a></li>
-        <li class="breadcrumb-item"><a href="docs.php">Dokumentasi</a></li>
+        <li class="breadcrumb-item"><a href="<?= route('home') ?>">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="<?= route('docs.index') ?>">Dokumentasi</a></li>
         <li class="breadcrumb-item active" aria-current="page">OID perangkat</li>
       </ol>
     </nav>
@@ -77,7 +67,3 @@ include __DIR__ . '/assets/parsial/head.php';
     </div>
   </div>
 </main>
-<?php include __DIR__ . '/assets/parsial/foother.php'; ?>
-<script src="assets/js/script.js" defer></script>
-</body>
-</html>
