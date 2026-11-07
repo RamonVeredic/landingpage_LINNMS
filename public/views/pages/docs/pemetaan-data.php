@@ -11,10 +11,10 @@
     <p>OID SNMP dan perintah Telnet yang digunakan LINNMS untuk membaca data perangkat ZTE dan HIOSO.</p>
   </header>
   <div class="shell container-xl documentation-content">
-    <div class="accordion vendor-accordion" id="device-vendors">
+    <div class="accordion linnms-accordion" id="device-vendors">
       <section class="accordion-item vendor-panel border rounded-3 overflow-hidden mb-3" id="zte">
         <h2 class="accordion-header" id="zte-heading">
-          <button class="accordion-button collapsed vendor-toggle gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#zte-data" aria-expanded="false" aria-controls="zte-data">
+          <button class="accordion-button collapsed accordion-toggle gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#zte-data" aria-expanded="false" aria-controls="zte-data">
             <span class="vendor-name d-grid gap-2"><strong>ZTE</strong><span>GPON · C300 / C320</span></span>
             <span class="d-none d-sm-inline ms-auto small text-body-secondary">SNMP · Telnet</span>
             <i class="bi bi-chevron-down ms-auto ms-sm-0" aria-hidden="true"></i>
@@ -27,7 +27,7 @@
 <table class="table table-bordered table-striped table-hover align-top mb-0 data-source-table">
 <caption class="visually-hidden">Pemetaan data perangkat ZTE</caption>
 <colgroup><col class="data-col-name"><col class="data-col-source"><col class="data-col-value"><col class="data-col-description"></colgroup>
-<thead><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
+<thead class="table-active"><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
 <tbody>
   <tr>
     <th scope="row">Nama perangkat</th>
@@ -199,7 +199,7 @@
       </section>
       <section class="accordion-item vendor-panel border rounded-3 overflow-hidden mb-3" id="hioso">
         <h2 class="accordion-header" id="hioso-heading">
-          <button class="accordion-button collapsed vendor-toggle gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#hioso-data" aria-expanded="false" aria-controls="hioso-data">
+          <button class="accordion-button collapsed accordion-toggle gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#hioso-data" aria-expanded="false" aria-controls="hioso-data">
             <span class="vendor-name d-grid gap-2"><strong>HIOSO</strong><span>EPON · 2 / 4 port</span></span>
             <span class="d-none d-sm-inline ms-auto small text-body-secondary">SNMP · Telnet</span>
             <i class="bi bi-chevron-down ms-auto ms-sm-0" aria-hidden="true"></i>
@@ -212,7 +212,7 @@
 <table class="table table-bordered table-striped table-hover align-top mb-0 data-source-table">
 <caption class="visually-hidden">Pemetaan data perangkat HIOSO</caption>
 <colgroup><col class="data-col-name"><col class="data-col-source"><col class="data-col-value"><col class="data-col-description"></colgroup>
-<thead><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
+<thead class="table-active"><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
 <tbody>
   <tr>
     <th scope="row">Nama perangkat</th>

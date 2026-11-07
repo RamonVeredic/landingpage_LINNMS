@@ -5,7 +5,8 @@
     <script>document.documentElement.classList.add('is-loading');</script>
     <meta name="description" content="<?= htmlspecialchars($pageDescription ?? 'LINNMS Network Management', ENT_QUOTES, 'UTF-8') ?>" />
     <title><?= htmlspecialchars($pageTitle ?? 'LINNMS', ENT_QUOTES, 'UTF-8') ?></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?= asset('vendor/bootstrap/css/bootstrap.min.css') ?>" />
+    <link rel="stylesheet" href="<?= asset('vendor/fonts/fonts.css') ?>" />
     <link rel="stylesheet" href="<?= asset('css/styles.css') ?>" />
     <?php if (($activePage ?? '') === 'home'): ?>
     <link rel="stylesheet" href="<?= asset('css/home.css') ?>" />
@@ -16,7 +17,7 @@
     <?php if (($activePage ?? '') === 'about'): ?>
     <link rel="stylesheet" href="<?= asset('css/about.css') ?>" />
     <?php endif; ?>
-    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="<?= asset('vendor/bootstrap/icons/bootstrap-icons.min.css') ?>" />
     <link rel="icon" href="<?= asset('favicon.ico') ?>" sizes="any" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <script src="<?= asset('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>" defer></script>
   </head>

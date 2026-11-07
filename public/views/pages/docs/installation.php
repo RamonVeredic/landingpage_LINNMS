@@ -30,9 +30,9 @@
       <section class="doc-section" id="docker-compose">
         <h2>Docker Compose</h2>
         <p>Gunakan <a href="https://github.com/RamonVeredic/LINNMS/blob/main/docker/docker-compose.yml" target="_blank" rel="noopener noreferrer">docker/docker-compose.yml</a> dari repository LINNMS. Berkas ini menjalankan aplikasi dan MariaDB. Konfigurasi aplikasi disimpan dalam volume <code>linnms-state</code>, data MariaDB dalam <code>linnms-db</code>, dan socket database dipakai bersama melalui <code>linnms-run</code>.</p>
-        <div class="snippet">
-          <div class="snippet-head"><span><span class="terminal-dot"></span> Jalankan dari direktori repository</span><button type="button" class="copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-          <pre><code>git clone https://github.com/RamonVeredic/LINNMS.git
+        <div class="card snippet my-4 overflow-hidden">
+          <div class="card-header snippet-head d-flex align-items-center justify-content-between gap-2"><span><i class="bi bi-terminal text-primary me-1" aria-hidden="true"></i> Jalankan dari direktori repository</span><button type="button" class="btn btn-sm btn-outline-primary copy-btn d-inline-flex align-items-center gap-2 flex-shrink-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+          <pre class="p-3 mb-0 overflow-auto"><code>git clone https://github.com/RamonVeredic/LINNMS.git
 cd LINNMS
 docker compose -f docker/docker-compose.yml config
 docker compose -f docker/docker-compose.yml up -d
@@ -43,18 +43,18 @@ docker compose -f docker/docker-compose.yml ps</code></pre>
       <section class="doc-section" id="casaos">
         <h2>CasaOS</h2>
         <p>Gunakan <a href="https://github.com/RamonVeredic/LINNMS/blob/main/docker/casaos-compose.yaml" target="_blank" rel="noopener noreferrer">docker/casaos-compose.yaml</a> dari repository LINNMS. Impor berkas tersebut menggunakan fitur pemasangan Compose di CasaOS.</p>
-        <div class="step-list">
-          <div><span>01</span><div><strong>Periksa lokasi data</strong><p>Contoh resmi menggunakan <code>/DATA/AppData/LINNMS/state</code> untuk konfigurasi dan <code>/DATA/AppData/LINNMS/database</code> untuk MariaDB. Folder <code>/DATA/AppData/LINNMS/run</code> dipakai bersama oleh kedua container untuk socket database.</p></div></div>
-          <div><span>02</span><div><strong>Sesuaikan port</strong><p>Contoh CasaOS memakai port HTTP <code>88</code> dan memetakan port <code>4143</code> ke port 443 container. Jika perlu mengubah lokasi data atau port, lakukan pada berkas Compose sebelum menjalankannya.</p></div></div>
-          <div><span>03</span><div><strong>Buka LINNMS</strong><p>Setelah aplikasi dan MariaDB berjalan, buka <code>http://IP_SERVER:88/</code>.</p></div></div>
+        <div class="list-group step-list my-4">
+          <div class="list-group-item d-flex gap-3 p-3"><span>01</span><div><strong>Periksa lokasi data</strong><p>Contoh resmi menggunakan <code>/DATA/AppData/LINNMS/state</code> untuk konfigurasi dan <code>/DATA/AppData/LINNMS/database</code> untuk MariaDB. Folder <code>/DATA/AppData/LINNMS/run</code> dipakai bersama oleh kedua container untuk socket database.</p></div></div>
+          <div class="list-group-item d-flex gap-3 p-3"><span>02</span><div><strong>Sesuaikan port</strong><p>Contoh CasaOS memakai port HTTP <code>88</code> dan memetakan port <code>4143</code> ke port 443 container. Jika perlu mengubah lokasi data atau port, lakukan pada berkas Compose sebelum menjalankannya.</p></div></div>
+          <div class="list-group-item d-flex gap-3 p-3"><span>03</span><div><strong>Buka LINNMS</strong><p>Setelah aplikasi dan MariaDB berjalan, buka <code>http://IP_SERVER:88/</code>.</p></div></div>
         </div>
       </section>
       <section class="doc-section" id="periksa">
         <h2>Periksa instalasi</h2>
         <p>Pastikan container aplikasi dan MariaDB berjalan, lalu buka alamat HTTP sesuai metode yang dipilih. Pada Docker Compose, gunakan perintah berikut untuk melihat status dan log jika halaman belum terbuka.</p>
-        <div class="snippet">
-          <div class="snippet-head"><span><span class="terminal-dot"></span> Status dan log Docker Compose</span><button type="button" class="copy-btn" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-          <pre><code>docker compose -f docker/docker-compose.yml ps
+        <div class="card snippet my-4 overflow-hidden">
+          <div class="card-header snippet-head d-flex align-items-center justify-content-between gap-2"><span><i class="bi bi-terminal text-primary me-1" aria-hidden="true"></i> Status dan log Docker Compose</span><button type="button" class="btn btn-sm btn-outline-primary copy-btn d-inline-flex align-items-center gap-2 flex-shrink-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+          <pre class="p-3 mb-0 overflow-auto"><code>docker compose -f docker/docker-compose.yml ps
 docker compose -f docker/docker-compose.yml logs --tail=50 app db</code></pre>
         </div>
         <p>Pada CasaOS, buka detail aplikasi untuk memeriksa status dan log container.</p>

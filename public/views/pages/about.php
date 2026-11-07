@@ -82,30 +82,30 @@
         </p>
 
         <div class="about-focus-list">
-          <section class="about-focus-item">
-            <h3><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
-            <p>Menyajikan informasi dan kondisi perangkat
+          <section class="about-focus-item row g-3 py-4">
+            <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
+            <p class="col-md-8 mb-0">Menyajikan informasi dan kondisi perangkat
                   jaringan untuk membantu operator melakukan
                   pemantauan serta mengidentifikasi perangkat
                   yang memerlukan perhatian.</p>
           </section>
-          <section class="about-focus-item">
-            <h3><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Pengelolaan OLT dan ONU</span></h3>
-            <p>Memusatkan informasi perangkat OLT dan ONU
+          <section class="about-focus-item row g-3 py-4">
+            <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Pengelolaan OLT dan ONU</span></h3>
+            <p class="col-md-8 mb-0">Memusatkan informasi perangkat OLT dan ONU
                   untuk mempermudah penelusuran serta
                   pemantauan infrastruktur jaringan akses
                   fiber optik.</p>
           </section>
-          <section class="about-focus-item">
-            <h3><i class="bi bi-activity" aria-hidden="true"></i><span>Aktivitas Jaringan</span></h3>
-            <p>Menampilkan informasi aktivitas jaringan
+          <section class="about-focus-item row g-3 py-4">
+            <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-activity" aria-hidden="true"></i><span>Aktivitas Jaringan</span></h3>
+            <p class="col-md-8 mb-0">Menampilkan informasi aktivitas jaringan
                   untuk memberikan gambaran operasional
                   dan membantu proses pemeriksaan ketika
                   ditemukan kondisi yang tidak sesuai.</p>
           </section>
-          <section class="about-focus-item">
-            <h3><i class="bi bi-bell" aria-hidden="true"></i><span>Informasi dan Notifikasi</span></h3>
-            <p>Menyediakan notifikasi dan informasi
+          <section class="about-focus-item row g-3 py-4">
+            <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-bell" aria-hidden="true"></i><span>Informasi dan Notifikasi</span></h3>
+            <p class="col-md-8 mb-0">Menyediakan notifikasi dan informasi
                   penting untuk membantu operator mengetahui
                   aktivitas atau kondisi perangkat yang
                   membutuhkan pemeriksaan lebih lanjut.</p>
@@ -124,9 +124,9 @@
           efisiensi dalam aktivitas operasional jaringan.
         </p>
 
-        <ul class="about-benefits-list">
+        <ul class="about-benefits-list row row-cols-1 row-cols-md-2 g-4 list-unstyled mt-0 mb-0">
 
-          <li>
+          <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
@@ -138,7 +138,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
@@ -150,7 +150,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
@@ -162,7 +162,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
@@ -252,17 +252,17 @@
         mengenai aplikasi, uji coba, atau pemesanan.
       </p>
 
-      <ul class="contact-links">
+      <ul class="contact-links row row-cols-1 row-cols-md-3 g-3 list-unstyled mt-3 mb-0">
 
-        <li>
-          <a href="mailto:hello@example.com">
+        <li class="col">
+          <a class="d-flex align-items-center gap-2 py-2" href="mailto:hello@example.com">
             <i class="bi bi-envelope" aria-hidden="true"></i>
             hello@example.com
           </a>
         </li>
 
-        <li>
-          <a href="https://wa.me/6281234567890"
+        <li class="col">
+          <a class="d-flex align-items-center gap-2 py-2" href="https://wa.me/6281234567890"
              target="_blank"
              rel="noopener noreferrer">
             <i class="bi bi-whatsapp" aria-hidden="true"></i>
@@ -270,8 +270,8 @@
           </a>
         </li>
 
-        <li>
-          <a href="tel:+622112345678">
+        <li class="col">
+          <a class="d-flex align-items-center gap-2 py-2" href="tel:+622112345678">
             <i class="bi bi-telephone" aria-hidden="true"></i>
             +62 21 1234 5678
           </a>
