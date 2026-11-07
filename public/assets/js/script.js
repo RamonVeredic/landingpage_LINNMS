@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.linnms-nav-link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
+  const menu=document.getElementById('primary-nav');
+  if(menu?.classList.contains('show')&&window.bootstrap){bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide()}
+ }));
  document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
   const code=btn.closest('.snippet')?.querySelector('pre code')?.textContent;
   if(!code)return;

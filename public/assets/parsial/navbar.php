@@ -11,7 +11,7 @@
     <nav class="collapse navbar-collapse" id="primary-nav" aria-label="Navigasi utama">
       <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link linnms-nav-link" href="index.php" <?= ($activePage ?? '') === 'home' ? 'aria-current="page"' : '' ?>>Beranda</a></li>
-        <li class="nav-item"><a class="nav-link linnms-nav-link" href="fitur.php" <?= ($activePage ?? '') === 'features' ? 'aria-current="page"' : '' ?>>Fitur</a></li>
+        <li class="nav-item"><a class="nav-link linnms-nav-link" href="index.php#fitur">Fitur</a></li>
         <li class="nav-item"><a class="nav-link linnms-nav-link" href="docs.php" <?= ($activePage ?? '') === 'docs' ? 'aria-current="page"' : '' ?>>Dokumentasi</a></li>
         <li class="nav-item"><a class="nav-link linnms-nav-link" href="about.php" <?= ($activePage ?? '') === 'about' ? 'aria-current="page"' : '' ?>>Tentang</a></li>
         <li class="nav-item dropdown ms-lg-2">

@@ -1,2 +1,3 @@
 <?php
-require __DIR__ . '/app/view/page/fitur.php';
+header('Location: index.php#fitur', true, 302);
+exit;
