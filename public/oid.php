@@ -33,7 +33,7 @@ include __DIR__ . '/assets/parsial/head.php';
         <summary><span>ZTE</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
         <div class="oid-vendor-content">
         <p>LINNMS membaca identitas dan kondisi perangkat, data ONU, serta nilai optik ONU melalui OID berikut.</p>
-        <div class="table-responsive rounded-3 border border-secondary-subtle" tabindex="0" role="region" aria-label="Tabel OID ZTE">
+        <div class="table-responsive oid-table-frame" tabindex="0" role="region" aria-label="Tabel OID ZTE">
           <table class="table table-hover align-middle mb-0 oid-document-table">
             <thead><tr><th>Informasi</th><th>OID</th><th>Digunakan LINNMS untuk</th></tr></thead>
             <tbody>
@@ -56,7 +56,7 @@ include __DIR__ . '/assets/parsial/head.php';
         <summary><span>HIOSO</span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
         <div class="oid-vendor-content">
         <p>LINNMS membaca identitas dan kondisi perangkat, data ONU, status port LAN ONU, serta informasi firmware melalui OID berikut.</p>
-        <div class="table-responsive rounded-3 border border-secondary-subtle" tabindex="0" role="region" aria-label="Tabel OID HIOSO">
+        <div class="table-responsive oid-table-frame" tabindex="0" role="region" aria-label="Tabel OID HIOSO">
           <table class="table table-hover align-middle mb-0 oid-document-table">
             <thead><tr><th>Informasi</th><th>OID</th><th>Digunakan LINNMS untuk</th></tr></thead>
             <tbody>

@@ -1,4 +1,4 @@
-<a class="skip-link" href="#main">Langsung ke konten</a>
+
 <header class="site-header">
   <div class="shell container-xl navbar navbar-expand-lg linnms-navbar">
     <a class="brand navbar-brand m-0" href="index.php">
