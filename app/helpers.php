@@ -1,13 +1,6 @@
 <?php
 declare(strict_types=1);
 
-function web_routes(): array
-{
-    static $routes = null;
-    return $routes ??= require BASE_PATH . '/routes/web.php';
-}
-
-
 function asset(string $path): string
 {
     $path = ltrim($path, '/');

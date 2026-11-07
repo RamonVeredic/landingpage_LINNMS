@@ -1,15 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Controllers;
-
-use App\View\View;
-
 final class PageController
 {
     public function home(): void
     {
-        View::render('pages.home', [
+        $this->render('pages.home', [
             'pageTitle' => 'LINNMS | Pemantauan Jaringan dan Pengelolaan OLT/ONU',
             'pageDescription' => 'Pantau status perangkat, kelola OLT dan ONU, serta telusuri aktivitas jaringan melalui LINNMS.',
             'activePage' => 'home',
@@ -19,7 +15,7 @@ final class PageController
 
     public function about(): void
     {
-        View::render('pages.about', [
+        $this->render('pages.about', [
             'pageTitle' => 'Tentang LINNMS',
             'pageDescription' => 'Tentang LINNMS, aplikasi manajemen jaringan yang dikembangkan oleh RamonVeredic dengan bantuan AI.',
             'activePage' => 'about',
@@ -29,9 +25,9 @@ final class PageController
 
     public function docs(): void
     {
-        View::render('pages.docs.index', [
+        $this->render('pages.docs.index', [
             'pageTitle' => 'Dokumentasi | LINNMS',
-            'pageDescription' => 'Dokumentasi LINNMS: instalasi, OID perangkat, dan changelog.',
+            'pageDescription' => 'Panduan instalasi, pemetaan data perangkat, dan changelog LINNMS.',
             'activePage' => 'docs',
             'bodyClass' => 'docs-index-page',
         ]);
@@ -39,7 +35,7 @@ final class PageController
 
     public function installation(): void
     {
-        View::render('pages.docs.installation', [
+        $this->render('pages.docs.installation', [
             'pageTitle' => 'Instalasi LINNMS | Dokumentasi',
             'pageDescription' => 'Panduan instalasi LINNMS menggunakan berkas Docker Compose resmi atau CasaOS.',
             'activePage' => 'docs',
@@ -49,9 +45,9 @@ final class PageController
 
     public function dataMapping(): void
     {
-        View::render('pages.docs.pemetaan-data', [
+        $this->render('pages.docs.pemetaan-data', [
             'pageTitle' => 'Pemetaan Data Perangkat | Dokumentasi LINNMS',
-            'pageDescription' => 'Sumber informasi perangkat ZTE dan HIOSO dari OID SNMP serta perintah Telnet yang dibaca LINNMS.',
+            'pageDescription' => 'Pemetaan data ZTE dan HIOSO beserta OID SNMP dan perintah Telnet yang digunakan LINNMS.',
             'activePage' => 'docs',
             'bodyClass' => '',
         ]);
@@ -59,7 +55,7 @@ final class PageController
 
     public function changelog(): void
     {
-        View::render('pages.docs.changelog', [
+        $this->render('pages.docs.changelog', [
             'pageTitle' => 'Changelog | LINNMS',
             'pageDescription' => 'Changelog LINNMS v1.0.2 dan v1.0.3.',
             'activePage' => 'docs',
@@ -77,7 +73,7 @@ final class PageController
             500 => ['Halaman belum dapat dimuat', 'Silakan coba kembali beberapa saat lagi.'],
         ];
         [$heading, $message] = $messages[$status];
-        View::render('errors.http', [
+        $this->render('error', [
             'pageTitle' => $heading . ' | LINNMS',
             'pageDescription' => $message,
             'activePage' => '',
@@ -86,5 +82,24 @@ final class PageController
             'heading' => $heading,
             'message' => $message,
         ]);
+    }
+
+    private function render(string $view, array $data): void
+    {
+        $template = BASE_PATH . '/public/views/' . str_replace('.', '/', $view) . '.php';
+        if (!is_file($template)) {
+            throw new RuntimeException('View not found: ' . $view);
+        }
+
+        extract($data, EXTR_SKIP);
+        ob_start();
+        try {
+            require $template;
+            $content = ob_get_clean();
+        } catch (Throwable $exception) {
+            ob_end_clean();
+            throw $exception;
+        }
+        require BASE_PATH . '/public/views/layout.php';
     }
 }

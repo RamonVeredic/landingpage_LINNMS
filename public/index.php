@@ -1,19 +1,14 @@
 <?php
 declare(strict_types=1);
 
-$router = require dirname(__DIR__) . '/bootstrap/app.php';
-
-ob_start();
-try {
-    $router->dispatch($_SERVER['REQUEST_METHOD'] ?? 'GET', $_SERVER['REQUEST_URI'] ?? '/');
-} catch (Throwable $exception) {
-    ob_clean();
-    error_log((string) $exception);
-    (new App\Http\Controllers\PageController())->error(500);
+if (PHP_SAPI === 'cli-server') {
+    $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+    $file = is_string($path) ? realpath(__DIR__ . rawurldecode($path)) : false;
+    if (is_string($path) && str_starts_with($path, '/assets/') && $file !== false
+        && str_starts_with($file, __DIR__ . '/assets/') && is_file($file)
+        && pathinfo($file, PATHINFO_EXTENSION) !== 'php') {
+        return false;
+    }
 }
 
-if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'HEAD') {
-    ob_end_clean();
-} else {
-    ob_end_flush();
-}
+require dirname(__DIR__) . '/app/bootstrap.php';

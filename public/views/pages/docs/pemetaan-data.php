@@ -2,14 +2,14 @@
   <header class="documentation-head shell container-xl">
     <nav class="crumb" aria-label="Breadcrumb"><a href="/">Beranda</a><span>/</span><a href="/dokumentasi">Dokumentasi</a><span>/</span>Pemetaan Data Perangkat</nav>
     <h1>Pemetaan Data Perangkat</h1>
-    <p>Asal informasi sistem, identitas ONU, status, dan nilai optik yang dibaca LINNMS pada perangkat ZTE dan HIOSO.</p>
+    <p>OID SNMP dan perintah Telnet yang digunakan LINNMS untuk membaca data perangkat ZTE dan HIOSO.</p>
   </header>
   <div class="shell container-xl documentation-content">
-<details class="vendor-panel" id="zte" open><summary><div><h2>ZTE</h2><span>GPON · C300 / C320</span></div><div class="vendor-protocols"><span>SNMP</span><span>Telnet</span><i class="bi bi-chevron-down" aria-hidden="true"></i></div></summary><div class="vendor-content"><p class="vendor-intro">Informasi dasar dan identitas ONU dibaca melalui SNMP. CLI Telnet melengkapi pembacaan seperti CPU, memori, card, dan detail ONU. Nilai optik memiliki jalur pembacaan SNMP serta CLI sesuai operasi yang dijalankan.</p>
-<p class="data-table-hint">Geser tabel untuk melihat seluruh kolom.</p>
+<details class="vendor-panel" id="zte"><summary><div><h2>ZTE</h2><span>GPON · C300 / C320</span></div><div class="vendor-protocols"><span>SNMP</span><span>Telnet</span><i class="bi bi-chevron-down" aria-hidden="true"></i></div></summary><div class="vendor-content"><p class="vendor-intro">Data perangkat dan ONU dibaca melalui SNMP. Telnet digunakan untuk melengkapi informasi sistem dan detail ONU.</p>
+<p class="data-table-hint">Geser ke samping untuk melihat seluruh tabel.</p>
 <div class="table-responsive data-table-scroll" tabindex="0" role="region" aria-label="Tabel pemetaan data ZTE">
 <table class="table table-bordered table-striped align-middle mb-0 data-source-table">
-<caption class="visually-hidden">Data, sumber pembacaan, OID atau perintah, dan deskripsi untuk ZTE</caption>
+<caption class="visually-hidden">Pemetaan data perangkat ZTE</caption>
 <colgroup><col class="data-col-name"><col class="data-col-source"><col class="data-col-value"><col class="data-col-description"></colgroup>
 <thead><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
 <tbody>
@@ -179,11 +179,11 @@
 </table>
 </div>
 </div></details>
-<details class="vendor-panel" id="hioso"><summary><div><h2>HIOSO</h2><span>EPON · 2 / 4 port</span></div><div class="vendor-protocols"><span>SNMP</span><span>Telnet</span><i class="bi bi-chevron-down" aria-hidden="true"></i></div></summary><div class="vendor-content"><p class="vendor-intro">Nama, MAC, status ONU, serta nilai optik ONU dibaca melalui SNMP. Trafik PON dan informasi modul optik PON menggunakan Telnet sesuai konfigurasi driver.</p>
-<p class="data-table-hint">Geser tabel untuk melihat seluruh kolom.</p>
+<details class="vendor-panel" id="hioso"><summary><div><h2>HIOSO</h2><span>EPON · 2 / 4 port</span></div><div class="vendor-protocols"><span>SNMP</span><span>Telnet</span><i class="bi bi-chevron-down" aria-hidden="true"></i></div></summary><div class="vendor-content"><p class="vendor-intro">Data perangkat dan ONU dibaca melalui SNMP. Trafik dan informasi modul optik PON dibaca melalui Telnet.</p>
+<p class="data-table-hint">Geser ke samping untuk melihat seluruh tabel.</p>
 <div class="table-responsive data-table-scroll" tabindex="0" role="region" aria-label="Tabel pemetaan data HIOSO">
 <table class="table table-bordered table-striped align-middle mb-0 data-source-table">
-<caption class="visually-hidden">Data, sumber pembacaan, OID atau perintah, dan deskripsi untuk HIOSO</caption>
+<caption class="visually-hidden">Pemetaan data perangkat HIOSO</caption>
 <colgroup><col class="data-col-name"><col class="data-col-source"><col class="data-col-value"><col class="data-col-description"></colgroup>
 <thead><tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Value</th><th scope="col">Deskripsi</th></tr></thead>
 <tbody>
@@ -215,25 +215,25 @@
     <th scope="row">MAC perangkat (alternatif)</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.2.1.2.2.1.6</code></td>
-    <td>Alamat MAC valid dari daftar interface perangkat.</td>
+    <td>Alamat MAC perangkat dari daftar interface.</td>
   </tr>
   <tr>
     <th scope="row">Versi firmware</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.4.1.25355.3.1.8.1.1.2.1</code></td>
-    <td>Versi perangkat lunak; bagian pertama respons.</td>
+    <td>Versi perangkat lunak.</td>
   </tr>
   <tr>
     <th scope="row">Model perangkat</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.4.1.25355.3.1.8.1.1.2.1</code></td>
-    <td>Model perangkat; bagian kedua respons.</td>
+    <td>Model perangkat.</td>
   </tr>
   <tr>
     <th scope="row">Serial perangkat</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.4.1.25355.3.1.8.1.1.2.1</code></td>
-    <td>Nomor seri perangkat; bagian ketiga respons.</td>
+    <td>Nomor seri perangkat.</td>
   </tr>
   <tr>
     <th scope="row">CPU perangkat</th>
@@ -245,13 +245,13 @@
     <th scope="row">Kapasitas memori</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.2.1.25.2.3.1.5.1</code></td>
-    <td>Kapasitas memori untuk perhitungan penggunaan memori.</td>
+    <td>Total kapasitas memori perangkat.</td>
   </tr>
   <tr>
     <th scope="row">Memori terpakai</th>
     <td><span class="data-protocol protocol-snmp">SNMP</span></td>
     <td><code>1.3.6.1.2.1.25.2.3.1.6.1</code></td>
-    <td>Jumlah memori terpakai untuk perhitungan persentase penggunaan.</td>
+    <td>Jumlah memori yang digunakan perangkat.</td>
   </tr>
   <tr>
     <th scope="row">MAC ONU</th>
@@ -311,6 +311,6 @@
 </table>
 </div>
 </div></details>
-    <div class="documentation-note"><i class="bi bi-info-circle" aria-hidden="true"></i><p>Bagian di dalam tanda kurung kurawal adalah indeks yang diisi driver, bukan angka OID tetap. Respons yang tidak tersedia atau gagal dibaca tidak dianggap sebagai nilai pengukuran yang valid.</p></div>
+    <div class="documentation-note"><i class="bi bi-info-circle" aria-hidden="true"></i><p>Penanda seperti {ponIndex}, {ifIndex}, dan {onuId} menunjukkan indeks perangkat atau ONU pada OID dan perintah.</p></div>
   </div>
 </main>
