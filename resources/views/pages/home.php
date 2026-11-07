@@ -3,9 +3,9 @@
     <div class="shell hero-grid container-xl">
       <div class="hero-copy">
         <div class="home-eyebrow">LINNMS · NETWORK MANAGEMENT SYSTEM</div>
-        <h1 class="hero-title">Monitoring perangkat jaringan anda<br><span class="home-accent">Kelola dalam satu tempat</span></h1>
+        <h1 class="hero-title">Pantau perangkat jaringan Anda.<br><span class="home-accent">Kelola dari satu tempat.</span></h1>
         <div class="hero-description">
-          <p class="hero-lead">LINNMS memudahkan Anda untuk memantau dan mengelola perangkat jaringan secara efisien dalam satu platform.</p>
+          <p class="hero-lead">LINNMS membantu Anda memantau OLT, ONU, router, dan switch, melihat trafik, serta menerima notifikasi perubahan kondisi jaringan.</p>
         </div>
         <div class="hero-actions">
           <a class="btn btn-sm btn-brand" href="#">Coba Gratis</a>
@@ -280,48 +280,46 @@
       </section>
   <section class="home-benefits shell container-xl" id="fitur">
     <div class="home-section-heading">
-      <span class="kicker">FITUR LINNMS</span>
-      <h2>Untuk pekerjaan jaringan sehari-hari.</h2>
-      <p>Pantau perangkat, kelola ONU, dan ikuti perubahan jaringan dari satu aplikasi.</p>
+      <h2>Pemantauan dan pengelolaan jaringan.</h2>
+      <p>Sesuaikan interval pembaruan, pantau trafik, dan pilih notifikasi sesuai kebutuhan jaringan Anda.</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-speedometer2" aria-hidden="true"></i>
-        <h3>Pemantauan terpusat</h3>
-        <p>Lihat ringkasan kondisi perangkat dan ONU dalam satu dashboard.</p>
+        <h3>Status perangkat</h3>
+        <p>Lihat ringkasan perangkat dan status ONU untuk mengetahui kondisi jaringan.</p>
       </div></div>
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-clock-history" aria-hidden="true"></i>
-        <h3>Interval fleksibel</h3>
-        <p>Interval pembaruan data dapat disesuaikan dengan kebutuhan pemantauan jaringan.</p>
+        <h3>Interval pembaruan</h3>
+        <p>Sesuaikan interval pembaruan data dengan kebutuhan pemantauan Anda.</p>
       </div></div>
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-diagram-3" aria-hidden="true"></i>
         <h3>Pengelolaan OLT dan ONU</h3>
-        <p>Telusuri OLT dan ONU serta gunakan fungsi pengelolaan yang tersedia pada perangkat Anda.</p>
+        <p>Periksa informasi OLT dan ONU, lalu gunakan fungsi pengelolaan yang didukung perangkat.</p>
       </div></div>
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-graph-up" aria-hidden="true"></i>
         <h3>Grafik trafik</h3>
-        <p>Ikuti perubahan trafik melalui grafik dan informasi status perangkat.</p>
+        <p>Amati penggunaan dan perubahan trafik perangkat melalui grafik.</p>
       </div></div>
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-bell" aria-hidden="true"></i>
-        <h3>Notifikasi pilihan Anda</h3>
-        <p>Pilih perangkat dan kejadian yang ingin diikuti melalui WhatsApp atau Telegram.</p>
+        <h3>Notifikasi kejadian</h3>
+        <p>Terima pemberitahuan untuk perangkat dan kejadian yang Anda pilih.</p>
       </div></div>
       <div class="col-md-6 col-lg-4"><div class="home-benefit-panel">
         <i class="bi bi-arrow-down-up" aria-hidden="true"></i>
         <h3>Impor dan ekspor ONU</h3>
-        <p>Kelola nama dan alamat ONU melalui CSV, dengan pratinjau sebelum impor diterapkan.</p>
+        <p>Ekspor nama dan alamat ONU, atau impor berkas CSV dengan pratinjau perubahan.</p>
       </div></div>
     </div>
   </section>
   <section class="home-support shell container-xl" id="perangkat">
     <div class="home-section-heading">
-      <span class="kicker">DUKUNGAN PERANGKAT</span>
-      <h2>Pantau perangkat dari berbagai vendor.</h2>
-      <p>LINNMS mendukung perangkat OLT, router, dan switch dari vendor berikut.</p>
+      <h2>Vendor yang didukung</h2>
+      <p>Dukungan OLT, router, dan switch untuk pemantauan melalui LINNMS.</p>
     </div>
     <ul class="home-vendors" aria-label="Vendor perangkat yang didukung">
       <li>ZTE</li>
@@ -337,24 +335,23 @@
   </section>
   <section class="home-feature-detail home-notifications shell container-xl">
     <figure class="home-notification-visual">
-      <figcaption>SALURAN NOTIFIKASI</figcaption>
-      <div class="home-channel"><i class="bi bi-whatsapp" aria-hidden="true"></i><div><strong>WhatsApp Gateway</strong><span>Notifikasi jaringan melalui gateway pilihan Anda</span></div></div>
-      <div class="home-channel"><i class="bi bi-telegram" aria-hidden="true"></i><div><strong>Telegram Bot</strong><span>Terima notifikasi melalui bot Telegram</span></div></div>
-      <div class="home-channel-event"><i class="bi bi-bell" aria-hidden="true"></i><span>Aktivitas jaringan<small>Ikuti kejadian dan riwayat notifikasi dari LINNMS.</small></span></div>
+      <figcaption>Integrasi notifikasi</figcaption>
+      <div class="home-channel"><i class="bi bi-whatsapp" aria-hidden="true"></i><div><strong>WhatsApp Gateway</strong><span>Pengiriman notifikasi melalui gateway WhatsApp.</span></div></div>
+      <div class="home-channel"><i class="bi bi-telegram" aria-hidden="true"></i><div><strong>Telegram Bot</strong><span>Pengiriman notifikasi melalui bot Telegram.</span></div></div>
+      <div class="home-channel-event"><i class="bi bi-bell" aria-hidden="true"></i><span>Riwayat notifikasi<small>Telusuri pemberitahuan yang telah dikirim.</small></span></div>
     </figure>
     <div class="home-detail-copy">
-      <span class="kicker">TETAP TERHUBUNG DENGAN JARINGAN</span>
-      <h2>Informasi jaringan sampai ke saluran kerja Anda.</h2>
-      <p>Gunakan WhatsApp Gateway atau Telegram Bot untuk menerima notifikasi. Pilih perangkat dan jenis kejadian yang ingin diikuti, lalu sesuaikan ambang RX. Riwayat di aplikasi membantu Anda menelusuri pemberitahuan yang sudah dikirim.</p>
-      <p>Gateway WhatsApp yang didukung:</p>
+      <h2>Notifikasi melalui WhatsApp dan Telegram.</h2>
+      <p>Terima pemberitahuan perubahan kondisi jaringan melalui saluran yang Anda gunakan. Pilih perangkat dan jenis kejadian yang ingin dipantau, lalu telusuri pemberitahuannya melalui riwayat notifikasi.</p>
+      <p>Pilihan WhatsApp Gateway:</p>
       <ul class="home-integration-list" aria-label="Gateway WhatsApp"><li>Fonnte</li><li>StarSender</li><li>WAGate</li><li>WPPConnect</li></ul>
     </div>
   </section>
   <section class="home-cta-section shell container-xl">
     <div class="home-cta">
-      <div><span class="kicker">MULAI DENGAN LINNMS</span><h2>Kenali jaringan Anda lebih dekat.</h2><p>Coba LINNMS atau hubungi kami untuk informasi pemesanan.</p></div>
+      <div><h2>Coba LINNMS untuk jaringan Anda.</h2><p>Mulai dengan uji coba atau hubungi kami untuk pemesanan.</p></div>
       <div class="home-cta-actions"><a class="btn btn-sm btn-brand" href="#">Coba Gratis</a><a class="btn btn-sm btn-brand-outline" href="#">Pesan Sekarang</a></div>
     </div>
-    <a class="home-install-link" href="/dokumentasi/instalasi">Sudah siap memasang? Buka panduan instalasi <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    <a class="home-install-link" href="/dokumentasi/instalasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </section>
 </main>
