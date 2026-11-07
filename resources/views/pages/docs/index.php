@@ -1,20 +1,14 @@
 <main id="main">
-  <div class="page-head docs-index-head shell container-xl">
-    <div class="crumb"><a href="<?= route('home') ?>">Beranda</a><span>/</span>Dokumentasi</div>
-    <h1>Dokumentasi</h1>
-  </div>
-  <nav class="docs-index shell container-xl" aria-label="Halaman dokumentasi">
-    <a class="docs-index-row" href="<?= route('docs.installation') ?>">
-      <span><strong>Instalasi</strong><small>Persyaratan dan langkah pemasangan LINNMS.</small></span>
-      <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-    </a>
-    <a class="docs-index-row" href="<?= route('docs.oid') ?>">
-      <span><strong>OID perangkat</strong><small>OID yang digunakan LINNMS, disusun menurut vendor perangkat.</small></span>
-      <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-    </a>
-    <a class="docs-index-row" href="<?= route('docs.changelog') ?>">
-      <span><strong>Changelog</strong><small>Daftar perubahan LINNMS menurut versi.</small></span>
-      <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-    </a>
+  <header class="documentation-head shell container-xl">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Beranda</a><span>/</span>Dokumentasi</nav>
+    <h1>Dokumentasi LINNMS</h1>
+    <p>Pemasangan, pemetaan data perangkat, dan catatan perubahan LINNMS.</p>
+  </header>
+  <nav class="shell container-xl documentation-directory" aria-label="Halaman dokumentasi">
+    <div class="documentation-directory-list">
+      <a href="/dokumentasi/instalasi"><span class="documentation-topic-icon"><i class="bi bi-box-seam" aria-hidden="true"></i></span><span><strong>Instalasi</strong><span>Langkah pemasangan LINNMS dengan Docker Compose atau CasaOS.</span></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      <a href="/dokumentasi/pemetaan-data"><span class="documentation-topic-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></span><span><strong>Pemetaan Data Perangkat</strong><span>Informasi yang dibaca dari OID SNMP dan perintah Telnet, disusun per vendor.</span></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      <a href="/dokumentasi/changelog"><span class="documentation-topic-icon"><i class="bi bi-clock-history" aria-hidden="true"></i></span><span><strong>Changelog</strong><span>Catatan perubahan LINNMS menurut versi.</span></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </div>
   </nav>
 </main>

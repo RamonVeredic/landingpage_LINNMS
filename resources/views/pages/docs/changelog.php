@@ -1,6 +1,6 @@
 <main id="main">
   <div class="page-head changelog-page-head shell container-xl">
-    <div class="crumb"><a href="<?= route('home') ?>">Beranda</a><span>/</span><a href="<?= route('docs.index') ?>">Dokumentasi</a><span>/</span>Changelog</div>
+    <div class="crumb"><a href="/">Beranda</a><span>/</span><a href="/dokumentasi">Dokumentasi</a><span>/</span>Changelog</div>
     <h1>Changelog</h1>
   </div>
   <div class="changelog-feed shell container-xl">

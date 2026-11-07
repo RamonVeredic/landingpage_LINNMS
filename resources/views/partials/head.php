@@ -6,6 +6,12 @@
     <title><?= htmlspecialchars($pageTitle ?? 'LINNMS', ENT_QUOTES, 'UTF-8') ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="<?= asset('css/styles.css') ?>" />
+    <?php if (($activePage ?? '') === 'home'): ?>
+    <link rel="stylesheet" href="<?= asset('css/home.css') ?>" />
+    <?php endif; ?>
+    <?php if (($activePage ?? '') === 'docs'): ?>
+    <link rel="stylesheet" href="<?= asset('css/docs.css') ?>" />
+    <?php endif; ?>
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="icon" href="<?= asset('favicon.ico') ?>" sizes="any" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>

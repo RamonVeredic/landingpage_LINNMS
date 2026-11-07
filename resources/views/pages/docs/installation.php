@@ -1,13 +1,13 @@
 <main id="main">
   <div class="page-head shell container-xl">
-    <div class="crumb"><a href="<?= route('home') ?>">Beranda</a><span>/</span><a href="<?= route('docs.index') ?>">Dokumentasi</a><span>/</span>Instalasi</div>
+    <div class="crumb"><a href="/">Beranda</a><span>/</span><a href="/dokumentasi">Dokumentasi</a><span>/</span>Instalasi</div>
     <h1>Instalasi LINNMS</h1>
     <p>Pilih Docker Compose atau CasaOS. Keduanya memakai berkas yang tersedia di repository LINNMS.</p>
   </div>
   <div class="shell docs-layout container-xl">
     <aside class="doc-aside">
       <nav class="aside-sticky" aria-label="Daftar isi instalasi">
-        <a class="sidebar-back" href="<?= route('docs.index') ?>"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
+        <a class="sidebar-back" href="/dokumentasi"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
         <div class="aside-title">DAFTAR ISI</div>
         <a href="#sebelum-mulai">Sebelum mulai</a>
         <a href="#docker-compose">Docker Compose</a>

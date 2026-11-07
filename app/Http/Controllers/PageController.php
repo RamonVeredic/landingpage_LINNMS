@@ -47,11 +47,11 @@ final class PageController
         ]);
     }
 
-    public function oid(): void
+    public function dataMapping(): void
     {
-        View::render('pages.docs.oid', [
-            'pageTitle' => 'OID perangkat | Dokumentasi LINNMS',
-            'pageDescription' => 'OID yang digunakan LINNMS untuk membaca data perangkat melalui SNMP.',
+        View::render('pages.docs.pemetaan-data', [
+            'pageTitle' => 'Pemetaan Data Perangkat | Dokumentasi LINNMS',
+            'pageDescription' => 'Sumber informasi perangkat ZTE dan HIOSO dari OID SNMP serta perintah Telnet yang dibaca LINNMS.',
             'activePage' => 'docs',
             'bodyClass' => '',
         ]);

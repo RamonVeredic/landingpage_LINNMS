@@ -41,7 +41,7 @@ function request(string $path, string $method = 'GET'): array
 }
 
 $assets = [];
-foreach (['/', '/tentang', '/dokumentasi', '/dokumentasi/instalasi', '/dokumentasi/oid', '/dokumentasi/changelog'] as $path) {
+foreach (['/', '/tentang', '/dokumentasi', '/dokumentasi/instalasi', '/dokumentasi/pemetaan-data', '/dokumentasi/changelog'] as $path) {
     [$status, $headers, $body] = request($path);
     check($status === 200, $path . ' must return 200');
     check(substr_count(strtolower($body), '<!doctype html>') === 1, $path . ' must render one layout');
@@ -69,9 +69,9 @@ foreach ($redirects as $old => $target) {
     check($status === 301 && ($headers['location'] ?? '') === $target, 'Invalid redirect: ' . $old);
 }
 foreach ([
-    '/oid.php?source=old' => '/dokumentasi/oid?source=old',
+    '/oid.php?source=old' => '/dokumentasi/pemetaan-data?source=old',
     '/fitur.php?source=old' => '/?source=old#fitur',
-    '/dokumentasi/oid/?source=old' => '/dokumentasi/oid?source=old',
+    '/dokumentasi/oid/?source=old' => '/dokumentasi/pemetaan-data?source=old',
 ] as $old => $target) {
     [$status, $headers] = request($old);
     check($status === 301 && ($headers['location'] ?? '') === $target, 'Query or slash redirect failed: ' . $old);
@@ -81,6 +81,6 @@ foreach (['/tidak-ada', '/missing.php', '/app/helpers.php', '/resources/views/pa
 }
 [$status, $headers] = request('/tentang', 'POST');
 check($status === 405 && ($headers['allow'] ?? '') === 'GET, HEAD', 'POST must return 405 with Allow');
-[$status, $headers, $body] = request('/dokumentasi/oid', 'HEAD');
+[$status, $headers, $body] = request('/dokumentasi/pemetaan-data', 'HEAD');
 check($status === 200 && $body === '', 'HEAD must return 200 without a body');
 echo $checks . " routing checks passed.\n";

@@ -6,6 +6,6 @@ return [
     'about' => ['path' => '/tentang', 'action' => 'about'],
     'docs.index' => ['path' => '/dokumentasi', 'action' => 'docs'],
     'docs.installation' => ['path' => '/dokumentasi/instalasi', 'action' => 'installation'],
-    'docs.oid' => ['path' => '/dokumentasi/oid', 'action' => 'oid'],
+    'docs.data-mapping' => ['path' => '/dokumentasi/pemetaan-data', 'action' => 'dataMapping'],
     'docs.changelog' => ['path' => '/dokumentasi/changelog', 'action' => 'changelog'],
 ];

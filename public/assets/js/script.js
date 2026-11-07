@@ -11,19 +11,4 @@ document.addEventListener('DOMContentLoaded',()=>{
  }));
  const headingLinks=[...document.querySelectorAll('.aside-sticky > a[href^="#"]')];
  if(headingLinks.length&&'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){headingLinks.forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id))}})},{rootMargin:'-110px 0px -70% 0px'});document.querySelectorAll('.doc-section[id]').forEach(s=>observer.observe(s))}
- const vendorSearch=document.querySelector('[data-oid-search]');
- if(vendorSearch){
-  const vendors=[...document.querySelectorAll('[data-oid-vendor]')];
-  const empty=document.querySelector('[data-oid-empty]');
-  vendorSearch.addEventListener('input',()=>{
-   const query=vendorSearch.value.trim().toLocaleLowerCase('id');
-   let matches=0;
-   vendors.forEach(vendor=>{
-    const visible=vendor.dataset.oidVendor.includes(query);
-    vendor.hidden=!visible;
-    if(visible)matches++;
-   });
-   empty.hidden=matches!==0;
-  });
- }
 });
