@@ -1,7 +1,5 @@
-
 <main id="main">
 
-  <!-- PAGE HEADER -->
   <div class="page-head shell container-xl about-head">
     <nav class="crumb" aria-label="Breadcrumb">
       <a href="/">Beranda</a>
@@ -17,14 +15,12 @@
     </p>
   </div>
 
-  <!-- ABOUT CONTENT -->
   <div class="shell container-xl about-content">
 
     <article class="about-story">
 
-      <!-- INTRODUCTION -->
-      <section class="mb-5" aria-labelledby="about-intro-title">
-        <h2 id="about-intro-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-intro-title">
+        <h2 id="about-intro-title">
           Apa itu LINNMS?
         </h2>
 
@@ -53,9 +49,8 @@
         </p>
       </section>
 
-      <!-- PURPOSE -->
-      <section class="mb-5" aria-labelledby="about-purpose-title">
-        <h2 id="about-purpose-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-purpose-title">
+        <h2 id="about-purpose-title">
           Tujuan Pengembangan
         </h2>
 
@@ -75,105 +70,50 @@
         </p>
       </section>
 
-      <!-- FEATURES -->
-      <section class="mb-5" aria-labelledby="about-features-title">
-        <h2 id="about-features-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-features-title">
+        <h2 id="about-features-title">
           Fokus dan Fungsionalitas
         </h2>
 
-        <p class="mb-4">
+        <p>
           LINNMS dirancang dengan beberapa fokus utama untuk
           mendukung aktivitas pengelolaan jaringan sehari-hari.
         </p>
 
-        <div class="row g-3">
-
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <i class="bi bi-hdd-network fs-4 d-block mb-3"
-                   aria-hidden="true"></i>
-
-                <h3 class="h6 fw-semibold">
-                  Monitoring Perangkat
-                </h3>
-
-                <p class="small text-body-secondary mb-0">
-                  Menyajikan informasi dan kondisi perangkat
+        <div class="about-focus-list">
+          <section class="about-focus-item">
+            <h3><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
+            <p>Menyajikan informasi dan kondisi perangkat
                   jaringan untuk membantu operator melakukan
                   pemantauan serta mengidentifikasi perangkat
-                  yang memerlukan perhatian.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <i class="bi bi-diagram-3 fs-4 d-block mb-3"
-                   aria-hidden="true"></i>
-
-                <h3 class="h6 fw-semibold">
-                  Pengelolaan OLT dan ONU
-                </h3>
-
-                <p class="small text-body-secondary mb-0">
-                  Memusatkan informasi perangkat OLT dan ONU
+                  yang memerlukan perhatian.</p>
+          </section>
+          <section class="about-focus-item">
+            <h3><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Pengelolaan OLT dan ONU</span></h3>
+            <p>Memusatkan informasi perangkat OLT dan ONU
                   untuk mempermudah penelusuran serta
                   pemantauan infrastruktur jaringan akses
-                  fiber optik.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <i class="bi bi-activity fs-4 d-block mb-3"
-                   aria-hidden="true"></i>
-
-                <h3 class="h6 fw-semibold">
-                  Aktivitas Jaringan
-                </h3>
-
-                <p class="small text-body-secondary mb-0">
-                  Menampilkan informasi aktivitas jaringan
+                  fiber optik.</p>
+          </section>
+          <section class="about-focus-item">
+            <h3><i class="bi bi-activity" aria-hidden="true"></i><span>Aktivitas Jaringan</span></h3>
+            <p>Menampilkan informasi aktivitas jaringan
                   untuk memberikan gambaran operasional
                   dan membantu proses pemeriksaan ketika
-                  ditemukan kondisi yang tidak sesuai.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <i class="bi bi-bell fs-4 d-block mb-3"
-                   aria-hidden="true"></i>
-
-                <h3 class="h6 fw-semibold">
-                  Informasi dan Notifikasi
-                </h3>
-
-                <p class="small text-body-secondary mb-0">
-                  Menyediakan notifikasi dan informasi
+                  ditemukan kondisi yang tidak sesuai.</p>
+          </section>
+          <section class="about-focus-item">
+            <h3><i class="bi bi-bell" aria-hidden="true"></i><span>Informasi dan Notifikasi</span></h3>
+            <p>Menyediakan notifikasi dan informasi
                   penting untuk membantu operator mengetahui
                   aktivitas atau kondisi perangkat yang
-                  membutuhkan pemeriksaan lebih lanjut.
-                </p>
-              </div>
-            </div>
-          </div>
-
+                  membutuhkan pemeriksaan lebih lanjut.</p>
+          </section>
         </div>
       </section>
 
-      <!-- BENEFITS -->
-      <section class="mb-5" aria-labelledby="about-benefits-title">
-        <h2 id="about-benefits-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-benefits-title">
+        <h2 id="about-benefits-title">
           Mengapa LINNMS?
         </h2>
 
@@ -183,50 +123,50 @@
           efisiensi dalam aktivitas operasional jaringan.
         </p>
 
-        <ul class="list-unstyled mt-4">
+        <ul class="about-benefits-list">
 
-          <li class="d-flex gap-3 mb-3">
-            <i class="bi bi-check-circle text-success"
+          <li>
+            <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
               <strong>Informasi Terpusat</strong>
-              <p class="small text-body-secondary mb-0">
+              <p class="about-benefit-description">
                 Informasi perangkat dan aktivitas jaringan
                 dapat diakses melalui satu antarmuka.
               </p>
             </div>
           </li>
 
-          <li class="d-flex gap-3 mb-3">
-            <i class="bi bi-check-circle text-success"
+          <li>
+            <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
               <strong>Monitoring Lebih Terarah</strong>
-              <p class="small text-body-secondary mb-0">
+              <p class="about-benefit-description">
                 Membantu operator menemukan informasi perangkat
                 dan menelusuri kondisi yang perlu diperiksa.
               </p>
             </div>
           </li>
 
-          <li class="d-flex gap-3 mb-3">
-            <i class="bi bi-check-circle text-success"
+          <li>
+            <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
               <strong>Antarmuka Mudah Dipahami</strong>
-              <p class="small text-body-secondary mb-0">
+              <p class="about-benefit-description">
                 Mengutamakan penyajian informasi teknis
                 yang terstruktur, jelas, dan mudah dibaca.
               </p>
             </div>
           </li>
 
-          <li class="d-flex gap-3">
-            <i class="bi bi-check-circle text-success"
+          <li>
+            <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
               <strong>Fokus pada Kebutuhan Operator</strong>
-              <p class="small text-body-secondary mb-0">
+              <p class="about-benefit-description">
                 Dirancang untuk mendukung pekerjaan monitoring
                 dan pengelolaan perangkat jaringan sehari-hari.
               </p>
@@ -236,9 +176,8 @@
         </ul>
       </section>
 
-      <!-- DEVELOPMENT -->
-      <section class="mb-5" aria-labelledby="about-dev-title">
-        <h2 id="about-dev-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-dev-title">
+        <h2 id="about-dev-title">
           Pengembangan LINNMS
         </h2>
 
@@ -265,13 +204,12 @@
         </p>
       </section>
 
-      <!-- VISION -->
-      <section class="mb-4" aria-labelledby="about-vision-title">
-        <h2 id="about-vision-title" class="h4 mb-3">
+      <section class="about-section" aria-labelledby="about-vision-title">
+        <h2 id="about-vision-title">
           Visi LINNMS
         </h2>
 
-        <blockquote class="border-start border-3 ps-3 my-4">
+        <blockquote class="about-quote">
           <p class="mb-0">
             Menghadirkan sistem manajemen jaringan yang
             sederhana, informatif, dan efisien untuk membantu
@@ -288,7 +226,7 @@
           yang dibutuhkan operator.
         </p>
 
-        <p class="small text-body-secondary mt-4 mb-0">
+        <p class="about-attribution">
           <strong>LINNMS</strong> — Simplifying Network Monitoring
           &amp; Management.
           <span class="d-block mt-1">
@@ -299,7 +237,6 @@
 
     </article>
 
-    <!-- CONTACT -->
     <section class="about-contact"
              id="kontak"
              aria-labelledby="about-contact-title">
@@ -313,8 +250,6 @@
         Hubungi kami untuk mendapatkan informasi
         mengenai aplikasi, uji coba, atau pemesanan.
       </p>
-
-      <!-- Ganti kontak contoh berikut dengan kontak resmi -->
 
       <ul class="contact-links">
 
