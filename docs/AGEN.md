@@ -2,3 +2,4 @@
 - Tidak melakukan pembuatan file ang tidak di perlukan
 - konfirmasi jika ada hal yang  perlu di modifikasi
 - sertakan alaasan dan masukan.
+- Optimalkan style cdn, jika tidak terlalu membutuhkan customngapai

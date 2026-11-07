@@ -178,14 +178,6 @@ summary:focus-visible {
 .page-head {
   padding: 79px 0 34px;
 }
-.breadcrumb {
-  --bs-breadcrumb-divider-color: var(--text-muted);
-  --bs-breadcrumb-item-active-color: var(--text-primary);
-  font-size: var(--font-sm);
-}
-.breadcrumb a:hover {
-  color: var(--brand-accent);
-}
 .page-head h1 {
   font: 800 var(--font-display-md)/1.16 var(--heading);
   letter-spacing: -0.06em;
@@ -1318,7 +1310,7 @@ summary:focus-visible {
 }
 
 :where(.btn, .copy-btn, .linnms-toggler, .linnms-nav-link, .dropdown-item,
-.footer a, .contact-links a, .breadcrumb a, .aside-sticky > a, .doc-sidebar-links a,
+.footer a, .contact-links a, .aside-sticky > a, .doc-sidebar-links a,
 .text-link, .home-install-link, .documentation-directory-list > a,
 .vendor-panel, .vendor-toggle, .changelog-release,
 .changelog-release > summary, .doc-body p a, .documentation-note a) {
