@@ -1,29 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
- // Tetapkan URL aplikasi LINNMS yang resmi setelah tersedia.
- const AUTH_URLS={login:'',register:''};
  const menu=document.querySelector('.menu-toggle');
  const nav=document.querySelector('#primary-nav');
- const authTrigger=document.querySelector('.auth-trigger');
- const authPanel=document.querySelector('.auth-menu-panel');
- const closeAuth=()=>{if(!authTrigger||!authPanel)return;authPanel.hidden=true;authTrigger.setAttribute('aria-expanded','false')};
- document.querySelectorAll('[data-auth-link]').forEach(link=>{
-  const raw=AUTH_URLS[link.dataset.authLink]?.trim();
-  if(!raw)return;
-  try{
-   const destination=new URL(raw,window.location.href);
-   if(!['http:','https:'].includes(destination.protocol))return;
-   link.href=destination.href;
-   link.removeAttribute('aria-disabled');link.removeAttribute('tabindex');link.classList.remove('is-unavailable');
-   const note=link.querySelector('small');if(note)note.textContent=link.dataset.authLink==='login'?'Buka halaman masuk':'Buat akun LINNMS';
-  }catch{/* URL belum valid, pertahankan status nonaktif. */}
- });
- if(authTrigger&&authPanel){
-  authTrigger.addEventListener('click',()=>{const opening=authPanel.hidden;authPanel.hidden=!opening;authTrigger.setAttribute('aria-expanded',String(opening))});
-  document.addEventListener('pointerdown',e=>{if(!e.target.closest('.auth-menu'))closeAuth()});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const opened=!authPanel.hidden;closeAuth();if(opened)authTrigger.focus()}});
- }
  if(menu&&nav){
-  const closeMobile=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Buka navigasi');closeAuth()};
+  const closeMobile=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Buka navigasi')};
   menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';if(open){closeMobile()}else{nav.classList.add('open');menu.setAttribute('aria-expanded','true');menu.setAttribute('aria-label','Tutup navigasi')}});
   nav.querySelectorAll('a[href]').forEach(a=>a.addEventListener('click',closeMobile));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMobile();menu.focus()}});

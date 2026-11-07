@@ -1,6 +1,6 @@
     <main id="main">
       <section class="hero hero-product">
-        <div class="shell hero-grid">
+        <div class="shell hero-grid container-xl">
           <div class="hero-copy">
             <div class="eyebrow">
               <span class="eyebrow-line" aria-hidden="true"></span>NETWORK MANAGEMENT SYSTEM
@@ -23,8 +23,8 @@
               </p>
             </div>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="fitur.php">Jelajahi fitur</a
-              ><a class="btn btn-ghost" href="docs.php">Baca dokumentasi</a>
+              <a class="btn btn-sm btn-brand" href="fitur.php">Jelajahi fitur</a
+              ><a class="btn btn-sm btn-brand-outline" href="docs.php">Baca dokumentasi</a>
             </div>
 
           </div>
@@ -290,7 +290,7 @@
           </div>
         </div>
       </section>
-      <section class="section-block shell" id="fitur">
+      <section class="section-block shell container-xl" id="fitur">
         <div class="section-intro">
           <div>
             <span class="kicker">FITUR UTAMA</span>
@@ -303,8 +303,8 @@
             serta aktivitas sinkronisasi dalam alur kerja yang lebih jelas.
           </p>
         </div>
-        <div class="topic-grid product-feature-grid">
-          <a class="topic-card product-feature" href="fitur.php#pemantauan"
+        <div class="topic-grid product-feature-grid row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col"><a class="topic-card product-feature h-100" href="fitur.php#pemantauan"
             ><div class="topic-icon">
               <i class="bi bi-speedometer2" aria-hidden="true"></i>
             </div>
@@ -314,7 +314,7 @@
               kondisi jaringan.
             </p>
             <span class="feature-card-footer">Pelajari pemantauan</span></a
-          ><a class="topic-card product-feature" href="fitur.php#perangkat"
+          ></div><div class="col"><a class="topic-card product-feature h-100" href="fitur.php#perangkat"
             ><div class="topic-icon">
               <i class="bi bi-diagram-3" aria-hidden="true"></i>
             </div>
@@ -324,7 +324,7 @@
               firmware yang digunakan.
             </p>
             <span class="feature-card-footer">Pelajari pengelolaan</span></a
-          ><a class="topic-card product-feature" href="fitur.php#sinkronisasi"
+          ></div><div class="col"><a class="topic-card product-feature h-100" href="fitur.php#sinkronisasi"
             ><div class="topic-icon">
               <i class="bi bi-activity" aria-hidden="true"></i>
             </div>
@@ -334,7 +334,7 @@
               penelusuran masalah.
             </p>
             <span class="feature-card-footer">Pelajari sinkronisasi</span></a
-          >
+          ></div>
         </div>
         <div class="section-footer-link">
           <a class="text-link" href="fitur.php"
@@ -342,7 +342,7 @@
           >
         </div>
       </section>
-      <section class="section-block shell product-about">
+      <section class="section-block shell product-about container-xl">
         <div class="feature-split">
           <div>
             <span class="kicker">TENTANG LINNMS</span>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-bs-theme="dark">
 
 <?php
 $pageTitle = 'Referensi OID & SNMP | LINNMS';
@@ -11,13 +11,13 @@ include __DIR__ . '/assets/parsial/head.php';
 <?php include __DIR__ . '/assets/parsial/navbar.php'; ?>
 
     <main id="main">
-        <div class="page-head shell">
+        <div class="page-head shell container-xl">
             <div class="crumb"><a href="index.php">Beranda</a><span>/</span><a href="docs.php">Dokumentasi</a><span>/</span>Referensi OID</div><span class="kicker">LINNMS / DOKUMENTASI</span>
             <h1>Referensi <span class='gradient-text'>OID dan SNMP.</span></h1>
             <p>Kumpulan OID standar dan vendor yang dapat Anda gunakan sebagai referensi untuk memeriksa perangkat jaringan, baik dengan LINNMS maupun alat SNMP lainnya.</p>
             <div class="header-pills"><span class="pill">MIB-II</span><span class="pill">IF-MIB</span><span class="pill">ZTE · HIOSO</span></div>
         </div>
-        <div class="shell docs-layout">
+        <div class="shell docs-layout container-xl">
             <aside class="doc-aside">
                 <div class="aside-sticky"><a class="sidebar-back" href="docs.php"><i class="bi bi-arrow-left" aria-hidden="true"></i> Semua dokumentasi</a>
                     <div class="aside-title">DAFTAR ISI</div><a href="#before">01 Cara membaca OID</a><a href="#reference">02 Tabel referensi</a><a href="#vendor">03 OID vendor</a><a href="#examples">04 Contoh perintah</a><a href="#results">05 Interpretasi hasil</a>
@@ -59,7 +59,7 @@ include __DIR__ . '/assets/parsial/head.php';
                             </thead>
                             <tbody>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>MIB-II</td>
                                     <td>System</td>
                                     <td><strong>sysDescr.0</strong></td>
@@ -67,7 +67,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Deskripsi sistem (teks)</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>MIB-II</td>
                                     <td>System</td>
                                     <td><strong>sysObjectID.0</strong></td>
@@ -75,7 +75,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Identitas objek enterprise</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>MIB-II</td>
                                     <td>System</td>
                                     <td><strong>sysUpTime.0</strong></td>
@@ -83,7 +83,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Uptime agen SNMP</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>MIB-II</td>
                                     <td>System</td>
                                     <td><strong>sysName.0</strong></td>
@@ -91,7 +91,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Nama sistem</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Interface</td>
                                     <td><strong>ifDescr</strong></td>
@@ -99,7 +99,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Deskripsi; tambahkan indeks interface</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Interface</td>
                                     <td><strong>ifAdminStatus</strong></td>
@@ -107,7 +107,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Status administratif; tambah ifIndex</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Interface</td>
                                     <td><strong>ifOperStatus</strong></td>
@@ -115,7 +115,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Status operasional; tambah ifIndex</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Interface</td>
                                     <td><strong>ifName</strong></td>
@@ -123,7 +123,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Nama interface; tambah ifIndex</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Interface</td>
                                     <td><strong>ifHighSpeed</strong></td>
@@ -131,7 +131,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Kecepatan nominal (Mbps); tambah ifIndex</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Traffic</td>
                                     <td><strong>ifHCInOctets</strong></td>
@@ -139,7 +139,7 @@ include __DIR__ . '/assets/parsial/head.php';
                                     <td>Counter RX 64-bit; tambah ifIndex</td>
                                 </tr>
                                 <tr data-type="standard">
-                                    <td><span class="oid-type ">STANDARD</span></td>
+                                    <td><span class="oid-type">STANDARD</span></td>
                                     <td>IF-MIB</td>
                                     <td>Traffic</td>
                                     <td><strong>ifHCOutOctets</strong></td>

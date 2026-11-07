@@ -1,5 +1,5 @@
  <footer class="footer">
-      <div class="shell footer-top">
+      <div class="shell footer-top container-xl">
         <div class="footer-links">
           <div>
             <a href="docs.php">Dokumentasi</a>
@@ -12,7 +12,7 @@
           </div>
         </div>
       </div>
-      <div class="shell footer-bottom">
+      <div class="shell footer-bottom container-xl">
         <span>© <?php echo date('Y'); ?> LINNMS</span>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-bs-theme="dark">
 <?php
 $pageTitle = 'Beranda | LINNMS';
 $pageDescription = 'LINNMS membantu memantau OLT, ONU, dan perangkat jaringan dari satu dashboard.';
