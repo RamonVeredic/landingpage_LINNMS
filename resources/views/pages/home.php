@@ -279,7 +279,7 @@
       <h2>Dari kondisi jaringan ke detail perangkat.</h2>
       <p>Mulai dari ringkasan, lalu telusuri perangkat dan ONU yang membutuhkan perhatian.</p>
     </div>
-    <div class="row g-4 g-lg-5">
+    <div class="row g-4">
       <div class="col-md-4 home-benefit">
         <i class="bi bi-speedometer2" aria-hidden="true"></i>
         <h3>Pantau kondisi perangkat</h3>

@@ -25,3 +25,10 @@ function e(string $value): string
 {
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
+
+function site(string $key): string
+{
+    static $settings = null;
+    $settings ??= require BASE_PATH . '/config/site.php';
+    return $settings[$key] ?? '';
+}

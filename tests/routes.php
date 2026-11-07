@@ -48,7 +48,7 @@ foreach (['/', '/tentang', '/dokumentasi', '/dokumentasi/instalasi', '/dokumenta
     check(str_contains($body, '<main') && str_contains($body, '<footer'), $path . ' must render content and footer');
     preg_match_all('/(?:href|src)="([^"]+)"/', $body, $matches);
     foreach ($matches[1] as $url) {
-        if (preg_match('~^https?://~', $url) || str_starts_with($url, '#')) {
+        if (preg_match('~^[a-z][a-z0-9+.-]*:~i', $url) || str_starts_with($url, '#')) {
             continue;
         }
         check(str_starts_with($url, '/'), 'Internal URL must be absolute: ' . $url);
