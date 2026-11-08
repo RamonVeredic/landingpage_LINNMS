@@ -432,7 +432,7 @@
   .manual-nav-sub a.active,
   .manual-nav-sub a:hover,
   .manual-nav-sub a:focus-visible {
-    border-color: var(--brand-accent-border);
+    border: 1px solid var(--brand-accent-border);
   }
   .manual-content {
     padding-left: 0;
