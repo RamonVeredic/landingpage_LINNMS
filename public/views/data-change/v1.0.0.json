@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "date": null,
+  "published": true,
+  "sections": [
+    {
+      "title": "Perangkat yang didukung",
+      "groups": [
+        {
+          "title": "OLT · Read & Write",
+          "items": [
+            "ZTE C300 (GPON)",
+            "ZTE C320 (GPON)",
+            "Hioso 2 Port (EPON)",
+            "Hioso 4 Port (EPON)",
+            "Hisfocus 2 Port (EPON)",
+            "Hisfocus 4 Port (EPON)"
+          ]
+        },
+        {
+          "title": "OLT · Read Only",
+          "items": [
+            "ZTE 6xx Series",
+            "ZTE EPON",
+            "HSGQ (GPON / EPON)",
+            "C-Data (GPON / EPON)",
+            "VSOL (GPON / EPON)",
+            "FiberHome (GPON)"
+          ]
+        },
+        {
+          "title": "Router & Switch · Read Only",
+          "items": [
+            "MikroTik",
+            "Cisco Catalyst S Series"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Notifikasi",
+      "groups": [
+        {
+          "title": null,
+          "items": [
+            "WhatsApp Gateway",
+            "Telegram Bot"
+          ]
+        },
+        {
+          "title": "WhatsApp Gateway yang didukung",
+          "items": [
+            "Fonnte",
+            "StarSender",
+            "WAGate",
+            "WPPConnect"
+          ]
+        }
+      ]
+    }
+  ]
+}
