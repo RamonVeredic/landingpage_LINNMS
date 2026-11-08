@@ -3,7 +3,7 @@
     <nav class="mb-4" aria-label="Breadcrumb">
       <ol class="breadcrumb mb-0 small">
         <li class="breadcrumb-item"><a class="link-body-emphasis" href="/">Beranda</a></li>
-        <li class="breadcrumb-item"><a class="link-body-emphasis" href="/dokumentasi">Dokumentasi</a></li>
+        <li class="breadcrumb-item"><a class="link-body-emphasis" href="/dokumentasi">Docs</a></li>
         <li class="breadcrumb-item active" aria-current="page">Pemetaan Data Perangkat</li>
       </ol>
     </nav>

@@ -32,13 +32,7 @@
 }
 .documentation-directory-list strong {
   display: block;
-  margin-bottom: 6px;
   font: 700 var(--font-lg)/1.4 var(--heading);
-}
-.documentation-directory-list strong + span {
-  display: block;
-  color: var(--text-secondary);
-  line-height: 1.7;
 }
 .documentation-directory-list > a > .bi {
   color: var(--brand-accent-hover);
@@ -148,4 +142,31 @@
     background-color: var(--surface-elevated);
   }
 }
-.changelog-release .accordion-button { font: 600 var(--font-lg)/1.4 var(--heading); }
+.changelog-release .accordion-button {
+  font: 600 var(--font-lg)/1.35 var(--heading);
+  letter-spacing: -.02em;
+}
+.changelog-release .accordion-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+.changelog-release .accordion-body h3 {
+  color: var(--text-primary);
+  font: 600 var(--font-md)/1.4 var(--heading);
+}
+.changelog-release .accordion-body h4 {
+  color: var(--text-secondary);
+  font: 600 var(--font-sm)/1.4 var(--font);
+}
+.changelog-release .accordion-body li {
+  position: relative;
+  margin-top: .15rem;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font: 400 var(--font-md)/1.55 var(--font);
+}
+.changelog-release .accordion-body li::before {
+  position: absolute;
+  left: 0;
+  color: var(--brand-accent);
+  content: "–";
+}

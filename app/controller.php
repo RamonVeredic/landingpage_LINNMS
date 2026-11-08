@@ -7,7 +7,7 @@ final class PageController
     {
         $this->render('pages.home', [
             'pageTitle' => 'LINNMS | Pemantauan Jaringan dan Pengelolaan OLT/ONU',
-            'pageDescription' => 'Pantau status perangkat, kelola OLT dan ONU, serta telusuri aktivitas jaringan melalui LINNMS.',
+            'pageDescription' => 'LINNMS membantu memantau perangkat jaringan dan mengelola OLT serta ONU dari satu tempat.',
             'activePage' => 'home',
             'bodyClass' => 'home-page',
         ]);
@@ -17,7 +17,7 @@ final class PageController
     {
         $this->render('pages.about', [
             'pageTitle' => 'Tentang LINNMS',
-            'pageDescription' => 'Tentang LINNMS, aplikasi manajemen jaringan yang dikembangkan oleh RamonVeredic dengan bantuan AI.',
+            'pageDescription' => 'Tentang LINNMS dan pengembangnya, RamonVeredic.',
             'activePage' => 'about',
             'bodyClass' => 'about-page',
         ]);
@@ -26,8 +26,8 @@ final class PageController
     public function docs(): void
     {
         $this->render('pages.docs.index', [
-            'pageTitle' => 'Dokumentasi | LINNMS',
-            'pageDescription' => 'Panduan instalasi, pemetaan data perangkat, dan changelog LINNMS.',
+            'pageTitle' => 'Docs | LINNMS',
+            'pageDescription' => 'Cara instalasi, sumber data perangkat, dan catatan perubahan LINNMS.',
             'activePage' => 'docs',
             'bodyClass' => 'docs-index-page',
         ]);
@@ -36,8 +36,8 @@ final class PageController
     public function installation(): void
     {
         $this->render('pages.docs.installation', [
-            'pageTitle' => 'Instalasi LINNMS | Dokumentasi',
-            'pageDescription' => 'Panduan instalasi LINNMS menggunakan berkas Docker Compose resmi atau CasaOS.',
+            'pageTitle' => 'Instalasi LINNMS | Docs',
+            'pageDescription' => 'Instalasi LINNMS dengan satu berkas Compose untuk server AMD64 dan ARM64.',
             'activePage' => 'docs',
             'bodyClass' => '',
         ]);
@@ -46,8 +46,8 @@ final class PageController
     public function dataMapping(): void
     {
         $this->render('pages.docs.pemetaan-data', [
-            'pageTitle' => 'Pemetaan Data Perangkat | Dokumentasi LINNMS',
-            'pageDescription' => 'Pemetaan data ZTE dan HIOSO beserta OID SNMP dan perintah Telnet yang digunakan LINNMS.',
+            'pageTitle' => 'Pemetaan Data Perangkat | Docs LINNMS',
+            'pageDescription' => 'OID SNMP dan perintah Telnet yang dipakai LINNMS untuk membaca data perangkat ZTE dan HIOSO.',
             'activePage' => 'docs',
             'bodyClass' => '',
         ]);
@@ -57,7 +57,7 @@ final class PageController
     {
         $this->render('pages.docs.changelog', [
             'pageTitle' => 'Changelog | LINNMS',
-            'pageDescription' => 'Changelog LINNMS v1.0.2 dan v1.0.3.',
+            'pageDescription' => 'Catatan perubahan LINNMS dari v1.0.0 sampai v1.0.3.',
             'activePage' => 'docs',
             'bodyClass' => '',
         ]);

@@ -236,16 +236,6 @@ summary:focus-visible {
   color: inherit;
   font-size: inherit;
 }
-.copy-btn {
-  border: 1px solid var(--border-strong);
-  background: var(--surface-elevated);
-  color: var(--text-primary);
-  border-radius: 7px;
-  font: 600 var(--font-xs) var(--mono);
-}
-.copy-btn:hover {
-  background: var(--panel2);
-}
 .step-list {
   display: grid;
   gap: 12px;
@@ -270,6 +260,8 @@ summary:focus-visible {
 .footer {
   border-top: 1px solid var(--line);
   background: var(--bg2);
+  font-size: var(--font-sm);
+  margin-top: 0;
 }
 @media (max-width: 1080px) {
   .docs-layout {
@@ -349,17 +341,6 @@ summary:focus-visible {
   align-items: center;
   gap: 7px;
 }
-.copy-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  min-height: 32px;
-  padding: 6px 11px;
-  white-space: nowrap;
-}
-.copy-btn .bi {
-  font-size: var(--font-sm);
-}
 .site-header .brand-logo {
   object-fit: contain;
 }
@@ -374,20 +355,7 @@ summary:focus-visible {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 .btn.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 42px;
-  padding: 0 12px;
-  border-radius: 8px;
-  font-size: var(--font-sm);
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
-}
-.btn.cta-button:hover {
-  transform: none;
+  min-width: 160px;
 }
 .site-header .brand-logo {
   width: 34px;
@@ -552,35 +520,23 @@ summary:focus-visible {
     border-top: 1px solid var(--border-muted);
   }.linnms-navbar .dropdown-menu { width: min(100%, 220px); margin-top: 6px; }
 }
-
-.footer {
-  margin-top: 0;
-}
 .footer-inner {
   max-width: 960px;
-  padding-top: 28px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--line);
 }
 .footer-group {
   min-width: 0;
 }
 .footer-group h2 {
-  margin: 0 0 12px;
   color: var(--text-primary);
-  font: 700 var(--font-sm)/1.4 var(--font);
+  font: 600 var(--font-md)/1.5 var(--font);
 }
 .footer-nav a,
 .footer-social a,
 .footer-contact.contact-links a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
+  min-height: 32px;
   color: var(--text-secondary);
-  font-size: var(--font-md);
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: inherit;
 }
 .footer-social .bi,
 .footer-contact .bi {
@@ -595,8 +551,6 @@ summary:focus-visible {
 }
 .footer-copy {
   max-width: 960px;
-  padding-top: 14px;
-  padding-bottom: 18px;
   text-align: center;
   color: var(--text-muted);
   font-size: var(--font-sm);
@@ -624,12 +578,6 @@ summary:focus-visible {
   color: var(--brand-accent-hover);
   font-size: 1em;
   line-height: 1;
-}
-@media (max-width: 575.98px) {
-  .footer-inner {
-    padding-top: 24px;
-    padding-bottom: 20px;
-  }
 }
 
 :where(.btn, .copy-btn, .linnms-toggler, .linnms-nav-link, .dropdown-item,
@@ -688,10 +636,6 @@ summary:focus-visible {
   text-underline-offset: 3px;
 }
 @media (hover: hover) and (pointer: fine) {
-  .btn-primary:hover,
-  .btn-outline-primary:hover {
-    box-shadow: 0 3px 12px var(--focus-ring);
-  }
   .linnms-navbar .linnms-nav-link:hover,
   .linnms-navbar .linnms-toggler:hover {
     background-color: var(--brand-accent-subtle);
@@ -704,10 +648,6 @@ summary:focus-visible {
   }
   .footer a:hover .bi,
   .contact-links a:hover .bi {
-    color: var(--brand-accent-hover);
-  }
-  .copy-btn:hover {
-    border-color: var(--brand-accent-border);
     color: var(--brand-accent-hover);
   }
   .changelog-release > summary:hover {

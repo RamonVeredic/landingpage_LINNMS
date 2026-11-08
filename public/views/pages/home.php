@@ -2,19 +2,30 @@
   <section class="hero hero-product">
     <div class="shell hero-grid container-xl d-flex flex-column align-items-center">
       <div class="hero-copy text-center w-100 mb-4">
-        <div class="home-eyebrow">LINNMS · NETWORK MANAGEMENT SYSTEM</div>
-        <h1 class="hero-title">Pantau perangkat jaringan Anda.<br><span class="home-accent">Kelola dari satu tempat.</span></h1>
+        <div class="home-eyebrow">NETWORK MANAGEMENT SYSTEM</div>
+        <h1 class="hero-title">Pantau perangkat jaringan Anda<br><span class="home-accent">Kelola dari satu tempat</span></h1>
         <div class="hero-description mx-auto mb-4">
-          <p class="hero-lead mb-0">LINNMS membantu Anda memantau OLT, ONU, router, dan switch, melihat trafik, serta menerima notifikasi perubahan kondisi jaringan.</p>
+          <p class="hero-lead mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
         </div>
         <div class="hero-actions d-flex flex-wrap justify-content-center gap-2">
-          <a class="btn btn-sm cta-button btn-primary" href="#">Coba Gratis</a>
-          <a class="btn btn-sm cta-button btn-outline-primary" href="#">Pesan Sekarang</a>
+          <a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
+          <a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a>
         </div>
         <ul class="home-highlights list-unstyled d-flex flex-wrap justify-content-center gap-3 mt-4 mb-0" aria-label="Fungsi utama LINNMS">
-          <li class="d-flex align-items-center gap-2"><i class="bi bi-speedometer2" aria-hidden="true"></i>Pantau perangkat</li>
-          <li class="d-flex align-items-center gap-2"><i class="bi bi-sliders" aria-hidden="true"></i>Kelola ONU</li>
-          <li class="d-flex align-items-center gap-2"><i class="bi bi-chat-dots" aria-hidden="true"></i>Terima notifikasi</li>
+          
+<li class="d-flex align-items-center gap-2">
+  <i class="bi bi-speedometer2" aria-hidden="true"></i>
+  Monitoring Perangkat
+</li>
+<li class="d-flex align-items-center gap-2">
+  <i class="bi bi-sliders" aria-hidden="true"></i>
+  Remote Management
+</li>
+<li class="d-flex align-items-center gap-2">
+  <i class="bi bi-bell" aria-hidden="true"></i>
+  Notifikasi Fleksibel
+</li>
+
         </ul>
       </div>
       <div class="card auth-preview-wrap w-100 mx-auto overflow-hidden" id="dashboard-preview">
@@ -38,7 +49,7 @@
               <section class="card overflow-hidden">
                 <div class="d-flex align-items-center justify-content-between gap-2 p-2">
                   <div class="input-group input-group-sm auth-search"><span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span><span class="form-control text-body-secondary">Cari...</span></div>
-                  <span class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1"><i class="bi bi-plus-circle" aria-hidden="true"></i>Add</span>
+                  <span class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1 rounded-pill fw-semibold"><i class="bi bi-plus-circle" aria-hidden="true"></i>Add</span>
                 </div>
                 <div class="table-responsive">
                   <table class="table table-sm table-striped align-middle mb-0 auth-table">
@@ -57,41 +68,83 @@
     </div>
   </section>
   <section class="home-benefits shell container-xl" id="fitur" aria-labelledby="features-heading">
-    <div class="home-section-heading">
-      <strong class="d-block small text-primary mb-3">FITUR PLATFORM</strong>
-      <h2 id="features-heading">Monitoring dan Pengelolaan Jaringan dalam Satu Platform</h2>
-      <p>Pantau perangkat jaringan, kelola informasi OLT dan ONU, serta sesuaikan sistem monitoring dengan kebutuhan operasional ISP.</p>
-    </div>
-    <div class="row g-4 g-lg-5">
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Monitoring Terpusat</h3>
-        <strong class="d-block small text-primary mb-3">Centralized Monitoring</strong>
-        <p class="mb-0">Pantau informasi dan kondisi perangkat jaringan melalui satu dashboard tanpa harus berpindah antarhalaman pengelolaan.</p>
+    <hgroup class="home-section-heading d-block w-100 mw-100 text-center mb-5">
+      <p class="small text-primary fw-semibold mb-2">FITUR PLATFORM</p>
+      <h2 class="mt-0 mb-2" id="features-heading">Monitoring dan Pengelolaan Jaringan dalam Satu Platform</h2>
+      <p class="mb-0">Pantau perangkat jaringan, kelola informasi OLT dan ONU, serta sesuaikan sistem monitoring dengan kebutuhan operasional ISP.</p>
+    </hgroup>
+    <div class="row row-cols-1 row-cols-md-2 gx-4 gy-0 row-gap-4">
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-display" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Monitoring Terpusat</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Centralized Monitoring</strong>
+              <p class="mb-0">Pantau informasi dan kondisi perangkat jaringan melalui satu dashboard tanpa harus berpindah antarhalaman pengelolaan.</p>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Manajemen OLT dan ONU</h3>
-        <strong class="d-block small text-primary mb-3">Fiber Network Management</strong>
-        <p class="mb-0">Akses dan kelola informasi OLT serta ONU secara terpusat untuk mempermudah pemantauan infrastruktur jaringan fiber optik.</p>
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Manajemen OLT dan ONU</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Fiber Network Management</strong>
+              <p class="mb-0">Akses dan kelola informasi OLT serta ONU secara terpusat untuk mempermudah pemantauan infrastruktur jaringan fiber optik.</p>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Sinkronisasi Data Otomatis</h3>
-        <strong class="d-block small text-primary mb-3">Custom Interval</strong>
-        <p class="mb-0">Data perangkat diperbarui secara otomatis berdasarkan interval sinkronisasi yang dapat ditentukan sesuai kebutuhan.</p>
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Sinkronisasi Data Otomatis</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Interval</strong>
+              <p class="mb-0">Data perangkat diperbarui secara otomatis berdasarkan interval sinkronisasi yang dapat ditentukan sesuai kebutuhan.</p>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Notifikasi yang Dapat Disesuaikan</h3>
-        <strong class="d-block small text-primary mb-3">Custom Alerts</strong>
-        <p class="mb-0">Tentukan perangkat, jenis kejadian, dan saluran pengiriman notifikasi agar setiap informasi yang diterima tetap relevan.</p>
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-bell" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Notifikasi yang Dapat Disesuaikan</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Alerts</strong>
+              <p class="mb-0">Tentukan perangkat, jenis kejadian, dan saluran pengiriman notifikasi agar setiap informasi yang diterima tetap relevan.</p>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Konfigurasi Fleksibel</h3>
-        <strong class="d-block small text-primary mb-3">Custom Configuration</strong>
-        <p class="mb-0">Sesuaikan pengaturan perangkat dan layanan yang tersedia di LINNMS berdasarkan kebutuhan operasional jaringan.</p>
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-sliders" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Konfigurasi Fleksibel</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Configuration</strong>
+              <p class="mb-0">Sesuaikan pengaturan perangkat dan layanan yang tersedia di LINNMS berdasarkan kebutuhan operasional jaringan.</p>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <h3 class="home-feature-title mb-2">Pemantauan Aktivitas Jaringan</h3>
-        <strong class="d-block small text-primary mb-3">Network Activity</strong>
-        <p class="mb-0">Lihat informasi aktivitas jaringan untuk membantu menelusuri perubahan kondisi perangkat dan melakukan pemeriksaan lebih lanjut.</p>
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex align-items-start gap-3 p-4">
+            <span class="home-feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-activity" aria-hidden="true"></i></span>
+            <div class="flex-grow-1">
+              <h3 class="home-feature-title mb-2">Pemantauan Aktivitas Jaringan</h3>
+              <strong class="d-block small text-body-secondary fw-medium mb-3">Network Activity</strong>
+              <p class="mb-0">Lihat informasi aktivitas jaringan untuk membantu menelusuri perubahan kondisi perangkat dan melakukan pemeriksaan lebih lanjut.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -101,15 +154,15 @@
       <p>Dukungan OLT, router, dan switch untuk pemantauan melalui LINNMS.</p>
     </div>
     <ul class="home-vendors list-unstyled d-flex flex-wrap justify-content-center gap-2 mb-0 py-2" aria-label="Vendor perangkat yang didukung">
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">ZTE</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">HIOSO</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">Hisfocus</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">HSGQ</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">C-Data</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">VSOL</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">FiberHome</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">MikroTik</li>
-      <li class="badge rounded-pill border px-4 py-3 fw-semibold">Cisco</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">ZTE</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">HIOSO</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Hisfocus</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">HSGQ</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">C-Data</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">VSOL</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">FiberHome</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">MikroTik</li>
+      <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Cisco</li>
     </ul>
   </section>
   <section class="home-feature-detail home-notifications shell container-xl">
@@ -131,7 +184,7 @@
   <section class="home-cta-section shell container-xl">
     <div class="home-cta d-flex align-items-center justify-content-between flex-wrap gap-4 p-4">
       <div><h2>Coba LINNMS untuk jaringan Anda.</h2><p>Mulai dengan uji coba atau hubungi kami untuk pemesanan.</p></div>
-      <div class="home-cta-actions d-flex flex-wrap gap-2"><a class="btn btn-sm cta-button btn-primary" href="#">Coba Gratis</a><a class="btn btn-sm cta-button btn-outline-primary" href="#">Pesan Sekarang</a></div>
+      <div class="home-cta-actions d-flex flex-wrap gap-2"><a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
     </div>
     <a class="home-install-link d-block text-center mt-4" href="/dokumentasi/instalasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </section>

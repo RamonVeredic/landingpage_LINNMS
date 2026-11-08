@@ -12,10 +12,10 @@
       <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link linnms-nav-link d-flex align-items-center justify-content-lg-center" href="/" <?= ($activePage ?? '') === 'home' ? 'aria-current="page"' : '' ?>>Beranda</a></li>
         <li class="nav-item"><a class="nav-link linnms-nav-link d-flex align-items-center justify-content-lg-center" href="/#fitur">Fitur</a></li>
-        <li class="nav-item"><a class="nav-link linnms-nav-link d-flex align-items-center justify-content-lg-center" href="/dokumentasi" <?= ($activePage ?? '') === 'docs' ? 'aria-current="page"' : '' ?>>Dokumentasi</a></li>
+        <li class="nav-item"><a class="nav-link linnms-nav-link d-flex align-items-center justify-content-lg-center" href="/dokumentasi" <?= ($activePage ?? '') === 'docs' ? 'aria-current="page"' : '' ?>>Docs</a></li>
         <li class="nav-item"><a class="nav-link linnms-nav-link d-flex align-items-center justify-content-lg-center" href="/tentang" <?= ($activePage ?? '') === 'about' ? 'aria-current="page"' : '' ?>>Tentang</a></li>
         <li class="nav-item dropdown ms-lg-2">
-          <button class="btn btn-sm btn-primary linnms-nav-cta dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Gabung</button>
+          <button class="btn btn-sm btn-primary linnms-nav-cta dropdown-toggle rounded-pill fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">Gabung</button>
           <ul class="dropdown-menu dropdown-menu-lg-end">
             <li><a class="dropdown-item" href="#">Masuk</a></li>
             <li><a class="dropdown-item" href="#">Daftar</a></li>
