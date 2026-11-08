@@ -13,7 +13,7 @@
     <nav class="linnms__footer__group col-6 col-md-4" aria-labelledby="footer-social-title">
       <h2 id="footer-social-title" class="linnms__footer__title mb-2">Media sosial</h2>
       <ul class="list-unstyled mb-0">
-        <li><a class="linnms__footer__link d-flex align-items-center gap-2 py-1" href="https://github.com/RamonVeredic/LINNMS" target="_blank" rel="noopener noreferrer"><i class="linnms__footer__social__icon bi bi-github" aria-hidden="true"></i>GitHub</a></li>
+        <li><a class="linnms__footer__link d-flex align-items-center gap-2 py-1" href="https://github.com/RamonVeredic/" target="_blank" rel="noopener noreferrer"><i class="linnms__footer__social__icon bi bi-github" aria-hidden="true"></i>GitHub</a></li>
         <li><a class="linnms__footer__link d-flex align-items-center gap-2 py-1" href="#"><i class="linnms__footer__social__icon bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
         <li><a class="linnms__footer__link d-flex align-items-center gap-2 py-1" href="#"><i class="linnms__footer__social__icon bi bi-telegram" aria-hidden="true"></i>Telegram</a></li>
         <li><a class="linnms__footer__link d-flex align-items-center gap-2 py-1" href="#"><i class="linnms__footer__social__icon bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
