@@ -32,7 +32,7 @@
         <div class="card-header py-2 px-3">
           <div class="preview-window-dots d-flex align-items-center gap-1" aria-hidden="true"><span class="bg-danger rounded-circle"></span><span class="bg-warning rounded-circle"></span><span class="bg-success rounded-circle"></span></div>
         </div>
-        <div class="auth-dashboard d-flex" role="img" aria-label="Ilustrasi dashboard LINNMS dengan data contoh">
+        <div class="auth-dashboard d-flex" role="region" aria-label="Pratinjau dashboard LINNMS dengan data contoh">
 
           <div class="auth-app-content flex-grow-1">
             <div class="auth-topbar d-flex justify-content-end align-items-center border-bottom px-3 py-2"><i class="bi bi-person-circle text-body-secondary" aria-hidden="true"></i></div>
@@ -51,7 +51,7 @@
                   <div class="input-group input-group-sm auth-search"><span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span><span class="form-control text-body-secondary">Cari...</span></div>
                   <span class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1 rounded-pill fw-semibold"><i class="bi bi-plus-circle" aria-hidden="true"></i>Add</span>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive" tabindex="0" role="region" aria-label="Tabel pratinjau perangkat; gulir secara horizontal untuk melihat semua kolom">
                   <table class="table table-sm table-striped align-middle mb-0 auth-table">
                     <thead class="table-active"><tr><th scope="col" >No.</th><th scope="col">Jenis</th><th scope="col">Nama</th><th scope="col" >Model</th><th scope="col" >Sync</th><th scope="col">Tindakan</th></tr></thead>
                     <tbody>
