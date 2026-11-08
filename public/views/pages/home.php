@@ -5,7 +5,7 @@
         <div class="home-eyebrow">NETWORK MANAGEMENT SYSTEM</div>
         <h1 class="hero-title">Pantau perangkat jaringan Anda<br><span class="home-accent">Kelola dari satu tempat</span></h1>
         <div class="hero-description mx-auto mb-4">
-          <p class="hero-lead mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
+          <p class="mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
         </div>
         <div class="hero-actions d-flex flex-wrap justify-content-center gap-2">
           <a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
@@ -153,7 +153,7 @@
       <h2>Vendor yang didukung</h2>
       <p>Dukungan OLT, router, dan switch untuk pemantauan melalui LINNMS.</p>
     </div>
-    <ul class="home-vendors list-unstyled d-flex flex-wrap justify-content-center gap-2 mb-0 py-2" aria-label="Vendor perangkat yang didukung">
+    <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-2 mb-0 py-2" aria-label="Vendor perangkat yang didukung">
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">ZTE</li>
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">HIOSO</li>
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Hisfocus</li>
@@ -165,7 +165,7 @@
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Cisco</li>
     </ul>
   </section>
-  <section class="home-feature-detail home-notifications container-xl">
+  <section class="home-feature-detail container-xl">
     <div class="row g-4 align-items-center">
     <div class="col-md-6 order-2 order-md-1"><figure class="card home-notification-visual p-4 mb-0">
       <figcaption>Integrasi notifikasi</figcaption>

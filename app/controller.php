@@ -25,7 +25,7 @@ final class PageController
 
     public function docs(): void
     {
-        $this->render('pages.docs.index', [
+        $this->render('pages.docs.installation', [
             'pageTitle' => 'Docs | LINNMS',
             'pageDescription' => 'Instalasi, pemetaan data, dan changelog LINNMS.',
             'activePage' => 'docs',
@@ -36,7 +36,7 @@ final class PageController
 
     public function dataMapping(): void
     {
-        $this->render('pages.docs.index', [
+        $this->render('pages.docs.pemetaan-data', [
             'pageTitle' => 'Pemetaan Data | LINNMS Docs',
             'pageDescription' => 'OID SNMP dan perintah Telnet untuk perangkat ZTE dan HIOSO.',
             'activePage' => 'docs',
@@ -47,7 +47,7 @@ final class PageController
 
     public function changelog(): void
     {
-        $this->render('pages.docs.index', [
+        $this->render('pages.docs.changelog', [
             'pageTitle' => 'Changelog | LINNMS Docs',
             'pageDescription' => 'Riwayat versi LINNMS.',
             'activePage' => 'docs',
