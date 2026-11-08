@@ -1,0 +1,18 @@
+{
+  "version": "1.0.2",
+  "date": null,
+  "published": true,
+  "changes": {
+    "Fixed": [
+      "Service WaGateway",
+      "Service Workers",
+      "Trafik Networking",
+      "Monitoring Event"
+    ],
+    "Changed": [
+      "Update Format pesan group notifikasi",
+      "Update riwayat notifikasi",
+      "Optimasi Edit Delete Device"
+    ]
+  }
+}

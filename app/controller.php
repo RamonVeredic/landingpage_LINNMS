@@ -48,6 +48,7 @@ final class PageController
             'pageDescription' => 'Riwayat versi LINNMS.',
             'activePage' => 'docs',
             'docSection' => 'changelog',
+            'changelogReleases' => changelog_releases(),
         ]);
     }
 
