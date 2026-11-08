@@ -43,17 +43,6 @@
   background: var(--bg);
   font-size: var(--font-xs);
 }
-.auth-sidebar {
-  width: 155px;
-  flex-shrink: 0;
-  background: var(--bg2);
-}
-.auth-sidebar .nav {
-  --bs-nav-link-padding-x: .5rem;
-  --bs-nav-link-padding-y: .375rem;
-}
-.auth-side-section,
-.auth-sidebar small,
 .auth-stat span {
   font-size: var(--font-micro);
 }

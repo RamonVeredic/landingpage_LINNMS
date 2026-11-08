@@ -1,6 +1,6 @@
 <main id="main">
   <section class="hero hero-product">
-    <div class="shell hero-grid container-xl d-flex flex-column align-items-center">
+    <div class="hero-grid container-xl d-flex flex-column align-items-center">
       <div class="hero-copy text-center w-100 mb-4">
         <div class="home-eyebrow">NETWORK MANAGEMENT SYSTEM</div>
         <h1 class="hero-title">Pantau perangkat jaringan Anda<br><span class="home-accent">Kelola dari satu tempat</span></h1>
@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-  <section class="home-benefits shell container-xl" id="fitur" aria-labelledby="features-heading">
+  <section class="home-benefits container-xl" id="fitur" aria-labelledby="features-heading">
     <hgroup class="home-section-heading d-block w-100 mw-100 text-center mb-5">
       <p class="small text-primary fw-semibold mb-2">FITUR PLATFORM</p>
       <h2 class="mt-0 mb-2" id="features-heading">Monitoring dan Pengelolaan Jaringan dalam Satu Platform</h2>
@@ -148,7 +148,7 @@
       </div>
     </div>
   </section>
-  <section class="home-support shell container-xl" id="perangkat">
+  <section class="home-support container-xl" id="perangkat">
     <div class="home-section-heading">
       <h2>Vendor yang didukung</h2>
       <p>Dukungan OLT, router, dan switch untuk pemantauan melalui LINNMS.</p>
@@ -165,7 +165,7 @@
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Cisco</li>
     </ul>
   </section>
-  <section class="home-feature-detail home-notifications shell container-xl">
+  <section class="home-feature-detail home-notifications container-xl">
     <div class="row g-4 align-items-center">
     <div class="col-md-6 order-2 order-md-1"><figure class="card home-notification-visual p-4 mb-0">
       <figcaption>Integrasi notifikasi</figcaption>
@@ -181,11 +181,11 @@
     </div></div>
     </div>
   </section>
-  <section class="home-cta-section shell container-xl">
+  <section class="home-cta-section container-xl">
     <div class="home-cta d-flex align-items-center justify-content-between flex-wrap gap-4 p-4">
       <div><h2>Coba LINNMS untuk jaringan Anda.</h2><p>Mulai dengan uji coba atau hubungi kami untuk pemesanan.</p></div>
       <div class="home-cta-actions d-flex flex-wrap gap-2"><a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
     </div>
-    <a class="home-install-link d-block text-center mt-4" href="/dokumentasi/instalasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    <a class="home-install-link d-block text-center mt-4" href="/dokumentasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </section>
 </main>

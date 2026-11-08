@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="shell container-xl footer-inner py-3">
+  <div class="container-xl footer-inner py-3">
     <div class="row gx-4 gy-3">
     <nav class="footer-group col-6 col-md-4" aria-labelledby="footer-pages-title">
       <h2 id="footer-pages-title" class="mb-2">Halaman</h2>
@@ -29,5 +29,5 @@
     </div>
     </div>
   </div>
-  <div class="shell container-xl footer-copy py-2">© <?= date('Y') ?> LINNMS</div>
+  <div class="container-xl footer-copy py-2">© <?= date('Y') ?> LINNMS</div>
 </footer>

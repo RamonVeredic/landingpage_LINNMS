@@ -1,6 +1,6 @@
 
 <header class="site-header">
-  <div class="shell container-xl navbar navbar-expand-lg linnms-navbar">
+  <div class="container-xl navbar navbar-expand-lg linnms-navbar">
     <a class="brand navbar-brand m-0" href="/">
       <img class="brand-logo" src="<?= asset('img/linnms-logo.png') ?>" alt="" width="44" height="44" decoding="async" />
       <span><strong>LINNMS</strong><small>NETWORK MANAGEMENT</small></span>

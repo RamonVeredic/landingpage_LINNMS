@@ -44,9 +44,6 @@
 .about-story p:last-child {
   margin-bottom: 0;
 }
-.about-focus-list {
-  margin-top: 24px;
-}
 .about-focus-item {
   border-top: 1px solid var(--line);
 }

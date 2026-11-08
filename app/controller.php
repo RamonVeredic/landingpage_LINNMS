@@ -27,39 +27,32 @@ final class PageController
     {
         $this->render('pages.docs.index', [
             'pageTitle' => 'Docs | LINNMS',
-            'pageDescription' => 'Cara instalasi, sumber data perangkat, dan catatan perubahan LINNMS.',
+            'pageDescription' => 'Instalasi, pemetaan data, dan changelog LINNMS.',
             'activePage' => 'docs',
-            'bodyClass' => 'docs-index-page',
-        ]);
-    }
-
-    public function installation(): void
-    {
-        $this->render('pages.docs.installation', [
-            'pageTitle' => 'Instalasi LINNMS | Docs',
-            'pageDescription' => 'Instalasi LINNMS dengan satu berkas Compose untuk server AMD64 dan ARM64.',
-            'activePage' => 'docs',
-            'bodyClass' => '',
+            'bodyClass' => 'docs-page',
+            'docSection' => 'installation',
         ]);
     }
 
     public function dataMapping(): void
     {
-        $this->render('pages.docs.pemetaan-data', [
-            'pageTitle' => 'Pemetaan Data Perangkat | Docs LINNMS',
-            'pageDescription' => 'OID SNMP dan perintah Telnet yang dipakai LINNMS untuk membaca data perangkat ZTE dan HIOSO.',
+        $this->render('pages.docs.index', [
+            'pageTitle' => 'Pemetaan Data | LINNMS Docs',
+            'pageDescription' => 'OID SNMP dan perintah Telnet untuk perangkat ZTE dan HIOSO.',
             'activePage' => 'docs',
-            'bodyClass' => '',
+            'bodyClass' => 'docs-page',
+            'docSection' => 'mapping',
         ]);
     }
 
     public function changelog(): void
     {
-        $this->render('pages.docs.changelog', [
-            'pageTitle' => 'Changelog | LINNMS',
-            'pageDescription' => 'Catatan perubahan LINNMS dari v1.0.0 sampai v1.0.3.',
+        $this->render('pages.docs.index', [
+            'pageTitle' => 'Changelog | LINNMS Docs',
+            'pageDescription' => 'Riwayat versi LINNMS.',
             'activePage' => 'docs',
-            'bodyClass' => '',
+            'bodyClass' => 'docs-page',
+            'docSection' => 'changelog',
         ]);
     }
 

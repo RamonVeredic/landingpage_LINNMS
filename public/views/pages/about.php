@@ -1,9 +1,9 @@
 <main id="main">
 
-  <div class="page-head shell container-xl about-head">
+  <div class="container-xl about-head">
     <nav class="mb-4" aria-label="Breadcrumb">
       <ol class="breadcrumb mb-0 small">
-        <li class="breadcrumb-item"><a class="link-body-emphasis" href="/">Beranda</a></li>
+        <li class="breadcrumb-item"><a class="link-body-emphasis text-success-emphasis" href="/">Beranda</a></li>
         <li class="breadcrumb-item active" aria-current="page">Tentang</li>
       </ol>
     </nav>
@@ -16,7 +16,7 @@
     </p>
   </div>
 
-  <div class="shell container-xl about-content">
+  <div class="container-xl about-content">
 
     <article class="about-story">
 
@@ -81,7 +81,7 @@
           mendukung aktivitas pengelolaan jaringan sehari-hari.
         </p>
 
-        <div class="about-focus-list">
+        <div class="mt-4">
           <section class="about-focus-item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
             <p class="col-md-8 mb-0">Menyajikan informasi dan kondisi perangkat
