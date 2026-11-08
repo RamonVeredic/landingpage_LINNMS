@@ -16,6 +16,39 @@ window.addEventListener('pageshow', event => {
 });
 
 document.addEventListener('DOMContentLoaded',()=>{
+ // Detect new asset deployments without asking visitors to clear browser cache.
+ const renderedAssetVersion = document.querySelector('meta[name="linnms-assets-version"]')?.content;
+ if (renderedAssetVersion) {
+  let checkingVersion = false;
+  let lastVersionCheck = 0;
+  let reloadingForUpdate = false;
+  const checkAssetVersion = async () => {
+   if (document.hidden || checkingVersion || reloadingForUpdate) return;
+   checkingVersion = true;
+   lastVersionCheck = Date.now();
+   try {
+    const response = await fetch('/__asset-version', {method: 'HEAD', cache: 'no-store'});
+    if (!response.ok) return;
+    const availableVersion = response.headers.get('X-LINNMS-Assets-Version');
+    if (availableVersion && availableVersion !== renderedAssetVersion) {
+     reloadingForUpdate = true;
+     window.location.reload();
+    }
+   } catch {
+    // A temporary connection error must not interrupt the current page.
+   } finally {
+    checkingVersion = false;
+   }
+  };
+  // Check every 30 seconds while visible, and after returning to an older tab.
+  window.setInterval(checkAssetVersion, 30000);
+  document.addEventListener('visibilitychange', () => {
+   if (!document.hidden) checkAssetVersion();
+  });
+  window.addEventListener('focus', () => {
+   if (Date.now() - lastVersionCheck >= 5000) checkAssetVersion();
+  });
+ }
  document.querySelectorAll('.linnms__nav__link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
   const menu=document.getElementById('primary-nav');
   if(menu?.classList.contains('show')&&window.bootstrap){bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide()}
