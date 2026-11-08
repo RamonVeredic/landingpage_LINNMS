@@ -1,0 +1,16 @@
+{
+  "version": "1.0.3",
+  "date": null,
+  "published": true,
+  "changes": {
+    "Fixed": [
+      "Service kapaabilitas",
+      "Scanning coverage",
+      "Bug view OLT ZTE, Switch"
+    ],
+    "Added": [
+      "flexsibilitas setting admin",
+      "Worker change"
+    ]
+  }
+}
