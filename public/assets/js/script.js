@@ -1,6 +1,6 @@
 const dismissPageLoader = () => {
  const loader = document.getElementById('linnms__loader__page');
- document.documentElement.classList.remove('linnms__loading__is');
+ document.documentElement.classList.remove('linnms__page__loading');
  loader?.remove();
 };
 const finishPageLoading = () => {
@@ -16,44 +16,11 @@ window.addEventListener('pageshow', event => {
 });
 
 document.addEventListener('DOMContentLoaded',()=>{
- // Detect new asset deployments without asking visitors to clear browser cache.
- const renderedAssetVersion = document.querySelector('meta[name="linnms-assets-version"]')?.content;
- if (renderedAssetVersion) {
-  let checkingVersion = false;
-  let lastVersionCheck = 0;
-  let reloadingForUpdate = false;
-  const checkAssetVersion = async () => {
-   if (document.hidden || checkingVersion || reloadingForUpdate) return;
-   checkingVersion = true;
-   lastVersionCheck = Date.now();
-   try {
-    const response = await fetch('/__asset-version', {method: 'HEAD', cache: 'no-store'});
-    if (!response.ok) return;
-    const availableVersion = response.headers.get('X-LINNMS-Assets-Version');
-    if (availableVersion && availableVersion !== renderedAssetVersion) {
-     reloadingForUpdate = true;
-     window.location.reload();
-    }
-   } catch {
-    // A temporary connection error must not interrupt the current page.
-   } finally {
-    checkingVersion = false;
-   }
-  };
-  // Check every 30 seconds while visible, and after returning to an older tab.
-  window.setInterval(checkAssetVersion, 30000);
-  document.addEventListener('visibilitychange', () => {
-   if (!document.hidden) checkAssetVersion();
-  });
-  window.addEventListener('focus', () => {
-   if (Date.now() - lastVersionCheck >= 5000) checkAssetVersion();
-  });
- }
- document.querySelectorAll('.linnms__nav__link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
+ document.querySelectorAll('.linnms__header__link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
   const menu=document.getElementById('primary-nav');
   if(menu?.classList.contains('show')&&window.bootstrap){bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide()}
  }));
- document.querySelectorAll('.manual-code pre').forEach(pre=>pre.addEventListener('wheel',event=>{
+ document.querySelectorAll('.linnms__docs__code pre').forEach(pre=>pre.addEventListener('wheel',event=>{
   if(event.ctrlKey||event.deltaY===0)return;
   const atTop=pre.scrollTop<=0;
   const atBottom=pre.scrollTop+pre.clientHeight>=pre.scrollHeight-1;
@@ -62,9 +29,8 @@ document.addEventListener('DOMContentLoaded',()=>{
    window.scrollBy(0,event.deltaY);
   }
  },{passive:false}));
- // Sorot bagian dokumentasi yang sedang dibaca (instalasi, pemetaan, changelog).
- const manualSections = [...document.querySelectorAll('.manual-method[id]')];
- const manualSectionLinks = [...document.querySelectorAll('.manual-nav-sub a[href^="#"], .manual-method-nav a[href^="#"]')];
+ const manualSections = [...document.querySelectorAll('.linnms__docs__method[id]')];
+ const manualSectionLinks = [...document.querySelectorAll('.linnms__docs__nav-sub a[href^="#"], .linnms__docs__method-nav a[href^="#"]')];
  if (manualSections.length && manualSectionLinks.length) {
   let manualScrollFrame = null;
   const updateManualSectionNav = () => {

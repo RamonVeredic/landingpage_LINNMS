@@ -1,15 +1,15 @@
 <?php require BASE_PATH . '/public/views/partials/docs-open.php'; ?>
-      <section class="manual-section" id="instalasi" aria-labelledby="instalasi-title">
+      <section class="linnms__docs__section" id="instalasi" aria-labelledby="instalasi-title">
         <h2 id="instalasi-title">Panduan Instalasi LINNMS</h2>
-        <p class="manual-intro">Pilih satu metode instalasi. Image LINNMS tersedia untuk AMD64 dan ARM64; Docker akan mengambil varian yang sesuai dengan server.</p>
-        <nav class="manual-method-nav d-flex flex-wrap gap-2" aria-label="Bagian panduan instalasi">
+        <p class="linnms__docs__intro">Pilih satu metode instalasi. Image LINNMS tersedia untuk AMD64 dan ARM64; Docker akan mengambil varian yang sesuai dengan server.</p>
+        <nav class="linnms__docs__method-nav d-flex flex-wrap gap-2" aria-label="Bagian panduan instalasi">
           <a href="#docker-compose">Docker Compose</a>
           <a href="#casaos">CasaOS</a>
           <a href="#periksa-error">Periksa error</a>
         </nav>
-        <section class="manual-method" id="docker-compose" aria-labelledby="docker-title">
+        <section class="linnms__docs__method" id="docker-compose" aria-labelledby="docker-title">
           <h3 id="docker-title">Docker Compose</h3>
-          <ol class="manual-steps">
+          <ol class="linnms__docs__steps">
             <li>
               <strong>Siapkan Docker Engine dan plugin Compose.</strong>
               <p>Pastikan <code>docker --version</code> dan <code>docker compose version</code> berjalan. Periksa <code>uname -m</code>: <code>x86_64</code> berarti AMD64, sedangkan <code>aarch64</code> berarti ARM64. Server perlu akses ke GHCR dan Docker Hub untuk mengunduh image.</p>
@@ -17,8 +17,8 @@
             <li>
               <strong>Buat direktori dan berkas Compose.</strong>
               <p>Jalankan <code>mkdir -p linnms &amp;&amp; cd linnms</code>, lalu simpan YAML berikut sebagai <code>compose.yaml</code>. Port HTTP bawaan adalah <code>84</code>; port HTTPS container dipetakan ke <code>4143</code>.</p>
-              <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>compose.yaml</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+              <div class="linnms__docs__code" data-code>
+                <div class="linnms__docs__code-head"><span>compose.yaml</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>name: linnms
 services:
   app:
@@ -76,8 +76,8 @@ volumes:
             <li>
               <strong>Validasi dan jalankan layanan.</strong>
               <p>Jalankan perintah ini dari direktori yang berisi <code>compose.yaml</code>.</p>
-              <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>Terminal</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+              <div class="linnms__docs__code" data-code>
+                <div class="linnms__docs__code-head"><span>Terminal</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml up -d
 docker compose -f compose.yaml ps</code></pre>
@@ -89,9 +89,9 @@ docker compose -f compose.yaml ps</code></pre>
             </li>
           </ol>
         </section>
-        <section class="manual-method" id="casaos" aria-labelledby="casaos-title">
+        <section class="linnms__docs__method" id="casaos" aria-labelledby="casaos-title">
           <h3 id="casaos-title">CasaOS</h3>
-          <ol class="manual-steps">
+          <ol class="linnms__docs__steps">
             <li>
               <strong>Buka instalasi aplikasi kustom.</strong>
               <p>Di beranda CasaOS, klik <code>+</code> pada daftar aplikasi, pilih <code>Install a customized app</code>, lalu <code>Import</code>. Gunakan YAML CasaOS di bawah.</p>
@@ -103,8 +103,8 @@ docker compose -f compose.yaml ps</code></pre>
             <li>
               <strong>Impor YAML dan pasang aplikasi.</strong>
               <p>Salin seluruh YAML berikut ke fitur impor CasaOS, periksa hasil impornya, lalu jalankan instalasi.</p>
-              <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>casaos-compose.yaml</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+              <div class="linnms__docs__code" data-code>
+                <div class="linnms__docs__code-head"><span>casaos-compose.yaml</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>name: LINNMS
 services:
   app:
@@ -196,11 +196,11 @@ x-casaos:
             </li>
           </ol>
         </section>
-        <section class="manual-method" id="periksa-error" aria-labelledby="error-title">
+        <section class="linnms__docs__method" id="periksa-error" aria-labelledby="error-title">
           <h3 id="error-title">Periksa pesan error</h3>
           <p>Untuk Docker Compose, jalankan perintah ini dari direktori <code>compose.yaml</code>. Hasilnya menunjukkan kesalahan konfigurasi, status container, dan log aplikasi serta database.</p>
-          <div class="manual-code" data-code>
-            <div class="manual-code-head"><span>Terminal</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+          <div class="linnms__docs__code" data-code>
+            <div class="linnms__docs__code-head"><span>Terminal</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
             <pre><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml ps --all
 docker compose -f compose.yaml logs --tail=100 app db</code></pre>

@@ -2,13 +2,13 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
 }
-html.linnms__loading__is {
+html.linnms__page__loading {
   overflow: hidden;
 }
 body {
   -webkit-font-smoothing: antialiased;
 }
-#main:not(.manual-page) {
+#main:not(.linnms__docs__page) {
   padding-block: clamp(1.5rem, 4vw, 3rem);
 }
 a {
@@ -36,10 +36,10 @@ summary:focus-visible {
   outline: 2px solid var(--brand-accent);
   outline-offset: 4px;
 }
-.linnms__loader__page {
+.linnms__page__loader {
   display: none;
 }
-.linnms__loading__is .linnms__loader__page {
+.linnms__page__loading .linnms__page__loader {
   position: fixed;
   inset: 0;
   z-index: 2000;
@@ -48,7 +48,7 @@ summary:focus-visible {
   background: var(--bs-dark);
   color: var(--brand-accent);
 }
-.linnms__loader__page .spinner-grow {
+.linnms__page__loader .spinner-grow {
   width: 3rem;
   height: 3rem;
 }
@@ -61,23 +61,23 @@ summary:focus-visible {
   border-bottom: 1px solid var(--line);
   padding:0 0.8rem;
 }
-.linnms__branding {
+.linnms__header__brand {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
   gap: 10px;
 }
-.linnms__branding > span:last-child {
+.linnms__header__brand > span:last-child {
   display: grid;
   line-height: 1.1;
 }
-.linnms__branding strong {
+.linnms__header__brand strong {
   font-family: var(--heading);
   font-weight: 800;
   font-size: var(--font__lg);
   letter-spacing: -0.045em;
 }
-.linnms__branding small {
+.linnms__header__brand small {
   margin-top: 6px;
   font-family: var(--font);
   font-weight: 700;
@@ -86,7 +86,7 @@ summary:focus-visible {
   color: var(--text-muted);
   white-space: nowrap;
 }
-.footer__linnms__body {
+.linnms__footer__page {
   border-top: 1px solid var(--line);
   background: var(--bs-dark-seconery);
   font-size: var(--font__sm);
@@ -102,7 +102,7 @@ summary:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
-.linnms__logo {
+.linnms__header__logo {
   width: 34px;
   height: 34px;
   object-fit: contain;
@@ -111,31 +111,31 @@ summary:focus-visible {
   filter: drop-shadow(0 6px 18px var(--logo-shadow));
 }
 @media (max-width: 560px) {
-  .linnms__branding small {
+  .linnms__header__brand small {
     letter-spacing: 0.05em;
   }
 }
 .btn .linnms__cta__btn {
   min-width: 160px;
 }
-.linnms__header__page .linnms__branding strong {
+.linnms__header__page .linnms__header__brand strong {
   font-size: var(--font__md);
 }
-.linnms__header__page .linnms__branding small {
+.linnms__header__page .linnms__header__brand small {
   font-size: var(--font__micro);
 }
 @media (max-width: 820px) {
-  .linnms__header__page .linnms__logo {
+  .linnms__header__page .linnms__header__logo {
     width: 32px;
     height: 32px;
   }
 }
-.linnms__nav {
+.linnms__header__nav {
   min-height: 62px;
   gap: 12px;
   --bs-navbar-padding-y: 8px;
 }
-.linnms__nav .linnms__nav__link {
+.linnms__header__nav .linnms__header__link {
   height: 36px;
   padding: 0 12px;
   color: var(--text-secondary);
@@ -144,95 +144,95 @@ summary:focus-visible {
   white-space: nowrap;
   border-radius: 6px;
 }
-.linnms__nav .linnms__nav__link:hover,
-.linnms__nav .linnms__nav__link[aria-current="page"] {
+.linnms__header__nav .linnms__header__link:hover,
+.linnms__header__nav .linnms__header__link[aria-current="page"] {
   color: var(--brand-accent-hover);
 }
-.linnms__nav .linnms__nav__link[aria-current="page"] {
+.linnms__header__nav .linnms__header__link[aria-current="page"] {
   text-decoration-color: var(--brand-accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 7px;
 }
-.linnms__nav .linnms__cta__nav.btn {
+.linnms__header__nav .linnms__header__cta.btn {
   width: 104px;
   min-width: 104px;
   height: 36px;
   padding: 0 10px;
   font-size: var(--font__sm);
 }
-.linnms__nav .linnms__nav__toggle {
+.linnms__header__nav .linnms__header__toggle {
   width: 40px;
   height: 40px;
   padding: 7px;
   border-radius: 8px;
   box-shadow: none;
 }
-.linnms__nav .linnms__nav__toggle .bi {
+.linnms__header__nav .linnms__header__toggle .bi {
   color: var(--brand-accent-hover);
   font-size: 24px;
   line-height: 1;
 }
 @media (max-width: 991.98px) {
-  .linnms__nav .navbar-collapse {
+  .linnms__header__nav .navbar-collapse {
     flex-basis: 100%;
     width: 100%;
   }
-  .linnms__nav .navbar-collapse.collapsing {
+  .linnms__header__nav .navbar-collapse.collapsing {
     overflow: hidden;
   }
-  .linnms__nav .navbar-collapse.show {
+  .linnms__header__nav .navbar-collapse.show {
     max-height: calc(100dvh - 62px);
     overflow-y: auto;
   }
-  .linnms__nav .navbar-collapse.show,
-  .linnms__nav .navbar-collapse.collapsing {
+  .linnms__header__nav .navbar-collapse.show,
+  .linnms__header__nav .navbar-collapse.collapsing {
     margin-top: 8px;
     padding: 12px 0 6px;
     border-top: 1px solid var(--border-muted);
   }
-  .linnms__nav .linnms__nav__link {
+  .linnms__header__nav .linnms__header__link {
     justify-content: flex-start;
     width: 100%;
     height: 42px;
     padding: 0 14px;
   }
-  .linnms__nav .navbar-nav > .dropdown {
+  .linnms__header__nav .navbar-nav > .dropdown {
     margin-top: 10px;
     padding-top: 12px;
     border-top: 1px solid var(--border-muted);
   }
-  .linnms__nav .dropdown-menu {
+  .linnms__header__nav .dropdown-menu {
     width: min(100%, 220px);
     margin-top: 6px;
   }
 }
-.linnms__inner__footer {
+.linnms__footer__inner {
   max-width: 960px;
   border-bottom: 1px solid var(--line);
 }
-.linnms__group__footer {
+.linnms__footer__group {
   min-width: 0;
 }
-.linnms__group__footer h2 {
+.linnms__footer__group h2 {
   color: var(--text-primary);
   font: 600 var(--font__md)/1.5 var(--font);
 }
-.footer__linnms__nav  a,
-.footer__linnms a,
-.footer-contact.contact-links a {
+.linnms__footer__nav  a,
+.linnms__footer__social a,
+.linnms__footer__contact.linnms__contact__links a {
   min-height: 32px;
   color: var(--text-secondary);
   font-size: inherit;
 }
-.footer__linnms.bi,
-.footer-contact .bi {
+.linnms__footer__social.bi,
+.linnms__footer__contact .bi {
   flex-shrink: 0;
   font-size: 1em;
   color: var(--text-muted);
 }
-.footer__linnms__nav  a:hover,
-.footer__linnms a:hover,
-.contact-links a:hover {
+.linnms__footer__nav  a:hover,
+.linnms__footer__social a:hover,
+.linnms__contact__links a:hover {
   color: var(--brand-accent-hover);
 }
 .linnms__footer__copyright {
@@ -241,17 +241,17 @@ summary:focus-visible {
   color: var(--text-muted);
   font-size: var(--font__sm);
 }
-.contact-links li {
+.linnms__contact__links li {
   min-width: 0;
 }
-.contact-links a {
+.linnms__contact__links a {
   font-family: var(--font);
   font-size: var(--font__md);
   font-weight: 400;
   line-height: 1.5;
   white-space: nowrap;
 }
-.contact-links .bi {
+.linnms__contact__links .bi {
   flex-shrink: 0;
   color: var(--brand-accent-hover);
   font-size: 1em;
@@ -259,12 +259,12 @@ summary:focus-visible {
 }
 :where(
   .btn,
-  .linnms__nav__toggle,
-  .linnms__nav__link,
+  .linnms__header__toggle,
+  .linnms__header__link,
   .dropdown-item,
-  .footer__linnms__body a,
-  .contact-links a,
-  .home-install-link
+  .linnms__footer__page a,
+  .linnms__contact__links a,
+  .linnms__home__install-link
 ) {
   transition:
     color var(--interaction-duration) ease,
@@ -274,39 +274,39 @@ summary:focus-visible {
     transform var(--interaction-duration) var(--interaction-easing);
 }
 .btn:active,
-.linnms__nav__toggle:active {
+.linnms__header__toggle:active {
   transform: scale(0.98);
 }
-.footer__linnms__body a,
-.contact-links a,
-.home-install-link {
+.linnms__footer__page a,
+.linnms__contact__links a,
+.linnms__home__install-link {
   text-decoration-color: rgba(0, 0, 0, 0);
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 }
-.footer__linnms__body a:focus-visible,
-.contact-links a:focus-visible,
-.home-install-link:focus-visible {
+.linnms__footer__page a:focus-visible,
+.linnms__contact__links a:focus-visible,
+.linnms__home__install-link:focus-visible {
   color: var(--brand-accent-hover);
   text-decoration-color: currentColor;
 }
-.footer__linnms__body a .bi,
-.contact-links a .bi {
+.linnms__footer__page a .bi,
+.linnms__contact__links a .bi {
   transition: color var(--interaction-duration) ease;
 }
-.linnms__nav .linnms__nav__link:focus-visible,
+.linnms__header__nav .linnms__header__link:focus-visible,
 .dropdown-item:focus-visible {
   color: var(--brand-accent-hover);
   background-color: var(--brand-accent-subtle);
 }
 @media (hover: hover) and (pointer: fine) {
-  .linnms__nav .linnms__nav__link:hover,
-  .linnms__nav .linnms__nav__toggle:hover {
+  .linnms__header__nav .linnms__header__link:hover,
+  .linnms__header__nav .linnms__header__toggle:hover {
     background-color: var(--brand-accent-subtle);
   }
 
-  .footer__linnms__body a:hover .bi,
-  .contact-links a:hover .bi {
+  .linnms__footer__page a:hover .bi,
+  .linnms__contact__links a:hover .bi {
     color: var(--brand-accent-hover);
   }
   .breadcrumb-item.active {

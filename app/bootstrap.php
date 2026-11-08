@@ -23,19 +23,6 @@ function handle_request(array $config): void
 
     $canonical = rtrim($path, '/') ?: '/';
 
-    // Lightweight uncached version probe for tabs that remain open during deploys.
-    if ($canonical === '/__asset-version') {
-        if (!in_array($method, ['GET', 'HEAD'], true)) {
-            header('Allow: GET, HEAD');
-            $controller->error(405);
-            return;
-        }
-        header('Cache-Control: no-store, max-age=0');
-        header('X-LINNMS-Assets-Version: ' . asset_bundle_version());
-        http_response_code(204);
-        return;
-    }
-
     $action = $config['pages'][$canonical] ?? null;
     $redirect = $config['redirects'][$canonical] ?? null;
 

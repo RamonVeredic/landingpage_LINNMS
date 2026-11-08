@@ -1,6 +1,6 @@
 <main id="main">
 
-  <div class="container-xl about-head">
+  <div class="container-xl linnms__about__head">
     <nav class="mb-4" aria-label="Breadcrumb">
       <ol class="breadcrumb mb-0 small">
         <li class="breadcrumb-item"><a class="link-body-emphasis text-success-emphasis" href="/">Beranda</a></li>
@@ -16,11 +16,11 @@
     </p>
   </div>
 
-  <div class="container-xl about-content">
+  <div class="container-xl linnms__about__content">
 
-    <article class="about-story">
+    <article class="linnms__about__story">
 
-      <section class="about-section" aria-labelledby="about-intro-title">
+      <section class="linnms__about__section" aria-labelledby="about-intro-title">
         <h2 id="about-intro-title">
           Apa itu LINNMS?
         </h2>
@@ -50,7 +50,7 @@
         </p>
       </section>
 
-      <section class="about-section" aria-labelledby="about-purpose-title">
+      <section class="linnms__about__section" aria-labelledby="about-purpose-title">
         <h2 id="about-purpose-title">
           Tujuan Pengembangan
         </h2>
@@ -71,7 +71,7 @@
         </p>
       </section>
 
-      <section class="about-section" aria-labelledby="about-features-title">
+      <section class="linnms__about__section" aria-labelledby="about-features-title">
         <h2 id="about-features-title">
           Fokus dan Fungsionalitas
         </h2>
@@ -82,28 +82,28 @@
         </p>
 
         <div class="mt-4">
-          <section class="about-focus-item row g-3 py-4">
+          <section class="linnms__about__focus-item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
             <p class="col-md-8 mb-0">Menyajikan informasi dan kondisi perangkat
                   jaringan untuk membantu operator melakukan
                   pemantauan serta mengidentifikasi perangkat
                   yang memerlukan perhatian.</p>
           </section>
-          <section class="about-focus-item row g-3 py-4">
+          <section class="linnms__about__focus-item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Pengelolaan OLT dan ONU</span></h3>
             <p class="col-md-8 mb-0">Memusatkan informasi perangkat OLT dan ONU
                   untuk mempermudah penelusuran serta
                   pemantauan infrastruktur jaringan akses
                   fiber optik.</p>
           </section>
-          <section class="about-focus-item row g-3 py-4">
+          <section class="linnms__about__focus-item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-activity" aria-hidden="true"></i><span>Aktivitas Jaringan</span></h3>
             <p class="col-md-8 mb-0">Menampilkan informasi aktivitas jaringan
                   untuk memberikan gambaran operasional
                   dan membantu proses pemeriksaan ketika
                   ditemukan kondisi yang tidak sesuai.</p>
           </section>
-          <section class="about-focus-item row g-3 py-4">
+          <section class="linnms__about__focus-item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-bell" aria-hidden="true"></i><span>Informasi dan Notifikasi</span></h3>
             <p class="col-md-8 mb-0">Menyediakan notifikasi dan informasi
                   penting untuk membantu operator mengetahui
@@ -113,7 +113,7 @@
         </div>
       </section>
 
-      <section class="about-section" aria-labelledby="about-benefits-title">
+      <section class="linnms__about__section" aria-labelledby="about-benefits-title">
         <h2 id="about-benefits-title">
           Mengapa LINNMS?
         </h2>
@@ -124,14 +124,14 @@
           efisiensi dalam aktivitas operasional jaringan.
         </p>
 
-        <ul class="about-benefits-list row row-cols-1 row-cols-md-2 g-4 list-unstyled mt-0 mb-0">
+        <ul class="linnms__about__benefits-list row row-cols-1 row-cols-md-2 g-4 list-unstyled mt-0 mb-0">
 
           <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
               <strong>Informasi Terpusat</strong>
-              <p class="about-benefit-description">
+              <p class="linnms__about__benefit-description">
                 Informasi perangkat dan aktivitas jaringan
                 dapat diakses melalui satu antarmuka.
               </p>
@@ -143,7 +143,7 @@
                aria-hidden="true"></i>
             <div>
               <strong>Monitoring Lebih Terarah</strong>
-              <p class="about-benefit-description">
+              <p class="linnms__about__benefit-description">
                 Membantu operator menemukan informasi perangkat
                 dan menelusuri kondisi yang perlu diperiksa.
               </p>
@@ -155,7 +155,7 @@
                aria-hidden="true"></i>
             <div>
               <strong>Antarmuka Mudah Dipahami</strong>
-              <p class="about-benefit-description">
+              <p class="linnms__about__benefit-description">
                 Mengutamakan penyajian informasi teknis
                 yang terstruktur, jelas, dan mudah dibaca.
               </p>
@@ -167,7 +167,7 @@
                aria-hidden="true"></i>
             <div>
               <strong>Fokus pada Kebutuhan Operator</strong>
-              <p class="about-benefit-description">
+              <p class="linnms__about__benefit-description">
                 Dirancang untuk mendukung pekerjaan monitoring
                 dan pengelolaan perangkat jaringan sehari-hari.
               </p>
@@ -177,7 +177,7 @@
         </ul>
       </section>
 
-      <section class="about-section" aria-labelledby="about-dev-title">
+      <section class="linnms__about__section" aria-labelledby="about-dev-title">
         <h2 id="about-dev-title">
           Pengembangan LINNMS
         </h2>
@@ -205,12 +205,12 @@
         </p>
       </section>
 
-      <section class="about-section" aria-labelledby="about-vision-title">
+      <section class="linnms__about__section" aria-labelledby="about-vision-title">
         <h2 id="about-vision-title">
           Visi LINNMS
         </h2>
 
-        <blockquote class="about-quote">
+        <blockquote class="linnms__about__quote">
           <p class="mb-0">
             Menghadirkan sistem manajemen jaringan yang
             sederhana, informatif, dan efisien untuk membantu
@@ -227,7 +227,7 @@
           yang dibutuhkan operator.
         </p>
 
-        <p class="about-attribution">
+        <p class="linnms__about__attribution">
           <strong>LINNMS</strong> — Simplifying Network Monitoring
           &amp; Management.
           <span class="d-block mt-1">
@@ -238,7 +238,7 @@
 
     </article>
 
-    <section class="about-contact"
+    <section class="linnms__about__contact"
              id="kontak"
              aria-labelledby="about-contact-title">
 
@@ -252,7 +252,7 @@
         mengenai aplikasi, uji coba, atau pemesanan.
       </p>
 
-      <ul class="contact-links row row-cols-1 row-cols-md-3 g-3 list-unstyled mt-3 mb-0">
+      <ul class="linnms__contact__links row row-cols-1 row-cols-md-3 g-3 list-unstyled mt-3 mb-0">
 
         <li class="col">
           <a class="d-flex align-items-center gap-2 py-2" href="mailto:hello@example.com">

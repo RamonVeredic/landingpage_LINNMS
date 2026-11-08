@@ -2,7 +2,7 @@
 <html lang="id" data-bs-theme="dark">
 <?php require BASE_PATH . '/public/views/partials/head.php'; ?>
 <body>
-<div class="linnms__loader__page" id="linnms__loader__page">
+<div class="linnms__page__loader" id="linnms__loader__page">
   <div class="spinner-grow" role="status">
     <span class="visually-hidden">Memuat halaman...</span>
   </div>
