@@ -38,12 +38,11 @@
               </div>
             <?php endforeach; ?>
             <?php foreach (($release['sections'] ?? []) as $section): ?>
-              <?php if (!is_array($section)) continue; ?>
+              <?php if (!is_array($section) || !is_array($section['groups'] ?? null)) continue; ?>
               <div class="manual-release-group">
                 <?php if (is_string($section['title'] ?? null) && $section['title'] !== ''): ?>
                 <h5><?= e($section['title']) ?></h5>
                 <?php endif; ?>
-                <?php if (!is_array($section['groups'] ?? null)) continue; ?>
                 <?php foreach ($section['groups'] as $group): ?>
                   <?php if (!is_array($group)) continue; ?>
                   <?php if (is_string($group['title'] ?? null) && $group['title'] !== ''): ?>
