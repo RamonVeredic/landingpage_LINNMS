@@ -36,22 +36,9 @@
             <?php endif; ?>
           </header>
           <div class="manual-release-body">
-            <h4>Changelog</h4>
-            <?php foreach (($release['changes'] ?? []) as $category => $items): ?>
-              <?php if (!is_string($category) || !is_array($items) || !$items) continue; ?>
-              <?php $categoryTitle = ['Fixed' => 'Perbaikan', 'Added' => 'Penambahan', 'Changed' => 'Perubahan', 'Removed' => 'Penghapusan'][$category] ?? $category; ?>
-              <div class="manual-release-group">
-                <h5><?= e($categoryTitle) ?></h5>
-                <ul class="manual-changes">
-                  <?php foreach ($items as $item): ?>
-                    <?php if (is_string($item) && $item !== ''): ?>
-                    <li><?= e($item) ?></li>
-                    <?php endif; ?>
-                  <?php endforeach; ?>
-                </ul>
-              </div>
-            <?php endforeach; ?>
-            <?php foreach (($release['sections'] ?? []) as $section): ?>
+            <?php if (!empty($release['sections'])): ?>
+            <h4>Rincian rilis</h4>
+            <?php foreach ($release['sections'] as $section): ?>
               <?php if (!is_array($section) || !is_array($section['groups'] ?? null)) continue; ?>
               <div class="manual-release-group">
                 <?php if (is_string($section['title'] ?? null) && $section['title'] !== ''): ?>
@@ -74,6 +61,27 @@
                 <?php endforeach; ?>
               </div>
             <?php endforeach; ?>
+            <?php endif; ?>
+            <h4 class="manual-release-changelog-heading">Changelog v<?= e($release['version']) ?></h4>
+            <?php
+              $notes = $release['changelog'] ?? [];
+              // Legacy JSON records can still use changes. Do not auto-label them.
+              foreach (($release['changes'] ?? []) as $items) {
+                  if (!is_array($items)) continue;
+                  foreach ($items as $item) {
+                      if (is_string($item) && trim($item) !== '') $notes[] = $item;
+                  }
+              }
+            ?>
+            <?php if ($notes): ?>
+            <ul class="manual-changes manual-changelog-list">
+              <?php foreach ($notes as $note): ?>
+              <li><?= e($note) ?></li>
+              <?php endforeach; ?>
+            </ul>
+            <?php else: ?>
+            <p class="manual-note">Belum ada catatan perubahan terpisah untuk versi ini.</p>
+            <?php endif; ?>
           </div>
         </section>
         <?php endforeach; ?>
