@@ -22,11 +22,16 @@ function asset(string $path): string
 }
 
 /**
- * Lightweight fingerprint of the public asset tree for checking whether a
- * currently open browser tab is using an outdated deployment.
+ * Content fingerprint of every public asset. Unlike timestamps, this detects
+ * equal-sized edits made within the same second as well.
  */
 function asset_bundle_version(): string
 {
+    static $version = null;
+    if ($version !== null) {
+        return $version;
+    }
+
     $directory = BASE_PATH . '/public/assets';
     if (!is_dir($directory)) {
         return 'missing-assets';
@@ -41,11 +46,15 @@ function asset_bundle_version(): string
             continue;
         }
         $relativePath = substr($file->getPathname(), strlen($directory) + 1);
-        $entries[] = $relativePath . ':' . $file->getMTime() . ':' . $file->getSize();
+        $contentHash = hash_file('sha256', $file->getPathname());
+        if ($contentHash !== false) {
+            $entries[] = $relativePath . ':' . $contentHash;
+        }
     }
     sort($entries, SORT_STRING);
 
-    return substr(hash('sha256', implode("\n", $entries)), 0, 16);
+    $version = substr(hash('sha256', implode("\n", $entries)), 0, 16);
+    return $version;
 }
 
 function e(string $value): string
