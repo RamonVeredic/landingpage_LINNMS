@@ -426,6 +426,24 @@
 .manual-release-group + .manual-release-group {
   margin-top: 14px;
 }
+/* Notes are distinct from the release's device/support description. */
+.manual-release .manual-release-changelog-heading {
+  margin-top: 30px;
+}
+.manual-release-group + .manual-release-changelog-heading {
+  padding-top: 22px;
+  border-top: 2px solid var(--border-strong);
+}
+.manual-release .manual-release-changelog-heading:first-child {
+  margin-top: 0;
+}
+.manual-changelog-list {
+  padding: 18px 20px;
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--brand-accent-border);
+  border-radius: 12px;
+  background: var(--panel2);
+}
 /* Explicit rule between consecutive versions; not just the card outlines. */
 .manual-release-divider {
   display: block;
@@ -603,7 +621,8 @@
   .manual-release-body {
     padding: 18px 16px 20px;
   }
-  .manual-release-group {
+  .manual-release-group,
+  .manual-changelog-list {
     padding: 15px 14px;
   }
   .manual-release-intro {
