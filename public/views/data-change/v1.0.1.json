@@ -1,7 +1,7 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.1",
   "date": null,
-  "published": true,
+  "published": false,
   "changelog": [
     "fix:Service WaGateway",
     "fix:Service Workers",
