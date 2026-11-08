@@ -13,9 +13,10 @@
 }
 .manual-layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: clamp(20px, 5vw, 72px);
   padding-top: 40px;
+  
 }
 .manual-nav {
   position: sticky;
