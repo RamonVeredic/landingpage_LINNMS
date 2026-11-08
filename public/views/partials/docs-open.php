@@ -7,11 +7,11 @@
         <li class="breadcrumb-item active" aria-current="page">Docs</li>
         <?php else: ?>
         <li class="breadcrumb-item"><a class="link-body-emphasis text-success-emphasis" href="/dokumentasi">Docs</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><?= $docSection === 'mapping' ? 'Pemetaan Data' : 'Changelog' ?></li>
+        <li class="breadcrumb-item active" aria-current="page"><?= $docSection === 'mapping' ? 'Pemetaan Data' : 'Release' ?></li>
         <?php endif; ?>
       </ol>
     </nav>
-    <h1>Docs</h1>
+    <h1><?= $docSection === 'changelog' ? 'Release' : 'Docs' ?></h1>
   </header>
   <div class="manual-layout container-xl">
     <nav class="manual-nav" aria-label="Isi Docs">
@@ -31,7 +31,7 @@
         <a href="#hioso">HIOSO</a>
       </div>
       <?php endif; ?>
-      <a href="/dokumentasi/changelog" <?= $docSection === 'changelog' ? 'class="active" aria-current="page"' : '' ?>>Changelog</a>
+      <a href="/dokumentasi/changelog" <?= $docSection === 'changelog' ? 'class="active" aria-current="page"' : '' ?>>Release</a>
       <?php if ($docSection === 'changelog' && !empty($changelogReleases)): ?>
       <div class="manual-nav-sub">
         <?php foreach ($changelogReleases as $release): ?>

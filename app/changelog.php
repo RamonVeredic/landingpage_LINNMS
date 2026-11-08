@@ -43,14 +43,20 @@ function changelog_releases(): array
 
         $hasChanges = is_array($release['changes'] ?? null) && $release['changes'] !== [];
         $hasSections = is_array($release['sections'] ?? null) && $release['sections'] !== [];
-        if (!$hasChanges && !$hasSections) {
-            error_log('Changelog has no changes or sections: ' . basename($file));
+        // Prefer an ordered verbatim changelog list; do not invent category labels.
+        $changelog = is_array($release['changelog'] ?? null)
+            ? array_values(array_filter($release['changelog'],
+                static fn ($item): bool => is_string($item) && trim($item) !== ''))
+            : [];
+        if (!$hasChanges && !$hasSections && !$changelog) {
+            error_log('Release has no description or changelog: ' . basename($file));
             continue;
         }
 
         // Ignore malformed optional fields instead of emitting PHP foreach warnings.
         $release['changes'] = $hasChanges ? $release['changes'] : [];
         $release['sections'] = $hasSections ? $release['sections'] : [];
+        $release['changelog'] = $changelog;
         $release['id'] = 'v' . str_replace('.', '-', $matches[1]);
         $releases[] = $release;
     }

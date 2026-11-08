@@ -13,8 +13,9 @@
 }
 .manual-layout {
   display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
-  gap: clamp(20px, 5vw, 72px);
+  grid-template-columns: clamp(200px, 20vw, 240px) minmax(0, 1fr);
+  gap: 0;
+  align-items: start;
   padding-top: 40px;
   
 }
@@ -23,7 +24,16 @@
   top: 94px;
   align-self: start;
   display: grid;
+  align-content: start;
   gap: 4px;
+  max-height: calc(100dvh - 110px);
+  padding: 16px clamp(14px, 2vw, 20px);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  border: 2px solid var(--border-strong);
+  border-right: 3px solid var(--brand-accent-border);
+  border-radius: 14px;
+  background: var(--panel);
 }
 .manual-nav-label {
   margin: 0 0 10px 12px;
@@ -70,6 +80,8 @@
 }
 .manual-content {
   min-width: 0;
+  padding-left: clamp(24px, 4vw, 56px);
+  border-left: 3px solid var(--border-strong);
 }
 .manual-section {
   scroll-margin-top: 94px;
@@ -326,41 +338,168 @@
   overflow-wrap: anywhere;
   font-size: inherit;
 }
-.manual-release .manual-release-body h4 {
-  margin: 18px 0 10px;
-  font: 600 var(--font__md)/1.4 var(--heading);
+.manual-release-page > h2 {
+  /* Existing fluid typography tokens in the local Bootstrap theme. */
+  font-size: var(--font__display__md);
+  line-height: 1.18;
 }
-.manual-release .manual-release-body h4:first-child {
+.manual-release-intro {
+  max-width: 680px;
+  margin: -12px 0 24px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+/* A release is the parent entry; its changelog lives inside a bordered card. */
+.manual-method.manual-release {
+  margin-top: 28px;
+  padding-top: 0;
+  border: 2px solid var(--border-strong);
+  border-top: 4px solid var(--brand-accent-border);
+  border-radius: 16px;
+  background: var(--panel);
+  overflow: hidden;
+}
+.manual-release-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px 26px 20px;
+  border-bottom: 2px solid var(--border-strong);
+  background: var(--panel2);
+}
+.manual-release-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font: 700 var(--font__xs)/1.35 var(--mono);
+  letter-spacing: 0.11em;
+}
+.manual-release .manual-release-head h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font: 700 var(--font__display__sm)/1.2 var(--heading);
+  letter-spacing: -0.025em;
+}
+.manual-release-date {
+  color: var(--text-muted);
+  font: 600 var(--font__sm)/1.5 var(--mono);
+}
+/* The version itself links to the release page; sidebar chips remain in-page anchors. */
+.manual-release-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-underline-offset: 5px;
+}
+.manual-release-link .bi {
+  flex: 0 0 auto;
+  color: var(--brand-accent-hover);
+  font-size: var(--font__md);
+  line-height: 1;
+}
+.manual-release-link:hover,
+.manual-release-link:focus-visible {
+  color: var(--brand-accent-hover);
+  text-decoration: underline;
+}
+.manual-release-body {
+  padding: 24px 26px 26px;
+}
+.manual-release .manual-release-body > h4 {
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--border-strong);
+  color: var(--text-primary);
+  font: 700 var(--font__display__xs)/1.3 var(--heading);
+}
+.manual-release-group {
+  padding: 18px 20px;
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--brand-accent-border);
+  border-radius: 12px;
+  background: var(--panel2);
+}
+.manual-release-group + .manual-release-group {
+  margin-top: 14px;
+}
+/* Notes are distinct from the release's device/support description. */
+.manual-release .manual-release-changelog-heading {
+  margin-top: 30px;
+}
+.manual-release-group + .manual-release-changelog-heading {
+  padding-top: 22px;
+  border-top: 2px solid var(--border-strong);
+}
+.manual-release .manual-release-changelog-heading:first-child {
   margin-top: 0;
 }
-.manual-release .manual-release-body h5 {
-  margin: 14px 0 7px;
+.manual-changelog-list {
+  padding: 18px 20px;
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--brand-accent-border);
+  border-radius: 12px;
+  background: var(--panel2);
+}
+/* Explicit rule between consecutive versions; not just the card outlines. */
+.manual-release-divider {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: 32px 0 28px;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  opacity: 1;
+}
+.manual-release-divider + .manual-method.manual-release {
+  margin-top: 0;
+}
+.manual-release-group h5 {
+  margin: 0 0 12px;
+  color: var(--text-primary);
+  font: 700 var(--font__xl)/1.35 var(--heading);
+}
+.manual-release-group h6 {
+  margin: 16px 0 10px;
   color: var(--text-secondary);
-  font: 600 var(--font__sm)/1.4 var(--font);
+  font: 700 var(--font__lg)/1.4 var(--heading);
+}
+.manual-release-group .manual-changes + h6 {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
 }
 .manual-changes {
-  margin: 0 0 14px;
+  display: grid;
+  gap: 9px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
-.manual-changes:last-child {
-  margin-bottom: 0;
-}
 .manual-changes li {
   position: relative;
-  margin-top: 3px;
-  padding-left: 18px;
+  min-width: 0;
+  margin: 0;
+  padding-left: 22px;
   color: var(--text-secondary);
   font-size: var(--font__md);
-  line-height: 1.55;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 .manual-changes li::before {
   position: absolute;
-  left: 0;
-  color: var(--brand-accent);
-  content: "–";
+  top: 0.72em;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  content: "";
 }
-@media (max-width: 820px) {
+@media (max-width: 991.98px) {
   .manual-head {
     padding-top: 32px;
   }
@@ -370,30 +509,158 @@
   }
   .manual-nav {
     position: static;
-    display: flex;
-    gap: 6px;
-    margin-bottom: 32px;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    max-height: none;
+    margin-bottom: 24px;
+    padding: 14px;
+    overflow: visible;
+    border: 2px solid var(--border-strong);
+    border-bottom: 3px solid var(--brand-accent-border);
+    border-radius: 14px;
+    background: var(--panel);
   }
-  .manual-nav-label,
-  .manual-nav-sub {
-    display: none;
+  .manual-nav-label {
+    grid-column: 1 / -1;
+    margin: 0 0 4px;
   }
-  .manual-nav a {
-    flex: 0 0 auto;
+  .manual-nav > a {
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 9px 8px;
     border: 1px solid var(--border-muted);
     border-radius: 8px;
-    white-space: nowrap;
+    font-size: var(--font__xs);
+    line-height: 1.4;
+    text-align: center;
+    overflow-wrap: anywhere;
   }
-  .manual-nav a.active,
-  .manual-nav a:hover,
-  .manual-nav a:focus-visible {
+  /* Keep page tabs on the same row even when the submenu is in the middle
+     of the source DOM (Instalasi and Pemetaan Data). */
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .manual-nav > a.active,
+  .manual-nav > a:hover,
+  .manual-nav > a:focus-visible {
     border-color: var(--brand-accent-border);
+  }
+  .manual-nav-sub {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 4px 0 0;
+    padding: 12px 0 0;
+    border-left: 0;
+    border-top: 2px solid var(--border-strong);
+  }
+  .manual-nav-sub a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 11px;
+    border: 1px solid var(--border-muted);
+    border-radius: 8px;
+    white-space: normal;
+  }
+  .manual-nav-sub a.active,
+  .manual-nav-sub a:hover,
+  .manual-nav-sub a:focus-visible {
+    border: 1px solid var(--brand-accent-border);
+  }
+  .manual-content {
+    padding: 22px 0 0;
+    border-top: 2px solid var(--border-strong);
+    border-left: 0;
   }
 }
 @media (max-width: 575.98px) {
+  .manual-nav {
+    gap: 6px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .manual-nav > a {
+    padding: 8px 5px;
+  }
+  .manual-nav-sub {
+    gap: 6px;
+  }
+  .manual-head {
+    padding-bottom: 20px;
+  }
+  .manual-section > h2 {
+    margin-bottom: 20px;
+  }
+  .manual-method {
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+  .manual-method.manual-release {
+    margin-top: 20px;
+    padding-top: 0;
+    border-radius: 12px;
+  }
+  .manual-release-head {
+    padding: 18px 16px;
+  }
+  .manual-release-body {
+    padding: 18px 16px 20px;
+  }
+  .manual-release-group,
+  .manual-changelog-list {
+    padding: 15px 14px;
+  }
+  .manual-release-intro {
+    margin-top: -8px;
+  }
+  .manual-release-divider {
+    margin: 24px 0 20px;
+  }
   .manual-details summary,
   .manual-details-body {
     padding-inline: 14px;
+  }
+}
+
+/* At phone widths, a single-column menu keeps every label legible. */
+@media (max-width: 420px) {
+  .manual-nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .manual-nav-sub {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .manual-nav > a {
+    justify-items: start;
+    text-align: left;
+    padding-inline: 12px;
   }
 }

@@ -44,8 +44,8 @@ final class PageController
     public function changelog(): void
     {
         $this->render('pages.docs.changelog', [
-            'pageTitle' => 'Changelog | LINNMS Docs',
-            'pageDescription' => 'Riwayat versi LINNMS.',
+            'pageTitle' => 'Release | LINNMS Docs',
+            'pageDescription' => 'Daftar release LINNMS beserta changelog setiap versi.',
             'activePage' => 'docs',
             'docSection' => 'changelog',
             'changelogReleases' => changelog_releases(),
