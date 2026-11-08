@@ -11,6 +11,8 @@ function handle_request(array $config): void
     $controller = new PageController();
     $uri = $_SERVER['REQUEST_URI'] ?? '/';
     $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+    // Always revalidate HTML so its asset URLs reflect the current deployment.
+    header('Cache-Control: no-cache, max-age=0, must-revalidate');
     $path = parse_url($uri, PHP_URL_PATH);
 
     if (!is_string($path) || !str_starts_with($path, '/')) {
@@ -19,6 +21,20 @@ function handle_request(array $config): void
     }
 
     $canonical = rtrim($path, '/') ?: '/';
+
+    // Lightweight uncached version probe for tabs that remain open during deploys.
+    if ($canonical === '/__asset-version') {
+        if (!in_array($method, ['GET', 'HEAD'], true)) {
+            header('Allow: GET, HEAD');
+            $controller->error(405);
+            return;
+        }
+        header('Cache-Control: no-store, max-age=0');
+        header('X-LINNMS-Assets-Version: ' . asset_bundle_version());
+        http_response_code(204);
+        return;
+    }
+
     $action = $config['pages'][$canonical] ?? null;
     $redirect = $config['redirects'][$canonical] ?? null;
 

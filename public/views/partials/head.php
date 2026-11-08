@@ -2,6 +2,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#18181b" />
+    <meta name="linnms-assets-version" content="<?= asset_bundle_version() ?>" />
     <script>document.documentElement.classList.add('linnms__loading__is');</script>
     <meta name="description" content="<?= htmlspecialchars($pageDescription ?? 'LINNMS Network Management', ENT_QUOTES, 'UTF-8') ?>" />
     <title><?= htmlspecialchars($pageTitle ?? 'LINNMS', ENT_QUOTES, 'UTF-8') ?></title>
