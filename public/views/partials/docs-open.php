@@ -25,6 +25,19 @@
       </div>
       <?php endif; ?>
       <a href="/dokumentasi/pemetaan-data" <?= $docSection === 'mapping' ? 'class="active" aria-current="page"' : '' ?>>Pemetaan Data</a>
+      <?php if ($docSection === 'mapping'): ?>
+      <div class="manual-nav-sub">
+        <a href="#zte">ZTE</a>
+        <a href="#hioso">HIOSO</a>
+      </div>
+      <?php endif; ?>
       <a href="/dokumentasi/changelog" <?= $docSection === 'changelog' ? 'class="active" aria-current="page"' : '' ?>>Changelog</a>
+      <?php if ($docSection === 'changelog'): ?>
+      <div class="manual-nav-sub">
+        <a href="#v1-0-3">v1.0.3</a>
+        <a href="#v1-0-2">v1.0.2</a>
+        <a href="#v1-0-0">v1.0.0</a>
+      </div>
+      <?php endif; ?>
     </nav>
     <article class="manual-content">

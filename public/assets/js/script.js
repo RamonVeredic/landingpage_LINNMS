@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    window.scrollBy(0,event.deltaY);
   }
  },{passive:false}));
- // Tandai bagian instalasi yang sedang dibaca, baik di sidebar maupun tautan metode.
+ // Sorot bagian dokumentasi yang sedang dibaca (instalasi, pemetaan, changelog).
  const manualSections = [...document.querySelectorAll('.manual-method[id]')];
  const manualSectionLinks = [...document.querySelectorAll('.manual-nav-sub a[href^="#"], .manual-method-nav a[href^="#"]')];
  if (manualSections.length && manualSectionLinks.length) {
