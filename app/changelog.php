@@ -41,12 +41,16 @@ function changelog_releases(): array
             continue;
         }
 
-        if ((!isset($release['changes']) || !is_array($release['changes']))
-            && (!isset($release['sections']) || !is_array($release['sections']))) {
+        $hasChanges = is_array($release['changes'] ?? null) && $release['changes'] !== [];
+        $hasSections = is_array($release['sections'] ?? null) && $release['sections'] !== [];
+        if (!$hasChanges && !$hasSections) {
             error_log('Changelog has no changes or sections: ' . basename($file));
             continue;
         }
 
+        // Ignore malformed optional fields instead of emitting PHP foreach warnings.
+        $release['changes'] = $hasChanges ? $release['changes'] : [];
+        $release['sections'] = $hasSections ? $release['sections'] : [];
         $release['id'] = 'v' . str_replace('.', '-', $matches[1]);
         $releases[] = $release;
     }
