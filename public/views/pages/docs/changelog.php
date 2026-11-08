@@ -32,7 +32,8 @@
               <?php if (is_string($section['title'] ?? null)): ?>
               <h4><?= e($section['title']) ?></h4>
               <?php endif; ?>
-              <?php foreach (($section['groups'] ?? []) as $group): ?>
+              <?php if (!is_array($section['groups'] ?? null)) continue; ?>
+              <?php foreach ($section['groups'] as $group): ?>
                 <?php if (!is_array($group)) continue; ?>
                 <?php if (is_string($group['title'] ?? null) && $group['title'] !== ''): ?>
                 <h5><?= e($group['title']) ?></h5>
