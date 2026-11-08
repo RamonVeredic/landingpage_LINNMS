@@ -32,11 +32,11 @@
       </div>
       <?php endif; ?>
       <a href="/dokumentasi/changelog" <?= $docSection === 'changelog' ? 'class="active" aria-current="page"' : '' ?>>Changelog</a>
-      <?php if ($docSection === 'changelog'): ?>
+      <?php if ($docSection === 'changelog' && !empty($changelogReleases)): ?>
       <div class="manual-nav-sub">
-        <a href="#v1-0-3">v1.0.3</a>
-        <a href="#v1-0-2">v1.0.2</a>
-        <a href="#v1-0-0">v1.0.0</a>
+        <?php foreach ($changelogReleases as $release): ?>
+        <a href="#<?= e($release['id']) ?>">v<?= e($release['version']) ?></a>
+        <?php endforeach; ?>
       </div>
       <?php endif; ?>
     </nav>
