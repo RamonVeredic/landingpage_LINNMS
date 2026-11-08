@@ -88,11 +88,13 @@
 }
 .manual-steps {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 22px;
   margin: 0;
   padding-left: 24px;
 }
 .manual-steps li {
+  min-width: 0;
   padding-left: 8px;
 }
 .manual-steps li::marker {
@@ -124,7 +126,9 @@
   line-height: 1.65;
 }
 .manual-code {
-  overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
+  overflow: clip;
   border: 1px solid var(--border-muted);
   border-radius: 12px;
   background: var(--bs-dark);
@@ -139,17 +143,46 @@
   color: var(--text-secondary);
   font: 600 var(--font__sm)/1.4 var(--mono);
 }
+.manual-code-head span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .manual-code pre {
+  max-width: 100%;
   max-height: 440px;
   margin: 0;
   padding: 16px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   color: var(--text-primary);
   font: 400 var(--font__sm)/1.7 var(--mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+.manual-code pre::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.manual-code pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.manual-code pre::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--border-strong);
+}
+.manual-code pre::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-accent-border);
 }
 .manual-code code {
   color: inherit;
   font: inherit;
+}
+.manual-content code {
+  overflow-wrap: anywhere;
 }
 .manual-details {
   overflow: hidden;

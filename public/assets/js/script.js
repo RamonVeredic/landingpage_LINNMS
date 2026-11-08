@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   const menu=document.getElementById('primary-nav');
   if(menu?.classList.contains('show')&&window.bootstrap){bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide()}
  }));
+ document.querySelectorAll('.manual-code pre').forEach(pre=>pre.addEventListener('wheel',event=>{
+  if(event.ctrlKey||event.deltaY===0)return;
+  const atTop=pre.scrollTop<=0;
+  const atBottom=pre.scrollTop+pre.clientHeight>=pre.scrollHeight-1;
+  if((event.deltaY<0&&atTop)||(event.deltaY>0&&atBottom)){
+   event.preventDefault();
+   window.scrollBy(0,event.deltaY);
+  }
+ },{passive:false}));
  document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{
   const el=btn.closest('[data-code]')?.querySelector('pre code');
   const code=el?.textContent;

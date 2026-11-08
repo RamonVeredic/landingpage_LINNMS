@@ -1,15 +1,15 @@
 <main id="main">
   <section class="hero linnms__hero">
     <div class="linnms__hero__gird container-xl d-flex flex-column align-items-center">
-      <div class="linnms__eyebrow text-center w-100 mb-4">
+      <div class="linnms__hero__copy text-center w-100 mb-4">
         <div class="linnms__eyebrow">NETWORK MANAGEMENT SYSTEM</div>
         <h1 class="linnms__hero__title">Pantau perangkat jaringan Anda<br><span class="linnms__home__accent">Kelola dari satu tempat</span></h1>
         <div class="hero-description mx-auto mb-4">
           <p class="mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
         </div>
-        <div class="hero-actions d-flex flex-wrap justify-content-center gap-2">
-          <a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
-          <a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a>
+        <div class="linnms__hero__actions d-flex flex-wrap justify-content-center gap-2">
+          <a class="btn btn-sm linnms__cta__btn btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
+          <a class="btn btn-sm linnms__cta__btn btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a>
         </div>
         <ul class="linnms__highlights list-unstyled d-flex flex-wrap justify-content-center gap-3 mt-4 mb-0" aria-label="Fungsi utama LINNMS">
           
@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-  <section class="home-benefits container-xl" id="fitur" aria-labelledby="features-heading">
+  <section class="linnms__benefits container-xl" id="fitur" aria-labelledby="features-heading">
     <hgroup class="home-section-heading d-block w-100 mw-100 text-center mb-5">
       <p class="small text-primary fw-semibold mb-2">FITUR PLATFORM</p>
       <h2 class="mt-0 mb-2" id="features-heading">Monitoring dan Pengelolaan Jaringan dalam Satu Platform</h2>
@@ -181,10 +181,10 @@
     </div></div>
     </div>
   </section>
-  <section class="home-cta-section container-xl">
-    <div class="home-cta d-flex align-items-center justify-content-between flex-wrap gap-4 p-4">
+  <section class="linnms__cta__section container-xl">
+    <div class="linnms__cta__home d-flex align-items-center justify-content-between flex-wrap gap-4 p-4">
       <div><h2>Coba LINNMS untuk jaringan Anda.</h2><p>Mulai dengan uji coba atau hubungi kami untuk pemesanan.</p></div>
-      <div class="home-cta-actions d-flex flex-wrap gap-2"><a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
+      <div class="linnms__cta__actions d-flex flex-wrap gap-2"><a class="btn btn-sm linnms__cta__btn btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm linnms__cta__btn btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
     </div>
     <a class="home-install-link d-block text-center mt-4" href="/dokumentasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </section>
