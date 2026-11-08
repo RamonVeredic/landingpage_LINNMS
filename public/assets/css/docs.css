@@ -386,6 +386,26 @@
   color: var(--text-muted);
   font: 600 var(--font__sm)/1.5 var(--mono);
 }
+/* The version itself links to the release page; sidebar chips remain in-page anchors. */
+.manual-release-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-underline-offset: 5px;
+}
+.manual-release-link .bi {
+  flex: 0 0 auto;
+  color: var(--brand-accent-hover);
+  font-size: var(--font__md);
+  line-height: 1;
+}
+.manual-release-link:hover,
+.manual-release-link:focus-visible {
+  color: var(--brand-accent-hover);
+  text-decoration: underline;
+}
 .manual-release-body {
   padding: 24px 26px 26px;
 }
