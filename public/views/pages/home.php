@@ -1,13 +1,13 @@
 <main id="main">
   <section class="linnms__home__hero">
-    <div class="linnms__home__hero-grid container-xl d-flex flex-column align-items-center">
-      <div class="linnms__home__hero-copy text-center w-100 mb-4">
+    <div class="linnms__home__hero__grid container-xl d-flex flex-column align-items-center">
+      <div class="linnms__home__hero__copy text-center w-100 mb-4">
         <div class="linnms__home__eyebrow">NETWORK MANAGEMENT SYSTEM</div>
-        <h1 class="linnms__home__hero-title">Pantau perangkat jaringan Anda<br><span class="linnms__home__accent">Kelola dari satu tempat</span></h1>
-        <div class="linnms__home__hero-description mx-auto mb-4">
+        <h1>Pantau perangkat jaringan Anda<br><span class="linnms__home__accent">Kelola dari satu tempat</span></h1>
+        <div class="linnms__home__hero__description mx-auto mb-4">
           <p class="mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
         </div>
-        <div class="linnms__home__hero-actions d-flex flex-wrap justify-content-center gap-2">
+        <div class="linnms__home__hero__actions d-flex flex-wrap justify-content-center gap-2">
           <a class="btn btn-sm linnms__cta__btn btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
           <a class="btn btn-sm linnms__cta__btn btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a>
         </div>
@@ -28,31 +28,31 @@
 
         </ul>
       </div>
-      <div class="card linnms__home__preview-preview-wrap w-100 mx-auto overflow-hidden" id="dashboard-preview">
+      <div class="card linnms__home__preview__wrap w-100 mx-auto overflow-hidden" id="dashboard-preview">
         <div class="card-header py-2 px-3">
-          <div class="linnms__home__preview-dots d-flex align-items-center gap-1" aria-hidden="true"><span class="bg-danger rounded-circle"></span><span class="bg-warning rounded-circle"></span><span class="bg-success rounded-circle"></span></div>
+          <div class="linnms__home__preview__dots d-flex align-items-center gap-1" aria-hidden="true"><span class="bg-danger rounded-circle"></span><span class="bg-warning rounded-circle"></span><span class="bg-success rounded-circle"></span></div>
         </div>
-        <div class="linnms__home__preview-dashboard d-flex" role="region" aria-label="Pratinjau dashboard LINNMS dengan data contoh">
+        <div class="linnms__home__preview__dashboard d-flex" role="region" aria-label="Pratinjau dashboard LINNMS dengan data contoh">
 
-          <div class="linnms__home__preview-app-content flex-grow-1">
-            <div class="linnms__home__preview-topbar d-flex justify-content-end align-items-center border-bottom px-3 py-2"><i class="bi bi-person-circle text-body-secondary" aria-hidden="true"></i></div>
+          <div class="linnms__home__preview__content flex-grow-1">
+            <div class="linnms__home__preview__topbar d-flex justify-content-end align-items-center border-bottom px-3 py-2"><i class="bi bi-person-circle text-body-secondary" aria-hidden="true"></i></div>
             <div class="p-3">
-              <div class="mb-3"><small class="text-body-secondary">LINNMS / Dashboard</small><h2 class="linnms__home__preview-title text-info fw-bold mt-1 mb-0">DASHBOARD</h2></div>
+              <div class="mb-3"><small class="text-body-secondary">LINNMS / Dashboard</small><h2 class="text-info fw-bold mt-1 mb-0">DASHBOARD</h2></div>
               <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-6 g-2 mb-3">
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--info h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total Perangkat</span><strong class="text-body">48</strong></div></div></div>
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--accent h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total ONU</span><strong class="text-body">1.286</strong></div></div></div>
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--success h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Online</span><strong class="text-body">1.231</strong></div></div></div>
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--warning h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Offline</span><strong class="text-body">25</strong></div></div></div>
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--lost h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Lost</span><strong class="text-body">9</strong></div></div></div>
-                <div class="col"><div class="card linnms__home__preview-stat linnms__home__preview-stat--danger h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Bermasalah</span><strong class="text-body">21</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__info h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total Perangkat</span><strong class="text-body">48</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__accent h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total ONU</span><strong class="text-body">1.286</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__success h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Online</span><strong class="text-body">1.231</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__warning h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Offline</span><strong class="text-body">25</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__lost h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Lost</span><strong class="text-body">9</strong></div></div></div>
+                <div class="col"><div class="card linnms__home__preview__stat linnms__home__preview__stat__danger h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Bermasalah</span><strong class="text-body">21</strong></div></div></div>
               </div>
               <section class="card overflow-hidden">
                 <div class="d-flex align-items-center justify-content-between gap-2 p-2">
-                  <div class="input-group input-group-sm linnms__home__preview-search"><span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span><span class="form-control text-body-secondary">Cari...</span></div>
+                  <div class="input-group input-group-sm linnms__home__preview__search"><span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span><span class="form-control text-body-secondary">Cari...</span></div>
                   <span class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1 rounded-pill fw-semibold"><i class="bi bi-plus-circle" aria-hidden="true"></i>Add</span>
                 </div>
                 <div class="table-responsive" tabindex="0" role="region" aria-label="Tabel pratinjau perangkat; gulir secara horizontal untuk melihat semua kolom">
-                  <table class="table table-sm table-striped align-middle mb-0 linnms__home__preview-table">
+                  <table class="table table-sm table-striped align-middle mb-0 linnms__home__preview__table">
                     <thead class="table-active"><tr><th scope="col" >No.</th><th scope="col">Jenis</th><th scope="col">Nama</th><th scope="col" >Model</th><th scope="col" >Sync</th><th scope="col">Tindakan</th></tr></thead>
                     <tbody>
                       <tr><td >01</td><td><span class="badge text-bg-info">OLT</span></td><td><strong class="d-block">OLT-JKT-01</strong><small class="d-block text-body-secondary">10.10.10.2</small></td><td >ZTE C320</td><td >18:32:15<small class="d-block text-success">● SNMP · OK</small></td><td><span class="d-inline-flex gap-2 text-info"><i class="bi bi-search" aria-hidden="true"></i><i class="bi bi-three-dots" aria-hidden="true"></i></span></td></tr>
@@ -68,7 +68,7 @@
     </div>
   </section>
   <section class="linnms__home__benefits container-xl" id="fitur" aria-labelledby="features-heading">
-    <hgroup class="linnms__home__section-heading d-block w-100 mw-100 text-center mb-5">
+    <hgroup class="linnms__home__section__heading d-block w-100 mw-100 text-center mb-5">
       <p class="small text-primary fw-semibold mb-2">FITUR PLATFORM</p>
       <h2 class="mt-0 mb-2" id="features-heading">Monitoring dan Pengelolaan Jaringan dalam Satu Platform</h2>
       <p class="mb-0">Pantau perangkat jaringan, kelola informasi OLT dan ONU, serta sesuaikan sistem monitoring dengan kebutuhan operasional ISP.</p>
@@ -77,9 +77,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-display" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-display" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Monitoring Terpusat</h3>
+              <h3 class="mb-2">Monitoring Terpusat</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Centralized Monitoring</strong>
               <p class="mb-0">Pantau informasi dan kondisi perangkat jaringan melalui satu dashboard tanpa harus berpindah antarhalaman pengelolaan.</p>
             </div>
@@ -89,9 +89,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Manajemen OLT dan ONU</h3>
+              <h3 class="mb-2">Manajemen OLT dan ONU</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Fiber Network Management</strong>
               <p class="mb-0">Akses dan kelola informasi OLT serta ONU secara terpusat untuk mempermudah pemantauan infrastruktur jaringan fiber optik.</p>
             </div>
@@ -101,9 +101,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Sinkronisasi Data Otomatis</h3>
+              <h3 class="mb-2">Sinkronisasi Data Otomatis</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Interval</strong>
               <p class="mb-0">Data perangkat diperbarui secara otomatis berdasarkan interval sinkronisasi yang dapat ditentukan sesuai kebutuhan.</p>
             </div>
@@ -113,9 +113,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-bell" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-bell" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Notifikasi yang Dapat Disesuaikan</h3>
+              <h3 class="mb-2">Notifikasi yang Dapat Disesuaikan</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Alerts</strong>
               <p class="mb-0">Tentukan perangkat, jenis kejadian, dan saluran pengiriman notifikasi agar setiap informasi yang diterima tetap relevan.</p>
             </div>
@@ -125,9 +125,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-sliders" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-sliders" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Konfigurasi Fleksibel</h3>
+              <h3 class="mb-2">Konfigurasi Fleksibel</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Custom Configuration</strong>
               <p class="mb-0">Sesuaikan pengaturan perangkat dan layanan yang tersedia di LINNMS berdasarkan kebutuhan operasional jaringan.</p>
             </div>
@@ -137,9 +137,9 @@
       <div class="col">
         <article class="card h-100">
           <div class="card-body d-flex align-items-start gap-3 p-4">
-            <span class="linnms__home__feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-activity" aria-hidden="true"></i></span>
+            <span class="linnms__home__feature__icon d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"><i class="bi bi-activity" aria-hidden="true"></i></span>
             <div class="flex-grow-1">
-              <h3 class="linnms__home__feature-title mb-2">Pemantauan Aktivitas Jaringan</h3>
+              <h3 class="mb-2">Pemantauan Aktivitas Jaringan</h3>
               <strong class="d-block small text-body-secondary fw-medium mb-3">Network Activity</strong>
               <p class="mb-0">Lihat informasi aktivitas jaringan untuk membantu menelusuri perubahan kondisi perangkat dan melakukan pemeriksaan lebih lanjut.</p>
             </div>
@@ -149,7 +149,7 @@
     </div>
   </section>
   <section class="linnms__home__support container-xl" id="perangkat">
-    <div class="linnms__home__section-heading">
+    <div class="linnms__home__section__heading">
       <h2>Vendor yang didukung</h2>
       <p>Dukungan OLT, router, dan switch untuk pemantauan melalui LINNMS.</p>
     </div>
@@ -165,27 +165,27 @@
       <li class="badge border text-body-secondary fs-6 fw-medium px-3 py-2">Cisco</li>
     </ul>
   </section>
-  <section class="linnms__home__feature-detail container-xl">
+  <section class="linnms__home__feature__detail container-xl">
     <div class="row g-4 align-items-center">
-    <div class="col-md-6 order-2 order-md-1"><figure class="card linnms__home__notification-visual p-4 mb-0">
+    <div class="col-md-6 order-2 order-md-1"><figure class="card linnms__home__notification__visual p-4 mb-0">
       <figcaption>Integrasi notifikasi</figcaption>
-      <div class="linnms__home__channel d-flex align-items-center gap-3 border-top py-3"><i class="bi bi-whatsapp" aria-hidden="true"></i><div><strong>WhatsApp Gateway</strong><span>Pengiriman notifikasi melalui gateway WhatsApp.</span></div></div>
-      <div class="linnms__home__channel d-flex align-items-center gap-3 border-top py-3"><i class="bi bi-telegram" aria-hidden="true"></i><div><strong>Telegram Bot</strong><span>Pengiriman notifikasi melalui bot Telegram.</span></div></div>
-      <div class="linnms__home__channel-event d-flex align-items-start gap-2 border rounded p-3 mt-3"><i class="bi bi-bell" aria-hidden="true"></i><span>Riwayat notifikasi<small>Telusuri pemberitahuan yang telah dikirim.</small></span></div>
+      <div class="linnms__home__channel d-flex align-items-center gap-3 border-top py-3"><i class="bi bi-whatsapp" aria-hidden="true"></i><div><strong class="d-block">WhatsApp Gateway</strong><span class="d-block">Pengiriman notifikasi melalui gateway WhatsApp.</span></div></div>
+      <div class="linnms__home__channel d-flex align-items-center gap-3 border-top py-3"><i class="bi bi-telegram" aria-hidden="true"></i><div><strong class="d-block">Telegram Bot</strong><span class="d-block">Pengiriman notifikasi melalui bot Telegram.</span></div></div>
+      <div class="linnms__home__channel__event d-flex align-items-start gap-2 border rounded p-3 mt-3"><i class="bi bi-bell" aria-hidden="true"></i><span>Riwayat notifikasi<small class="d-block">Telusuri pemberitahuan yang telah dikirim.</small></span></div>
     </figure></div>
-    <div class="col-md-6 order-1 order-md-2"><div class="linnms__home__detail-copy">
+    <div class="col-md-6 order-1 order-md-2"><div class="linnms__home__detail__copy">
       <h2>Notifikasi melalui WhatsApp dan Telegram.</h2>
       <p>Terima pemberitahuan perubahan kondisi jaringan melalui saluran yang Anda gunakan. Pilih perangkat dan jenis kejadian yang ingin dipantau, lalu telusuri pemberitahuannya melalui riwayat notifikasi.</p>
       <p>Pilihan WhatsApp Gateway:</p>
-      <ul class="linnms__home__integration-list list-unstyled d-flex flex-wrap gap-2 my-3" aria-label="Gateway WhatsApp"><li class="border rounded px-2 py-1">Fonnte</li><li class="border rounded px-2 py-1">StarSender</li><li class="border rounded px-2 py-1">WAGate</li><li class="border rounded px-2 py-1">WPPConnect</li></ul>
+      <ul class="linnms__home__integration__list list-unstyled d-flex flex-wrap gap-2 my-3" aria-label="Gateway WhatsApp"><li class="border rounded px-2 py-1">Fonnte</li><li class="border rounded px-2 py-1">StarSender</li><li class="border rounded px-2 py-1">WAGate</li><li class="border rounded px-2 py-1">WPPConnect</li></ul>
     </div></div>
     </div>
   </section>
-  <section class="linnms__home__cta-section container-xl">
+  <section class="linnms__home__cta__section container-xl">
     <div class="linnms__home__cta d-flex align-items-center justify-content-between flex-wrap gap-4 p-4">
       <div><h2>Coba LINNMS untuk jaringan Anda.</h2><p>Mulai dengan uji coba atau hubungi kami untuk pemesanan.</p></div>
-      <div class="linnms__home__cta-actions d-flex flex-wrap gap-2"><a class="btn btn-sm linnms__cta__btn btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm linnms__cta__btn btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
+      <div class="linnms__home__cta__actions d-flex flex-wrap gap-2"><a class="btn btn-sm linnms__cta__btn btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a><a class="btn btn-sm linnms__cta__btn btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a></div>
     </div>
-    <a class="linnms__home__install-link d-block text-center mt-4" href="/dokumentasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    <a class="linnms__home__install__link d-block text-center mt-4" href="/dokumentasi">Panduan instalasi LINNMS <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </section>
 </main>

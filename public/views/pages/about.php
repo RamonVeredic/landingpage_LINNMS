@@ -82,28 +82,28 @@
         </p>
 
         <div class="mt-4">
-          <section class="linnms__about__focus-item row g-3 py-4">
+          <section class="linnms__about__focus__item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-hdd-network" aria-hidden="true"></i><span>Monitoring Perangkat</span></h3>
             <p class="col-md-8 mb-0">Menyajikan informasi dan kondisi perangkat
                   jaringan untuk membantu operator melakukan
                   pemantauan serta mengidentifikasi perangkat
                   yang memerlukan perhatian.</p>
           </section>
-          <section class="linnms__about__focus-item row g-3 py-4">
+          <section class="linnms__about__focus__item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-diagram-3" aria-hidden="true"></i><span>Pengelolaan OLT dan ONU</span></h3>
             <p class="col-md-8 mb-0">Memusatkan informasi perangkat OLT dan ONU
                   untuk mempermudah penelusuran serta
                   pemantauan infrastruktur jaringan akses
                   fiber optik.</p>
           </section>
-          <section class="linnms__about__focus-item row g-3 py-4">
+          <section class="linnms__about__focus__item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-activity" aria-hidden="true"></i><span>Aktivitas Jaringan</span></h3>
             <p class="col-md-8 mb-0">Menampilkan informasi aktivitas jaringan
                   untuk memberikan gambaran operasional
                   dan membantu proses pemeriksaan ketika
                   ditemukan kondisi yang tidak sesuai.</p>
           </section>
-          <section class="linnms__about__focus-item row g-3 py-4">
+          <section class="linnms__about__focus__item row g-3 py-4">
             <h3 class="col-md-4 d-flex align-items-start gap-3 mb-0"><i class="bi bi-bell" aria-hidden="true"></i><span>Informasi dan Notifikasi</span></h3>
             <p class="col-md-8 mb-0">Menyediakan notifikasi dan informasi
                   penting untuk membantu operator mengetahui
@@ -124,14 +124,14 @@
           efisiensi dalam aktivitas operasional jaringan.
         </p>
 
-        <ul class="linnms__about__benefits-list row row-cols-1 row-cols-md-2 g-4 list-unstyled mt-0 mb-0">
+        <ul class="linnms__about__benefits__list row row-cols-1 row-cols-md-2 g-4 list-unstyled mt-0 mb-0">
 
           <li class="col d-flex align-items-start gap-3">
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
-              <strong>Informasi Terpusat</strong>
-              <p class="linnms__about__benefit-description">
+              <strong class="d-block">Informasi Terpusat</strong>
+              <p class="linnms__about__benefit__description">
                 Informasi perangkat dan aktivitas jaringan
                 dapat diakses melalui satu antarmuka.
               </p>
@@ -142,8 +142,8 @@
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
-              <strong>Monitoring Lebih Terarah</strong>
-              <p class="linnms__about__benefit-description">
+              <strong class="d-block">Monitoring Lebih Terarah</strong>
+              <p class="linnms__about__benefit__description">
                 Membantu operator menemukan informasi perangkat
                 dan menelusuri kondisi yang perlu diperiksa.
               </p>
@@ -154,8 +154,8 @@
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
-              <strong>Antarmuka Mudah Dipahami</strong>
-              <p class="linnms__about__benefit-description">
+              <strong class="d-block">Antarmuka Mudah Dipahami</strong>
+              <p class="linnms__about__benefit__description">
                 Mengutamakan penyajian informasi teknis
                 yang terstruktur, jelas, dan mudah dibaca.
               </p>
@@ -166,8 +166,8 @@
             <i class="bi bi-check2"
                aria-hidden="true"></i>
             <div>
-              <strong>Fokus pada Kebutuhan Operator</strong>
-              <p class="linnms__about__benefit-description">
+              <strong class="d-block">Fokus pada Kebutuhan Operator</strong>
+              <p class="linnms__about__benefit__description">
                 Dirancang untuk mendukung pekerjaan monitoring
                 dan pengelolaan perangkat jaringan sehari-hari.
               </p>

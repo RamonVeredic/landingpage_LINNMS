@@ -1,14 +1,14 @@
 <?php require BASE_PATH . '/public/views/partials/docs-open.php'; ?>
       <section class="linnms__docs__section" id="pemetaan-data" aria-labelledby="pemetaan-title">
         <h2 id="pemetaan-title">Pemetaan Data</h2>
-        <nav class="linnms__docs__method-nav d-flex flex-wrap gap-2" aria-label="Bagian pemetaan data">
+        <nav class="linnms__docs__method__nav d-flex flex-wrap gap-2" aria-label="Bagian pemetaan data">
           <a href="#zte">ZTE</a>
           <a href="#hioso">HIOSO</a>
         </nav>
-        <section class="linnms__docs__method linnms__docs__mapping-group" id="zte" aria-labelledby="zte-title">
+        <section class="linnms__docs__method linnms__docs__mapping__group" id="zte" aria-labelledby="zte-title">
           <h3 id="zte-title">ZTE <small>GPON · C300 / C320</small></h3>
-          <div class="manual-mapping-body">
-            <div class="linnms__docs__table-wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data ZTE">
+          <div>
+            <div class="linnms__docs__table__wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data ZTE">
               <table class="table table-sm align-top mb-0 linnms__docs__table">
 <caption class="visually-hidden">Pemetaan data perangkat ZTE</caption>
 <thead><tr><th scope="col">Data</th><th scope="col">Sumber</th><th scope="col">OID / perintah</th><th scope="col">Deskripsi</th></tr></thead>
@@ -283,10 +283,10 @@
             </div>
           </div>
         </section>
-        <section class="linnms__docs__method linnms__docs__mapping-group" id="hioso" aria-labelledby="hioso-title">
+        <section class="linnms__docs__method linnms__docs__mapping__group" id="hioso" aria-labelledby="hioso-title">
           <h3 id="hioso-title">HIOSO <small>EPON · 2 / 4 port</small></h3>
-          <div class="manual-mapping-body">
-            <div class="linnms__docs__table-wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data HIOSO">
+          <div>
+            <div class="linnms__docs__table__wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data HIOSO">
               <table class="table table-sm align-top mb-0 linnms__docs__table">
 <caption class="visually-hidden">Pemetaan data perangkat HIOSO</caption>
 <thead><tr><th scope="col">Data</th><th scope="col">Sumber</th><th scope="col">OID / perintah</th><th scope="col">Deskripsi</th></tr></thead>

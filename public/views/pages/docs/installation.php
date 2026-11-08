@@ -2,24 +2,24 @@
       <section class="linnms__docs__section" id="instalasi" aria-labelledby="instalasi-title">
         <h2 id="instalasi-title">Panduan Instalasi LINNMS</h2>
         <p class="linnms__docs__intro">Pilih satu metode instalasi. Image LINNMS tersedia untuk AMD64 dan ARM64; Docker akan mengambil varian yang sesuai dengan server.</p>
-        <nav class="linnms__docs__method-nav d-flex flex-wrap gap-2" aria-label="Bagian panduan instalasi">
+        <nav class="linnms__docs__method__nav d-flex flex-wrap gap-2" aria-label="Bagian panduan instalasi">
           <a href="#docker-compose">Docker Compose</a>
           <a href="#casaos">CasaOS</a>
           <a href="#periksa-error">Periksa error</a>
         </nav>
         <section class="linnms__docs__method" id="docker-compose" aria-labelledby="docker-title">
           <h3 id="docker-title">Docker Compose</h3>
-          <ol class="linnms__docs__steps">
+          <ol class="linnms__docs__steps m-0 ps-4">
             <li>
-              <strong>Siapkan Docker Engine dan plugin Compose.</strong>
+              <strong class="d-block">Siapkan Docker Engine dan plugin Compose.</strong>
               <p>Pastikan <code>docker --version</code> dan <code>docker compose version</code> berjalan. Periksa <code>uname -m</code>: <code>x86_64</code> berarti AMD64, sedangkan <code>aarch64</code> berarti ARM64. Server perlu akses ke GHCR dan Docker Hub untuk mengunduh image.</p>
             </li>
             <li>
-              <strong>Buat direktori dan berkas Compose.</strong>
+              <strong class="d-block">Buat direktori dan berkas Compose.</strong>
               <p>Jalankan <code>mkdir -p linnms &amp;&amp; cd linnms</code>, lalu simpan YAML berikut sebagai <code>compose.yaml</code>. Port HTTP bawaan adalah <code>84</code>; port HTTPS container dipetakan ke <code>4143</code>.</p>
               <div class="linnms__docs__code" data-code>
-                <div class="linnms__docs__code-head"><span>compose.yaml</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-                <pre><code>name: linnms
+                <div class="linnms__docs__code__head d-flex align-items-center justify-content-between"><span>compose.yaml</span><button type="button" class="linnms__docs__code__copy p-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <pre class="m-0"><code>name: linnms
 services:
   app:
     image: ${LINNMS_IMAGE:-ghcr.io/ramonveredic/linnms:latest}
@@ -74,38 +74,38 @@ volumes:
               </div>
             </li>
             <li>
-              <strong>Validasi dan jalankan layanan.</strong>
+              <strong class="d-block">Validasi dan jalankan layanan.</strong>
               <p>Jalankan perintah ini dari direktori yang berisi <code>compose.yaml</code>.</p>
               <div class="linnms__docs__code" data-code>
-                <div class="linnms__docs__code-head"><span>Terminal</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-                <pre><code>docker compose -f compose.yaml config
+                <div class="linnms__docs__code__head d-flex align-items-center justify-content-between"><span>Terminal</span><button type="button" class="linnms__docs__code__copy p-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <pre class="m-0"><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml up -d
 docker compose -f compose.yaml ps</code></pre>
               </div>
             </li>
             <li>
-              <strong>Buka LINNMS.</strong>
+              <strong class="d-block">Buka LINNMS.</strong>
               <p>Jika layanan <code>app</code> dan <code>db</code> berjalan, buka <code>http://IP_SERVER:84/</code>. Ganti <code>IP_SERVER</code> dengan alamat server.</p>
             </li>
           </ol>
         </section>
         <section class="linnms__docs__method" id="casaos" aria-labelledby="casaos-title">
           <h3 id="casaos-title">CasaOS</h3>
-          <ol class="linnms__docs__steps">
+          <ol class="linnms__docs__steps m-0 ps-4">
             <li>
-              <strong>Buka instalasi aplikasi kustom.</strong>
+              <strong class="d-block">Buka instalasi aplikasi kustom.</strong>
               <p>Di beranda CasaOS, klik <code>+</code> pada daftar aplikasi, pilih <code>Install a customized app</code>, lalu <code>Import</code>. Gunakan YAML CasaOS di bawah.</p>
             </li>
             <li>
-              <strong>Periksa lokasi data dan port.</strong>
+              <strong class="d-block">Periksa lokasi data dan port.</strong>
               <p>YAML CasaOS menyimpan data di <code>/DATA/AppData/LINNMS/state</code>, <code>/DATA/AppData/LINNMS/database</code>, dan <code>/DATA/AppData/LINNMS/run</code>. Pastikan lokasi tersebut sesuai dengan server Anda. Port HTTP bawaan adalah <code>88</code>, sedangkan port HTTPS container dipetakan ke <code>4143</code>.</p>
             </li>
             <li>
-              <strong>Impor YAML dan pasang aplikasi.</strong>
+              <strong class="d-block">Impor YAML dan pasang aplikasi.</strong>
               <p>Salin seluruh YAML berikut ke fitur impor CasaOS, periksa hasil impornya, lalu jalankan instalasi.</p>
               <div class="linnms__docs__code" data-code>
-                <div class="linnms__docs__code-head"><span>casaos-compose.yaml</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-                <pre><code>name: LINNMS
+                <div class="linnms__docs__code__head d-flex align-items-center justify-content-between"><span>casaos-compose.yaml</span><button type="button" class="linnms__docs__code__copy p-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <pre class="m-0"><code>name: LINNMS
 services:
   app:
     image: ghcr.io/ramonveredic/linnms:latest
@@ -191,7 +191,7 @@ x-casaos:
               </div>
             </li>
             <li>
-              <strong>Buka LINNMS.</strong>
+              <strong class="d-block">Buka LINNMS.</strong>
               <p>Setelah aplikasi dan database berjalan, buka <code>http://IP_SERVER:88/</code>. Ganti <code>IP_SERVER</code> dengan alamat server.</p>
             </li>
           </ol>
@@ -200,8 +200,8 @@ x-casaos:
           <h3 id="error-title">Periksa pesan error</h3>
           <p>Untuk Docker Compose, jalankan perintah ini dari direktori <code>compose.yaml</code>. Hasilnya menunjukkan kesalahan konfigurasi, status container, dan log aplikasi serta database.</p>
           <div class="linnms__docs__code" data-code>
-            <div class="linnms__docs__code-head"><span>Terminal</span><button type="button" class="linnms__docs__code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
-            <pre><code>docker compose -f compose.yaml config
+            <div class="linnms__docs__code__head d-flex align-items-center justify-content-between"><span>Terminal</span><button type="button" class="linnms__docs__code__copy p-0" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+            <pre class="m-0"><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml ps --all
 docker compose -f compose.yaml logs --tail=100 app db</code></pre>
           </div>

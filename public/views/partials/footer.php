@@ -3,7 +3,7 @@
     <div class="row gx-4 gy-3">
     <nav class="linnms__footer__group col-6 col-md-4" aria-labelledby="footer__linnms__title">
       <h2 id="footer__linnms__title" class="mb-2">Halaman</h2>
-      <ul class="linnms__footer__nav  list-unstyled mb-0">
+      <ul class="linnms__footer__nav list-unstyled mb-0">
         <li><a class="d-flex align-items-center gap-2 py-1" href="/">Beranda</a></li>
         <li><a class="d-flex align-items-center gap-2 py-1" href="/#fitur">Fitur</a></li>
         <li><a class="d-flex align-items-center gap-2 py-1" href="/dokumentasi">Docs</a></li>
@@ -29,5 +29,5 @@
     </div>
     </div>
   </div>
-  <div class="container-xl linnms__footer__copyright py-2">© <?= date('Y') ?> LINNMS</div>
+  <div class="container-xl linnms__footer__copyright py-2 text-center">© <?= date('Y') ?> LINNMS</div>
 </footer>

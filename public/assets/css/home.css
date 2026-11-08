@@ -1,11 +1,11 @@
 .linnms__home__hero {
   border-bottom: 1px solid var(--line);
 }
-.linnms__home__hero-grid {
+.linnms__home__hero__grid {
   padding-top: 56px;
   padding-bottom: 48px;
 }
-.linnms__home__hero-copy {
+.linnms__home__hero__copy {
   max-width: 800px;
 }
 .linnms__home__eyebrow {
@@ -15,16 +15,14 @@
   font-weight: 700;
   letter-spacing: 0.08em;
 }
-.linnms__home__hero-title {
+.linnms__home__hero h1 {
   margin-bottom: 20px;
-  font: 700 var(--font__display__md)/1.16 var(--heading);
-  letter-spacing: -0.04em;
 }
 .linnms__home__accent,
 .linnms__home__highlights .bi {
   color: var(--brand-accent);
 }
-.linnms__home__hero-description {
+.linnms__home__hero__description {
   max-width: 620px;
   line-height: 1.75;
 }
@@ -32,68 +30,67 @@
   font-size: var(--font__sm);
   font-weight: 500;
 }
-.linnms__home__preview-preview-wrap {
+.linnms__home__preview__wrap {
   max-width: 900px;
 }
-.linnms__home__preview-dots span {
+.linnms__home__preview__dots span {
   width: 8px;
   height: 8px;
 }
-.linnms__home__preview-dashboard {
+.linnms__home__preview__dashboard {
   background: var(--bs-dark);
   font-size: var(--font__sm);
 }
-.linnms__home__preview-stat span {
+.linnms__home__preview__stat span {
   font-size: var(--font__xs);
   min-height: 2.7em;
 }
-.linnms__home__preview-app-content {
+.linnms__home__preview__content {
   min-width: 0;
 }
-.linnms__home__preview-topbar {
+.linnms__home__preview__topbar {
   background: var(--bs-dark);
 }
-.linnms__home__preview-title,
-.linnms__home__preview-stat strong {
+.linnms__home__preview__dashboard h2,
+.linnms__home__preview__stat strong {
   font-size: var(--font__lg);
 }
-.linnms__home__preview-stat {
+.linnms__home__preview__stat {
   --bs-card-bg: color-mix(in srgb, var(--stat-color) 14%, var(--panel));
   color: var(--stat-color);
   border-top: 3px solid var(--stat-color);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--info {
+.linnms__home__preview__stat.linnms__home__preview__stat__info {
   --stat-color: var(--status-info);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--accent {
+.linnms__home__preview__stat.linnms__home__preview__stat__accent {
   --stat-color: var(--brand-accent);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--success {
+.linnms__home__preview__stat.linnms__home__preview__stat__success {
   --stat-color: var(--status-success);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--warning {
+.linnms__home__preview__stat.linnms__home__preview__stat__warning {
   --stat-color: var(--status-warning);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--lost {
+.linnms__home__preview__stat.linnms__home__preview__stat__lost {
   --stat-color: var(--status-lost);
 }
-.linnms__home__preview-stat.linnms__home__preview-stat--danger {
+.linnms__home__preview__stat.linnms__home__preview__stat__danger {
   --stat-color: var(--status-danger);
 }
-.linnms__home__preview-search {
+.linnms__home__preview__search {
   max-width: 190px;
 }
-.linnms__home__preview-search .form-control,
-.linnms__home__preview-search .input-group-text,
-.linnms__home__preview-dashboard .btn {
+.linnms__home__preview__search .form-control,
+.linnms__home__preview__search .input-group-text,
+.linnms__home__preview__dashboard .btn {
   font-size: var(--font__xs);
 }
-.linnms__home__preview-table {
+.linnms__home__preview__table {
   min-width: 720px;
   font-size: var(--font__sm);
   white-space: nowrap;
 }
-/* Keep the complete preview table accessible through horizontal scrolling. */
 #dashboard-preview .table-responsive {
   max-width: 100%;
   overflow-x: auto;
@@ -101,51 +98,51 @@
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) var(--panel);
 }
-#dashboard-preview .linnms__home__preview-stat .card-body {
+#dashboard-preview .linnms__home__preview__stat .card-body {
   min-width: 0;
 }
-#dashboard-preview .linnms__home__preview-stat span,
-#dashboard-preview .linnms__home__preview-stat strong {
+#dashboard-preview .linnms__home__preview__stat span,
+#dashboard-preview .linnms__home__preview__stat strong {
   overflow-wrap: anywhere;
 }
 .linnms__home__benefits,
 .linnms__home__support,
-.linnms__home__feature-detail {
+.linnms__home__feature__detail {
   padding-top: 64px;
   padding-bottom: 64px;
   border-top: 1px solid var(--line);
 }
-.linnms__home__section-heading {
+.linnms__home__section__heading {
   max-width: 720px;
   margin-bottom: 36px;
 }
-.linnms__home__section-heading h2,
-.linnms__home__detail-copy h2,
+.linnms__home__section__heading h2,
+.linnms__home__detail__copy h2,
 .linnms__home__cta h2 {
   margin: 12px 0 18px;
-  font: 700 var(--font__display__xs)/1.35 var(--heading);
-  letter-spacing: -0.025em;
   text-wrap: balance;
 }
-.linnms__home__section-heading p,
-.linnms__home__detail-copy p,
+.linnms__home__section__heading p,
+.linnms__home__detail__copy p,
 .linnms__home__benefits p,
 .linnms__home__cta p {
   line-height: 1.75;
   margin-bottom: 0;
 }
-.linnms__home__feature-icon {
+.linnms__home__feature__icon {
   font-size: var(--font__xl);
   line-height: 1;
 }
-.linnms__home__feature-title {
-  font: 600 var(--font__lg)/1.4 var(--heading);
+.linnms__home__benefits h3 {
+  font-size: var(--font__lg);
+  font-weight: 600;
+  line-height: 1.4;
 }
-.linnms__home__support .linnms__home__section-heading {
+.linnms__home__support .linnms__home__section__heading {
   margin-inline: auto;
   text-align: center;
 }
-.linnms__home__notification-visual figcaption {
+.linnms__home__notification__visual figcaption {
   margin-bottom: 24px;
   color: var(--text-muted);
   font-size: var(--font__sm);
@@ -157,36 +154,31 @@
   font-size: var(--font__xl);
   text-align: center;
 }
-.linnms__home__channel strong,
 .linnms__home__channel span,
-.linnms__home__channel-event small {
-  display: block;
-}
-.linnms__home__channel span,
-.linnms__home__channel-event {
+.linnms__home__channel__event {
   font-size: var(--font__sm);
   line-height: 1.6;
 }
 .linnms__home__channel span,
-.linnms__home__channel-event small {
+.linnms__home__channel__event small {
   margin-top: 6px;
   color: var(--text-secondary);
 }
-.linnms__home__channel-event {
+.linnms__home__channel__event {
   background: var(--bs-dark);
 }
-.linnms__home__channel-event > .bi {
+.linnms__home__channel__event > .bi {
   color: var(--brand-accent-hover);
 }
-.linnms__home__integration-list li {
+.linnms__home__integration__list li {
   background: var(--panel);
   color: var(--text-secondary);
   font-size: var(--font__sm);
 }
-.linnms__home__detail-copy > p + p {
+.linnms__home__detail__copy > p + p {
   margin-top: 18px;
 }
-.linnms__home__cta-section {
+.linnms__home__cta__section {
   padding-top: 24px;
   padding-bottom: 64px;
 }
@@ -195,24 +187,24 @@
   border-radius: var(--bs-border-radius-lg);
   background: var(--brand-accent-subtle);
 }
-.linnms__home__install-link {
+.linnms__home__install__link {
   color: var(--text-secondary);
   font-size: var(--font__sm);
 }
-.linnms__home__install-link:hover {
+.linnms__home__install__link:hover {
   color: var(--brand-accent-hover);
 }
 @media (max-width: 767.98px) {
   .linnms__home__benefits,
   .linnms__home__support,
-  .linnms__home__feature-detail {
+  .linnms__home__feature__detail {
     padding-block: 40px;
   }
 }
 @media (max-width: 374.98px) {
-  .linnms__home__hero-actions,
-  .linnms__home__cta-actions,
-  .linnms__home__cta-actions .linnms__cta__btn {
+  .linnms__home__hero__actions,
+  .linnms__home__cta__actions,
+  .linnms__home__cta__actions .linnms__cta__btn {
     width: 100%;
   }
 }

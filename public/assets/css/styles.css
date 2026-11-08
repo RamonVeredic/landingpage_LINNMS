@@ -8,6 +8,39 @@ html.linnms__page__loading {
 body {
   -webkit-font-smoothing: antialiased;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-family: var(--heading);
+  font-weight: 700;
+}
+h1 {
+  font-size: var(--font__display__md);
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+}
+h2 {
+  font-size: var(--font__display__xs);
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+h3,
+h5 {
+  font-size: var(--font__xl);
+  line-height: 1.35;
+}
+h4 {
+  font-size: var(--font__display__xs);
+  line-height: 1.3;
+}
+h6 {
+  font-size: var(--font__lg);
+  line-height: 1.4;
+}
 #main:not(.linnms__docs__page) {
   padding-block: clamp(1.5rem, 4vw, 3rem);
 }
@@ -62,9 +95,6 @@ summary:focus-visible {
   padding:0 0.8rem;
 }
 .linnms__header__brand {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
   gap: 10px;
 }
 .linnms__header__brand > span:last-child {
@@ -106,8 +136,6 @@ summary:focus-visible {
   width: 34px;
   height: 34px;
   object-fit: contain;
-  display: block;
-  flex: 0 0 auto;
   filter: drop-shadow(0 6px 18px var(--logo-shadow));
 }
 @media (max-width: 560px) {
@@ -224,7 +252,7 @@ summary:focus-visible {
   color: var(--text-secondary);
   font-size: inherit;
 }
-.linnms__footer__social.bi,
+.linnms__footer__social .bi,
 .linnms__footer__contact .bi {
   flex-shrink: 0;
   font-size: 1em;
@@ -237,7 +265,6 @@ summary:focus-visible {
 }
 .linnms__footer__copyright {
   max-width: 960px;
-  text-align: center;
   color: var(--text-muted);
   font-size: var(--font__sm);
 }
@@ -264,7 +291,7 @@ summary:focus-visible {
   .dropdown-item,
   .linnms__footer__page a,
   .linnms__contact__links a,
-  .linnms__home__install-link
+  .linnms__home__install__link
 ) {
   transition:
     color var(--interaction-duration) ease,
@@ -279,14 +306,14 @@ summary:focus-visible {
 }
 .linnms__footer__page a,
 .linnms__contact__links a,
-.linnms__home__install-link {
+.linnms__home__install__link {
   text-decoration-color: rgba(0, 0, 0, 0);
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 }
 .linnms__footer__page a:focus-visible,
 .linnms__contact__links a:focus-visible,
-.linnms__home__install-link:focus-visible {
+.linnms__home__install__link:focus-visible {
   color: var(--brand-accent-hover);
   text-decoration-color: currentColor;
 }

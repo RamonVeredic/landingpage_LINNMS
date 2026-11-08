@@ -1,8 +1,8 @@
 
 <header class="linnms__header__page">
   <div class="container-xl navbar navbar-expand-lg linnms__header__nav">
-    <a class="linnms__header__brand navbar-brand m-0" href="/">
-      <img class="linnms__header__logo" src="<?= asset('favicon.ico') ?>" alt="" width="44" height="44" decoding="async" />
+    <a class="linnms__header__brand navbar-brand m-0 d-inline-flex align-items-center flex-shrink-0" href="/">
+      <img class="linnms__header__logo d-block flex-shrink-0" src="<?= asset('favicon.ico') ?>" alt="" width="44" height="44" decoding="async" />
       <span><strong>LINNMS</strong><small>NETWORK MANAGEMENT</small></span>
     </a>
     <button class="navbar-toggler linnms__header__toggle ms-auto d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Menu navigasi">
