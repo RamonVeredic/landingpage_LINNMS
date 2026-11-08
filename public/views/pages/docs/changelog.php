@@ -1,11 +1,11 @@
 <?php require BASE_PATH . '/public/views/partials/docs-open.php'; ?>
       <section class="manual-section manual-release-page" id="release" aria-labelledby="release-title">
-        <h2 id="release-title">Daftar Release</h2>
-        <p class="manual-release-intro">Setiap release memiliki changelog yang menjelaskan penambahan, perubahan, dan perbaikannya.</p>
+        <h2 id="release-title">Release</h2>
+        <p class="manual-release-intro">Pilih versi rilis untuk melihat changelog. Setiap versi memiliki tautan ke halaman rilisnya di GitHub.</p>
         <?php if (empty($changelogReleases)): ?>
         <p class="manual-note">Belum ada release yang dipublikasikan.</p>
         <?php else: ?>
-        <nav class="manual-method-nav d-flex flex-wrap gap-2" aria-label="Pilih versi release">
+        <nav class="manual-method-nav d-flex flex-wrap gap-2" aria-label="Daftar versi release">
           <?php foreach ($changelogReleases as $release): ?>
           <a href="#<?= e($release['id']) ?>">v<?= e($release['version']) ?></a>
           <?php endforeach; ?>
@@ -17,8 +17,19 @@
         <section class="manual-method manual-release" id="<?= e($release['id']) ?>" aria-labelledby="<?= e($release['id']) ?>-title">
           <header class="manual-release-head">
             <div>
-              <span class="manual-release-eyebrow">RELEASE</span>
-              <h3 id="<?= e($release['id']) ?>-title">v<?= e($release['version']) ?></h3>
+              <span class="manual-release-eyebrow">VERSI RELEASE</span>
+              <?php $githubUrl = $release['release_url'] ?? null; ?>
+              <?php $hasGithubUrl = is_string($githubUrl) && preg_match('~^https://github\\.com(?:/|$)~i', $githubUrl); ?>
+              <h3 id="<?= e($release['id']) ?>-title">
+                <?php if ($hasGithubUrl): ?>
+                <a class="manual-release-link" href="<?= e($githubUrl) ?>" target="_blank" rel="noopener noreferrer" aria-label="Lihat release v<?= e($release['version']) ?> di GitHub (tab baru)">
+                  v<?= e($release['version']) ?>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <?php else: ?>
+                v<?= e($release['version']) ?>
+                <?php endif; ?>
+              </h3>
             </div>
             <?php if (isset($release['date']) && is_string($release['date']) && $release['date'] !== ''): ?>
             <time class="manual-release-date" datetime="<?= e($release['date']) ?>"><?= e($release['date']) ?></time>
