@@ -1,9 +1,13 @@
 <?php require BASE_PATH . '/public/views/partials/docs-open.php'; ?>
       <section class="manual-section" id="pemetaan-data" aria-labelledby="pemetaan-title">
         <h2 id="pemetaan-title">Pemetaan Data</h2>
-        <details class="manual-details" id="zte">
-          <summary><span><strong>ZTE</strong><small>GPON · C300 / C320</small></span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
-          <div class="manual-details-body">
+        <nav class="manual-method-nav d-flex flex-wrap gap-2" aria-label="Bagian pemetaan data">
+          <a href="#zte">ZTE</a>
+          <a href="#hioso">HIOSO</a>
+        </nav>
+        <section class="manual-method manual-mapping-group" id="zte" aria-labelledby="zte-title">
+          <h3 id="zte-title">ZTE <small>GPON · C300 / C320</small></h3>
+          <div class="manual-mapping-body">
             <div class="manual-table-wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data ZTE">
               <table class="table table-sm align-top mb-0 manual-table">
 <caption class="visually-hidden">Pemetaan data perangkat ZTE</caption>
@@ -278,10 +282,10 @@
 </table>
             </div>
           </div>
-        </details>
-        <details class="manual-details" id="hioso">
-          <summary><span><strong>HIOSO</strong><small>EPON · 2 / 4 port</small></span><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
-          <div class="manual-details-body">
+        </section>
+        <section class="manual-method manual-mapping-group" id="hioso" aria-labelledby="hioso-title">
+          <h3 id="hioso-title">HIOSO <small>EPON · 2 / 4 port</small></h3>
+          <div class="manual-mapping-body">
             <div class="manual-table-wrap" tabindex="0" role="region" aria-label="Tabel pemetaan data HIOSO">
               <table class="table table-sm align-top mb-0 manual-table">
 <caption class="visually-hidden">Pemetaan data perangkat HIOSO</caption>
@@ -454,7 +458,7 @@
 </table>
             </div>
           </div>
-        </details>
+        </section>
         <p class="manual-note">Penanda dalam kurung kurawal diganti sesuai indeks, jalur PON, port, atau identitas ONU pada perangkat. Nilai dengan tanda <code>|</code> menunjukkan pilihan.</p>
       </section>
     </article>

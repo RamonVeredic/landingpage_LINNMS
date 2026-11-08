@@ -110,6 +110,20 @@
   margin: 0 0 20px;
   font: 700 var(--font__xl)/1.3 var(--heading);
 }
+.manual-mapping-group h3 small {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--text-muted);
+  font: 500 var(--font__sm)/1.5 var(--font);
+  letter-spacing: normal;
+}
+.manual-mapping-group .manual-table-wrap {
+  /* Reveal all rows vertically; horizontal scroll remains on narrow screens. */
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .manual-steps {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -311,14 +325,14 @@
   overflow-wrap: anywhere;
   font-size: inherit;
 }
-.manual-release .manual-details-body h4 {
+.manual-release .manual-release-body h4 {
   margin: 18px 0 10px;
   font: 600 var(--font__md)/1.4 var(--heading);
 }
-.manual-release .manual-details-body h4:first-child {
+.manual-release .manual-release-body h4:first-child {
   margin-top: 0;
 }
-.manual-release .manual-details-body h5 {
+.manual-release .manual-release-body h5 {
   margin: 14px 0 7px;
   color: var(--text-secondary);
   font: 600 var(--font__sm)/1.4 var(--font);

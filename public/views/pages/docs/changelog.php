@@ -1,19 +1,24 @@
 <?php require BASE_PATH . '/public/views/partials/docs-open.php'; ?>
       <section class="manual-section" id="changelog" aria-labelledby="changelog-title">
         <h2 id="changelog-title">Changelog</h2>
-        <details class="manual-details manual-release" name="changelog" open>
-          <summary><strong>v1.0.3</strong><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
-          <div class="manual-details-body"><ul class="manual-changes">
+        <nav class="manual-method-nav d-flex flex-wrap gap-2" aria-label="Versi changelog">
+          <a href="#v1-0-3">v1.0.3</a>
+          <a href="#v1-0-2">v1.0.2</a>
+          <a href="#v1-0-0">v1.0.0</a>
+        </nav>
+        <section class="manual-method manual-release" id="v1-0-3" aria-labelledby="v1-0-3-title">
+          <h3 id="v1-0-3-title">v1.0.3</h3>
+          <div class="manual-release-body"><ul class="manual-changes">
           <li>fix: Service kapaabilitas</li>
           <li>fix: Scanning coverage</li>
           <li>fix: Bug view OLT ZTE, Switch</li>
           <li>Add: flexsibilitas setting admin</li>
           <li>Add: Worker change</li>
         </ul></div>
-        </details>
-        <details class="manual-details manual-release" name="changelog">
-          <summary><strong>v1.0.2</strong><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
-          <div class="manual-details-body"><ul class="manual-changes">
+        </section>
+        <section class="manual-method manual-release" id="v1-0-2" aria-labelledby="v1-0-2-title">
+          <h3 id="v1-0-2-title">v1.0.2</h3>
+          <div class="manual-release-body"><ul class="manual-changes">
           <li>fix: Service WaGateway</li>
           <li>fix: Service Workers</li>
           <li>fix: Trafik Networking</li>
@@ -22,10 +27,10 @@
           <li>Update riwayat notifikasi</li>
           <li>Optimasi Edit Delete Device</li>
         </ul></div>
-        </details>
-        <details class="manual-details manual-release" name="changelog">
-          <summary><strong>v1.0.0</strong><i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
-          <div class="manual-details-body"><h4>Perangkat yang didukung</h4>
+        </section>
+        <section class="manual-method manual-release" id="v1-0-0" aria-labelledby="v1-0-0-title">
+          <h3 id="v1-0-0-title">v1.0.0</h3>
+          <div class="manual-release-body"><h4>Perangkat yang didukung</h4>
         <h5>OLT · Read &amp; Write</h5>
         <ul class="manual-changes">
           <li>ZTE C300 (GPON)</li>
@@ -61,7 +66,7 @@
           <li>WAGate</li>
           <li>WPPConnect</li>
         </ul></div>
-        </details>
+        </section>
       </section>
     </article>
   </div>
