@@ -4,6 +4,7 @@ declare(strict_types=1);
 define('BASE_PATH', dirname(__DIR__));
 
 require __DIR__ . '/helpers.php';
+require __DIR__ . '/changelog.php';
 require __DIR__ . '/controller.php';
 
 function handle_request(array $config): void
