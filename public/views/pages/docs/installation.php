@@ -18,7 +18,7 @@
               <strong>Buat direktori dan berkas Compose.</strong>
               <p>Jalankan <code>mkdir -p linnms &amp;&amp; cd linnms</code>, lalu simpan YAML berikut sebagai <code>compose.yaml</code>. Port HTTP bawaan adalah <code>84</code>; port HTTPS container dipetakan ke <code>4143</code>.</p>
               <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>compose.yaml</span><button type="button" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <div class="manual-code-head"><span>compose.yaml</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>name: linnms
 services:
   app:
@@ -77,7 +77,7 @@ volumes:
               <strong>Validasi dan jalankan layanan.</strong>
               <p>Jalankan perintah ini dari direktori yang berisi <code>compose.yaml</code>.</p>
               <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>Terminal</span><button type="button" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <div class="manual-code-head"><span>Terminal</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml up -d
 docker compose -f compose.yaml ps</code></pre>
@@ -104,7 +104,7 @@ docker compose -f compose.yaml ps</code></pre>
               <strong>Impor YAML dan pasang aplikasi.</strong>
               <p>Salin seluruh YAML berikut ke fitur impor CasaOS, periksa hasil impornya, lalu jalankan instalasi.</p>
               <div class="manual-code" data-code>
-                <div class="manual-code-head"><span>casaos-compose.yaml</span><button type="button" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+                <div class="manual-code-head"><span>casaos-compose.yaml</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
                 <pre><code>name: LINNMS
 services:
   app:
@@ -200,7 +200,7 @@ x-casaos:
           <h3 id="error-title">Periksa pesan error</h3>
           <p>Untuk Docker Compose, jalankan perintah ini dari direktori <code>compose.yaml</code>. Hasilnya menunjukkan kesalahan konfigurasi, status container, dan log aplikasi serta database.</p>
           <div class="manual-code" data-code>
-            <div class="manual-code-head"><span>Terminal</span><button type="button" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
+            <div class="manual-code-head"><span>Terminal</span><button type="button" class="manual-code-copy" data-copy>Salin <i class="bi bi-copy" aria-hidden="true"></i></button></div>
             <pre><code>docker compose -f compose.yaml config
 docker compose -f compose.yaml ps --all
 docker compose -f compose.yaml logs --tail=100 app db</code></pre>

@@ -45,6 +45,26 @@
   background: var(--brand-accent-subtle);
   color: var(--brand-accent-hover);
 }
+.manual-nav-sub {
+  display: grid;
+  gap: 2px;
+  margin: 0 0 8px 12px;
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
+.manual-nav-sub a {
+  padding: 7px 10px;
+  border-left: 0;
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: var(--font__xs);
+  font-weight: 500;
+}
+.manual-nav-sub a:hover,
+.manual-nav-sub a:focus-visible {
+  background: var(--brand-accent-subtle);
+  color: var(--brand-accent-hover);
+}
 .manual-content {
   min-width: 0;
 }
@@ -149,6 +169,24 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.manual-code-copy {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--bs-cyan);
+  font: 600 var(--font__xs)/1.2 var(--mono);
+  letter-spacing: 0.02em;
+}
+.manual-code-copy:hover,
+.manual-code-copy:focus-visible {
+  color: var(--brand-accent-hover);
+}
+.manual-code pre,
+.manual-table-wrap,
+.manual-nav {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
 .manual-code pre {
   max-width: 100%;
   max-height: 440px;
@@ -160,21 +198,27 @@
   font: 400 var(--font__sm)/1.7 var(--mono);
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-strong) transparent;
 }
-.manual-code pre::-webkit-scrollbar {
+.manual-code pre::-webkit-scrollbar,
+.manual-table-wrap::-webkit-scrollbar,
+.manual-nav::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-.manual-code pre::-webkit-scrollbar-track {
+.manual-code pre::-webkit-scrollbar-track,
+.manual-table-wrap::-webkit-scrollbar-track,
+.manual-nav::-webkit-scrollbar-track {
   background: transparent;
 }
-.manual-code pre::-webkit-scrollbar-thumb {
+.manual-code pre::-webkit-scrollbar-thumb,
+.manual-table-wrap::-webkit-scrollbar-thumb,
+.manual-nav::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: var(--border-strong);
 }
-.manual-code pre::-webkit-scrollbar-thumb:hover {
+.manual-code pre::-webkit-scrollbar-thumb:hover,
+.manual-table-wrap::-webkit-scrollbar-thumb:hover,
+.manual-nav::-webkit-scrollbar-thumb:hover {
   background: var(--brand-accent-border);
 }
 .manual-code code {
@@ -185,7 +229,7 @@
   overflow-wrap: anywhere;
 }
 .manual-details {
-  overflow: hidden;
+  overflow: clip;
   margin-bottom: 12px;
   border: 1px solid var(--border-muted);
   border-radius: 12px;
@@ -312,7 +356,8 @@
     margin-bottom: 32px;
     overflow-x: auto;
   }
-  .manual-nav-label {
+  .manual-nav-label,
+  .manual-nav-sub {
     display: none;
   }
   .manual-nav a {

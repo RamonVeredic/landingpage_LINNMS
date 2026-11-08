@@ -17,6 +17,13 @@
     <nav class="manual-nav" aria-label="Isi Docs">
       <span class="manual-nav-label">ISI DOCS</span>
       <a href="/dokumentasi" <?= $docSection === 'installation' ? 'class="active" aria-current="page"' : '' ?>>Instalasi</a>
+      <?php if ($docSection === 'installation'): ?>
+      <div class="manual-nav-sub">
+        <a href="#docker-compose">Docker Compose</a>
+        <a href="#casaos">CasaOS</a>
+        <a href="#periksa-error">Periksa error</a>
+      </div>
+      <?php endif; ?>
       <a href="/dokumentasi/pemetaan-data" <?= $docSection === 'mapping' ? 'class="active" aria-current="page"' : '' ?>>Pemetaan Data</a>
       <a href="/dokumentasi/changelog" <?= $docSection === 'changelog' ? 'class="active" aria-current="page"' : '' ?>>Changelog</a>
     </nav>
