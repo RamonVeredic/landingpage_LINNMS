@@ -61,7 +61,9 @@
   font-weight: 500;
 }
 .manual-nav-sub a:hover,
-.manual-nav-sub a:focus-visible {
+.manual-nav-sub a:focus-visible,
+.manual-nav-sub a.active {
+  border-left: 0;
   background: var(--brand-accent-subtle);
   color: var(--brand-accent-hover);
 }
@@ -92,8 +94,10 @@
   font-weight: 600;
 }
 .manual-method-nav a:hover,
-.manual-method-nav a:focus-visible {
+.manual-method-nav a:focus-visible,
+.manual-method-nav a.active {
   border-color: var(--brand-accent-border);
+  background: var(--brand-accent-subtle);
   color: var(--brand-accent-hover);
 }
 .manual-method {
