@@ -1,9 +1,9 @@
 <main id="main">
-  <section class="hero hero-product">
-    <div class="hero-grid container-xl d-flex flex-column align-items-center">
-      <div class="hero-copy text-center w-100 mb-4">
-        <div class="home-eyebrow">NETWORK MANAGEMENT SYSTEM</div>
-        <h1 class="hero-title">Pantau perangkat jaringan Anda<br><span class="home-accent">Kelola dari satu tempat</span></h1>
+  <section class="hero linnms__hero">
+    <div class="linnms__hero__gird container-xl d-flex flex-column align-items-center">
+      <div class="linnms__eyebrow text-center w-100 mb-4">
+        <div class="linnms__eyebrow">NETWORK MANAGEMENT SYSTEM</div>
+        <h1 class="linnms__hero__title">Pantau perangkat jaringan Anda<br><span class="linnms__home__accent">Kelola dari satu tempat</span></h1>
         <div class="hero-description mx-auto mb-4">
           <p class="mb-0">LINNMS Memudahkan Anda dalam memantau dan mengelola perangkat jaringan secara efisien</p>
         </div>
@@ -11,7 +11,7 @@
           <a class="btn btn-sm cta-button btn-primary rounded-pill fw-semibold px-4 py-2" href="#">Coba Gratis</a>
           <a class="btn btn-sm cta-button btn-outline-primary rounded-pill fw-semibold px-4 py-2" href="#">Pesan Sekarang</a>
         </div>
-        <ul class="home-highlights list-unstyled d-flex flex-wrap justify-content-center gap-3 mt-4 mb-0" aria-label="Fungsi utama LINNMS">
+        <ul class="linnms__highlights list-unstyled d-flex flex-wrap justify-content-center gap-3 mt-4 mb-0" aria-label="Fungsi utama LINNMS">
           
 <li class="d-flex align-items-center gap-2">
   <i class="bi bi-speedometer2" aria-hidden="true"></i>

@@ -1,6 +1,6 @@
 const dismissPageLoader = () => {
- const loader = document.getElementById('page-loader');
- document.documentElement.classList.remove('is-loading');
+ const loader = document.getElementById('linnms__loader__page');
+ document.documentElement.classList.remove('linnms__loading__is');
  loader?.remove();
 };
 const finishPageLoading = () => {
@@ -16,7 +16,7 @@ window.addEventListener('pageshow', event => {
 });
 
 document.addEventListener('DOMContentLoaded',()=>{
- document.querySelectorAll('.linnms-nav-link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
+ document.querySelectorAll('.linnms__nav__link[href*="#"]').forEach(link=>link.addEventListener('click',()=>{
   const menu=document.getElementById('primary-nav');
   if(menu?.classList.contains('show')&&window.bootstrap){bootstrap.Collapse.getOrCreateInstance(menu,{toggle:false}).hide()}
  }));

@@ -9,7 +9,6 @@ final class PageController
             'pageTitle' => 'LINNMS | Pemantauan Jaringan dan Pengelolaan OLT/ONU',
             'pageDescription' => 'LINNMS membantu memantau perangkat jaringan dan mengelola OLT serta ONU dari satu tempat.',
             'activePage' => 'home',
-            'bodyClass' => 'home-page',
         ]);
     }
 
@@ -19,7 +18,6 @@ final class PageController
             'pageTitle' => 'Tentang LINNMS',
             'pageDescription' => 'Tentang LINNMS dan pengembangnya, RamonVeredic.',
             'activePage' => 'about',
-            'bodyClass' => 'about-page',
         ]);
     }
 
@@ -29,7 +27,6 @@ final class PageController
             'pageTitle' => 'Docs | LINNMS',
             'pageDescription' => 'Instalasi, pemetaan data, dan changelog LINNMS.',
             'activePage' => 'docs',
-            'bodyClass' => 'docs-page',
             'docSection' => 'installation',
         ]);
     }
@@ -40,7 +37,6 @@ final class PageController
             'pageTitle' => 'Pemetaan Data | LINNMS Docs',
             'pageDescription' => 'OID SNMP dan perintah Telnet untuk perangkat ZTE dan HIOSO.',
             'activePage' => 'docs',
-            'bodyClass' => 'docs-page',
             'docSection' => 'mapping',
         ]);
     }
@@ -51,7 +47,6 @@ final class PageController
             'pageTitle' => 'Changelog | LINNMS Docs',
             'pageDescription' => 'Riwayat versi LINNMS.',
             'activePage' => 'docs',
-            'bodyClass' => 'docs-page',
             'docSection' => 'changelog',
         ]);
     }
@@ -70,7 +65,6 @@ final class PageController
             'pageTitle' => $heading . ' | LINNMS',
             'pageDescription' => $message,
             'activePage' => '',
-            'bodyClass' => '',
             'status' => $status,
             'heading' => $heading,
             'message' => $message,

@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="id" data-bs-theme="dark">
 <?php require BASE_PATH . '/public/views/partials/head.php'; ?>
-<body class="<?= e($bodyClass ?? '') ?>">
-<div class="page-loader" id="page-loader">
+<body>
+<div class="linnms__loader__page" id="linnms__loader__page">
   <div class="spinner-grow" role="status">
     <span class="visually-hidden">Memuat halaman...</span>
   </div>
