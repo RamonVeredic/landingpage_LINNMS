@@ -10,7 +10,10 @@
           <a href="#<?= e($release['id']) ?>">v<?= e($release['version']) ?></a>
           <?php endforeach; ?>
         </nav>
-        <?php foreach ($changelogReleases as $release): ?>
+        <?php foreach ($changelogReleases as $releaseIndex => $release): ?>
+        <?php if ($releaseIndex > 0): ?>
+        <hr class="manual-release-divider" aria-hidden="true" />
+        <?php endif; ?>
         <section class="manual-method manual-release" id="<?= e($release['id']) ?>" aria-labelledby="<?= e($release['id']) ?>-title">
           <header class="manual-release-head">
             <div>
