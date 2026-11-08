@@ -60,22 +60,22 @@
   color: var(--stat-color);
   border-top: 3px solid var(--stat-color);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__info {
+.linnms__home__preview__stat__info {
   --stat-color: var(--status-info);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__accent {
+.linnms__home__preview__stat__accent {
   --stat-color: var(--brand-accent);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__success {
+.linnms__home__preview__stat__success {
   --stat-color: var(--status-success);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__warning {
+.linnms__home__preview__stat__warning {
   --stat-color: var(--status-warning);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__lost {
+.linnms__home__preview__stat__lost {
   --stat-color: var(--status-lost);
 }
-.linnms__home__preview__stat.linnms__home__preview__stat__danger {
+.linnms__home__preview__stat__danger {
   --stat-color: var(--status-danger);
 }
 .linnms__home__preview__search {

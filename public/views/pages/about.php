@@ -255,24 +255,24 @@
       <ul class="linnms__contact__links row row-cols-1 row-cols-md-3 g-3 list-unstyled mt-3 mb-0">
 
         <li class="col">
-          <a class="d-flex align-items-center gap-2 py-2" href="mailto:hello@example.com">
-            <i class="bi bi-envelope" aria-hidden="true"></i>
+          <a class="linnms__contact__link linnms__contact__link__large d-flex align-items-center gap-2 py-2" href="mailto:hello@example.com">
+            <i class="linnms__contact__icon bi bi-envelope" aria-hidden="true"></i>
             hello@example.com
           </a>
         </li>
 
         <li class="col">
-          <a class="d-flex align-items-center gap-2 py-2" href="https://wa.me/6281234567890"
+          <a class="linnms__contact__link linnms__contact__link__large d-flex align-items-center gap-2 py-2" href="https://wa.me/6281234567890"
              target="_blank"
              rel="noopener noreferrer">
-            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            <i class="linnms__contact__icon bi bi-whatsapp" aria-hidden="true"></i>
             +62 812 3456 7890
           </a>
         </li>
 
         <li class="col">
-          <a class="d-flex align-items-center gap-2 py-2" href="tel:+622112345678">
-            <i class="bi bi-telephone" aria-hidden="true"></i>
+          <a class="linnms__contact__link linnms__contact__link__large d-flex align-items-center gap-2 py-2" href="tel:+622112345678">
+            <i class="linnms__contact__icon bi bi-telephone" aria-hidden="true"></i>
             +62 21 1234 5678
           </a>
         </li>
