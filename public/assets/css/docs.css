@@ -27,9 +27,13 @@
   align-content: start;
   gap: 4px;
   max-height: calc(100dvh - 110px);
-  padding-right: clamp(16px, 2.5vw, 32px);
+  padding: 16px clamp(14px, 2vw, 20px);
   overflow-y: auto;
   overscroll-behavior-y: contain;
+  border: 2px solid var(--border-strong);
+  border-right: 3px solid var(--brand-accent-border);
+  border-radius: 14px;
+  background: var(--panel);
 }
 .manual-nav-label {
   margin: 0 0 10px 12px;
@@ -77,7 +81,7 @@
 .manual-content {
   min-width: 0;
   padding-left: clamp(24px, 4vw, 56px);
-  border-left: 1px solid var(--line);
+  border-left: 3px solid var(--border-strong);
 }
 .manual-section {
   scroll-margin-top: 94px;
@@ -347,9 +351,10 @@
 }
 /* A release is the parent entry; its changelog lives inside a bordered card. */
 .manual-method.manual-release {
-  margin-top: 24px;
+  margin-top: 28px;
   padding-top: 0;
-  border: 1px solid var(--border-muted);
+  border: 2px solid var(--border-strong);
+  border-top: 4px solid var(--brand-accent-border);
   border-radius: 16px;
   background: var(--panel);
   overflow: hidden;
@@ -361,7 +366,7 @@
   flex-wrap: wrap;
   gap: 12px;
   padding: 22px 26px 20px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 2px solid var(--border-strong);
   background: var(--panel2);
 }
 .manual-release-eyebrow {
@@ -381,24 +386,76 @@
   color: var(--text-muted);
   font: 600 var(--font__sm)/1.5 var(--mono);
 }
+/* The version itself links to the release page; sidebar chips remain in-page anchors. */
+.manual-release-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-underline-offset: 5px;
+}
+.manual-release-link .bi {
+  flex: 0 0 auto;
+  color: var(--brand-accent-hover);
+  font-size: var(--font__md);
+  line-height: 1;
+}
+.manual-release-link:hover,
+.manual-release-link:focus-visible {
+  color: var(--brand-accent-hover);
+  text-decoration: underline;
+}
 .manual-release-body {
   padding: 24px 26px 26px;
 }
 .manual-release .manual-release-body > h4 {
   margin: 0 0 18px;
   padding-bottom: 14px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 2px solid var(--border-strong);
   color: var(--text-primary);
   font: 700 var(--font__display__xs)/1.3 var(--heading);
 }
 .manual-release-group {
   padding: 18px 20px;
-  border: 1px solid var(--border-muted);
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--brand-accent-border);
   border-radius: 12px;
   background: var(--panel2);
 }
 .manual-release-group + .manual-release-group {
   margin-top: 14px;
+}
+/* Notes are distinct from the release's device/support description. */
+.manual-release .manual-release-changelog-heading {
+  margin-top: 30px;
+}
+.manual-release-group + .manual-release-changelog-heading {
+  padding-top: 22px;
+  border-top: 2px solid var(--border-strong);
+}
+.manual-release .manual-release-changelog-heading:first-child {
+  margin-top: 0;
+}
+.manual-changelog-list {
+  padding: 18px 20px;
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--brand-accent-border);
+  border-radius: 12px;
+  background: var(--panel2);
+}
+/* Explicit rule between consecutive versions; not just the card outlines. */
+.manual-release-divider {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: 32px 0 28px;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  opacity: 1;
+}
+.manual-release-divider + .manual-method.manual-release {
+  margin-top: 0;
 }
 .manual-release-group h5 {
   margin: 0 0 12px;
@@ -456,10 +513,11 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
     max-height: none;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     padding: 14px;
     overflow: visible;
-    border: 1px solid var(--line);
+    border: 2px solid var(--border-strong);
+    border-bottom: 3px solid var(--brand-accent-border);
     border-radius: 14px;
     background: var(--panel);
   }
@@ -480,6 +538,20 @@
     text-align: center;
     overflow-wrap: anywhere;
   }
+  /* Keep page tabs on the same row even when the submenu is in the middle
+     of the source DOM (Instalasi and Pemetaan Data). */
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 3;
+    grid-row: 2;
+  }
   .manual-nav > a.active,
   .manual-nav > a:hover,
   .manual-nav > a:focus-visible {
@@ -487,13 +559,14 @@
   }
   .manual-nav-sub {
     grid-column: 1 / -1;
+    grid-row: 3;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin: 4px 0 0;
     padding: 12px 0 0;
     border-left: 0;
-    border-top: 1px solid var(--line);
+    border-top: 2px solid var(--border-strong);
   }
   .manual-nav-sub a {
     display: inline-flex;
@@ -510,7 +583,8 @@
     border: 1px solid var(--brand-accent-border);
   }
   .manual-content {
-    padding-left: 0;
+    padding: 22px 0 0;
+    border-top: 2px solid var(--border-strong);
     border-left: 0;
   }
 }
@@ -547,14 +621,46 @@
   .manual-release-body {
     padding: 18px 16px 20px;
   }
-  .manual-release-group {
+  .manual-release-group,
+  .manual-changelog-list {
     padding: 15px 14px;
   }
   .manual-release-intro {
     margin-top: -8px;
   }
+  .manual-release-divider {
+    margin: 24px 0 20px;
+  }
   .manual-details summary,
   .manual-details-body {
     padding-inline: 14px;
+  }
+}
+
+/* At phone widths, a single-column menu keeps every label legible. */
+@media (max-width: 420px) {
+  .manual-nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .manual-nav-sub {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .manual-nav > a {
+    justify-items: start;
+    text-align: left;
+    padding-inline: 12px;
   }
 }
