@@ -34,11 +34,11 @@
         </div>
         <div class="auth-dashboard d-flex" role="img" aria-label="Ilustrasi dashboard LINNMS dengan data contoh">
 
-          <div class="auth-app-content flex-grow-1 overflow-hidden">
-            <div class="auth-topbar d-none d-md-flex justify-content-end align-items-center border-bottom px-3 py-2"><i class="bi bi-person-circle text-body-secondary" aria-hidden="true"></i></div>
+          <div class="auth-app-content flex-grow-1">
+            <div class="auth-topbar d-flex justify-content-end align-items-center border-bottom px-3 py-2"><i class="bi bi-person-circle text-body-secondary" aria-hidden="true"></i></div>
             <div class="p-3">
               <div class="mb-3"><small class="text-body-secondary">LINNMS / Dashboard</small><h2 class="auth-title text-info fw-bold mt-1 mb-0">DASHBOARD</h2></div>
-              <div class="row row-cols-3 row-cols-md-6 g-2 mb-3">
+              <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-6 g-2 mb-3">
                 <div class="col"><div class="card auth-stat info h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total Perangkat</span><strong class="text-body">48</strong></div></div></div>
                 <div class="col"><div class="card auth-stat accent h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Total ONU</span><strong class="text-body">1.286</strong></div></div></div>
                 <div class="col"><div class="card auth-stat success h-100"><div class="card-body p-2 d-grid gap-1"><span class="text-uppercase fw-semibold">Online</span><strong class="text-body">1.231</strong></div></div></div>
@@ -53,10 +53,10 @@
                 </div>
                 <div class="table-responsive">
                   <table class="table table-sm table-striped align-middle mb-0 auth-table">
-                    <thead class="table-active"><tr><th scope="col" class="d-none d-md-table-cell">No.</th><th scope="col">Jenis</th><th scope="col">Nama</th><th scope="col" class="d-none d-md-table-cell">Model</th><th scope="col" class="d-none d-md-table-cell">Sync</th><th scope="col"><span class="visually-hidden">Tindakan</span></th></tr></thead>
+                    <thead class="table-active"><tr><th scope="col" >No.</th><th scope="col">Jenis</th><th scope="col">Nama</th><th scope="col" >Model</th><th scope="col" >Sync</th><th scope="col">Tindakan</th></tr></thead>
                     <tbody>
-                      <tr><td class="d-none d-md-table-cell">01</td><td><span class="badge text-bg-info">OLT</span></td><td><strong class="d-block">OLT-JKT-01</strong><small class="d-block text-body-secondary">10.10.10.2</small></td><td class="d-none d-md-table-cell">ZTE C320</td><td class="d-none d-md-table-cell">18:32:15<small class="d-block text-success">● SNMP · OK</small></td><td><span class="d-inline-flex gap-2 text-info"><i class="bi bi-search" aria-hidden="true"></i><i class="bi bi-three-dots" aria-hidden="true"></i></span></td></tr>
-                      <tr><td class="d-none d-md-table-cell">02</td><td><span class="badge text-bg-info">OLT</span></td><td><strong class="d-block">OLT-BDG-02</strong><small class="d-block text-body-secondary">10.10.20.2</small></td><td class="d-none d-md-table-cell">ZTE C300</td><td class="d-none d-md-table-cell">18:31:48<small class="d-block text-success">● SNMP · OK</small></td><td><span class="d-inline-flex gap-2 text-info"><i class="bi bi-search" aria-hidden="true"></i><i class="bi bi-three-dots" aria-hidden="true"></i></span></td></tr>
+                      <tr><td >01</td><td><span class="badge text-bg-info">OLT</span></td><td><strong class="d-block">OLT-JKT-01</strong><small class="d-block text-body-secondary">10.10.10.2</small></td><td >ZTE C320</td><td >18:32:15<small class="d-block text-success">● SNMP · OK</small></td><td><span class="d-inline-flex gap-2 text-info"><i class="bi bi-search" aria-hidden="true"></i><i class="bi bi-three-dots" aria-hidden="true"></i></span></td></tr>
+                      <tr><td >02</td><td><span class="badge text-bg-info">OLT</span></td><td><strong class="d-block">OLT-BDG-02</strong><small class="d-block text-body-secondary">10.10.20.2</small></td><td >ZTE C300</td><td >18:31:48<small class="d-block text-success">● SNMP · OK</small></td><td><span class="d-inline-flex gap-2 text-info"><i class="bi bi-search" aria-hidden="true"></i><i class="bi bi-three-dots" aria-hidden="true"></i></span></td></tr>
                     </tbody>
                   </table>
                 </div>
