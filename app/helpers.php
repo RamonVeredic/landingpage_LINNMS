@@ -22,8 +22,8 @@ function asset(string $path): string
 }
 
 /**
- * Content fingerprint of every public asset. Unlike timestamps, this detects
- * equal-sized edits made within the same second as well.
+ * Content fingerprint of all public assets and changelog JSON files.
+ * Used to refresh open tabs after either code or release data changes.
  */
 function asset_bundle_version(): string
 {
@@ -49,6 +49,17 @@ function asset_bundle_version(): string
         $contentHash = hash_file('sha256', $file->getPathname());
         if ($contentHash !== false) {
             $entries[] = $relativePath . ':' . $contentHash;
+        }
+    }
+    // A changelog-only GitHub update must also invalidate open browser tabs.
+    $changelogDirectory = BASE_PATH . '/public/views/data-change';
+    foreach (glob($changelogDirectory . '/v*.json') ?: [] as $file) {
+        if (!is_file($file)) {
+            continue;
+        }
+        $contentHash = hash_file('sha256', $file);
+        if ($contentHash !== false) {
+            $entries[] = 'data-change/' . basename($file) . ':' . $contentHash;
         }
     }
     sort($entries, SORT_STRING);
