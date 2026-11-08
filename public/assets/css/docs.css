@@ -520,6 +520,20 @@
     text-align: center;
     overflow-wrap: anywhere;
   }
+  /* Keep page tabs on the same row even when the submenu is in the middle
+     of the source DOM (Instalasi and Pemetaan Data). */
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 3;
+    grid-row: 2;
+  }
   .manual-nav > a.active,
   .manual-nav > a:hover,
   .manual-nav > a:focus-visible {
@@ -527,6 +541,7 @@
   }
   .manual-nav-sub {
     grid-column: 1 / -1;
+    grid-row: 3;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -600,5 +615,33 @@
   .manual-details summary,
   .manual-details-body {
     padding-inline: 14px;
+  }
+}
+
+/* At phone widths, a single-column menu keeps every label legible. */
+@media (max-width: 420px) {
+  .manual-nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .manual-nav > a[href="/dokumentasi"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .manual-nav > a[href="/dokumentasi/pemetaan-data"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .manual-nav > a[href="/dokumentasi/changelog"] {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .manual-nav-sub {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .manual-nav > a {
+    justify-items: start;
+    text-align: left;
+    padding-inline: 12px;
   }
 }
